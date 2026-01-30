@@ -327,10 +327,8 @@ function startMemorize() {
     };
     
     // Update flashcard labels with selected subject
-    document.querySelector('#flashcard-imperfekt .flashcard-label').textContent = `Präteritum (${subject})`;
-    document.querySelector('#flashcard-imperfekt .flashcard-back .flashcard-label').textContent = `Präteritum (${subject})`;
-    document.querySelector('#flashcard-perfekt .flashcard-label').textContent = `Partizip Perfekt (${subject})`;
-    document.querySelector('#flashcard-perfekt .flashcard-back .flashcard-label').textContent = `Partizip Perfekt (${subject})`;
+    document.querySelectorAll('#flashcard-imperfekt .flashcard-subject').forEach(el => el.textContent = subject);
+    document.querySelectorAll('#flashcard-perfekt .flashcard-subject').forEach(el => el.textContent = subject);
     
     // Show/hide flashcards based on tense selection
     elements.flashcardImperfekt.style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';

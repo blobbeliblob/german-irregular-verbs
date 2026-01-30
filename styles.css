@@ -578,10 +578,13 @@ main {
 
 .flashcard-label {
     font-size: 0.85rem;
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
     opacity: 0.8;
+}
+
+.flashcard-tense {
+    text-transform: uppercase;
 }
 
 .flashcard-hint {
