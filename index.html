@@ -42,13 +42,38 @@
                     <h2>Practice Mode</h2>
                     <p>Test your knowledge of German irregular verbs. You'll be given the infinitive form and need to provide the correct conjugations.</p>
                     <div class="options">
-                        <label for="practice-verb-count">Number of verbs:</label>
-                        <select id="practice-verb-count">
-                            <option value="5">5 verbs</option>
-                            <option value="10" selected>10 verbs</option>
-                            <option value="20">20 verbs</option>
-                            <option value="all">All verbs</option>
-                        </select>
+                        <span class="options-label">Number of verbs:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="practice-verb-count" value="10" checked>
+                                <span class="radio-btn">Quick (10)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-verb-count" value="30">
+                                <span class="radio-btn">Medium (30)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-verb-count" value="all">
+                                <span class="radio-btn">All</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <span class="options-label">Tense:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="practice-tense" value="imperfekt">
+                                <span class="radio-btn">Imperfekt</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-tense" value="perfekt">
+                                <span class="radio-btn">Perfekt</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-tense" value="both" checked>
+                                <span class="radio-btn">Both</span>
+                            </label>
+                        </div>
                     </div>
                     <button id="start-practice-btn" class="btn primary">Start Practice</button>
                 </div>
@@ -69,13 +94,13 @@
                     </div>
 
                     <form id="answer-form">
-                        <div class="input-group">
-                            <label for="praeteritum">Präteritum (ich)</label>
+                        <div class="input-group" id="input-group-imperfekt">
+                            <label for="praeteritum">Imperfekt (ich)</label>
                             <input type="text" id="praeteritum" autocomplete="off" placeholder="e.g., ging">
                         </div>
-                        <div class="input-group">
-                            <label for="partizip">Partizip II</label>
-                            <input type="text" id="partizip" autocomplete="off" placeholder="e.g., gegangen">
+                        <div class="input-group" id="input-group-perfekt">
+                            <label for="partizip">Perfekt (ich)</label>
+                            <input type="text" id="partizip" autocomplete="off" placeholder="e.g., habe gegangen">
                         </div>
                         <button type="submit" class="btn primary" id="submit-btn">Check Answer</button>
                     </form>
@@ -83,8 +108,8 @@
                     <div id="feedback" class="feedback hidden">
                         <div class="correct-answers">
                             <p><strong>Correct answers:</strong></p>
-                            <p>Präteritum: <span id="correct-praeteritum">—</span></p>
-                            <p>Partizip II: <span id="correct-partizip">—</span></p>
+                            <p id="feedback-imperfekt">Imperfekt: <span id="correct-praeteritum">—</span></p>
+                            <p id="feedback-perfekt">Perfekt: <span id="correct-partizip">—</span></p>
                         </div>
                         <button id="next-btn" class="btn secondary">Next Verb</button>
                     </div>
@@ -117,13 +142,38 @@
                     <h2>Memorize Mode</h2>
                     <p>Review verbs at your own pace. Click on the cards to reveal the past tense forms.</p>
                     <div class="options">
-                        <label for="memorize-verb-count">Number of verbs:</label>
-                        <select id="memorize-verb-count">
-                            <option value="5">5 verbs</option>
-                            <option value="10" selected>10 verbs</option>
-                            <option value="20">20 verbs</option>
-                            <option value="all">All verbs</option>
-                        </select>
+                        <span class="options-label">Number of verbs:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-verb-count" value="10" checked>
+                                <span class="radio-btn">Quick (10)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-verb-count" value="30">
+                                <span class="radio-btn">Medium (30)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-verb-count" value="all">
+                                <span class="radio-btn">All</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <span class="options-label">Tense:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-tense" value="imperfekt">
+                                <span class="radio-btn">Imperfekt</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-tense" value="perfekt">
+                                <span class="radio-btn">Perfekt</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-tense" value="both" checked>
+                                <span class="radio-btn">Both</span>
+                            </label>
+                        </div>
                     </div>
                     <button id="start-memorize-btn" class="btn primary">Start Memorizing</button>
                 </div>

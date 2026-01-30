@@ -31,7 +31,7 @@ function initializeElements() {
         modeButtons: document.querySelectorAll('.mode-btn'),
         
         // Practice elements
-        practiceVerbCount: document.getElementById('practice-verb-count'),
+        practiceVerbCountRadios: document.querySelectorAll('input[name="practice-verb-count"]'),
         startPracticeBtn: document.getElementById('start-practice-btn'),
         practiceProgress: document.getElementById('practice-progress'),
         practiceCurrentNum: document.getElementById('practice-current-num'),
@@ -55,7 +55,7 @@ function initializeElements() {
         practiceMenuBtn: document.getElementById('practice-menu-btn'),
         
         // Memorize elements
-        memorizeVerbCount: document.getElementById('memorize-verb-count'),
+        memorizeVerbCountRadios: document.querySelectorAll('input[name="memorize-verb-count"]'),
         startMemorizeBtn: document.getElementById('start-memorize-btn'),
         memorizeProgress: document.getElementById('memorize-progress'),
         memorizeCurrentNum: document.getElementById('memorize-current-num'),
@@ -147,16 +147,24 @@ function shuffleArray(array) {
 // ==================
 
 function startPractice() {
-    const countValue = elements.practiceVerbCount.value;
+    const countValue = document.querySelector('input[name="practice-verb-count"]:checked').value;
     const count = countValue === 'all' ? verbs.length : parseInt(countValue);
+    const tense = document.querySelector('input[name="practice-tense"]:checked').value;
     
     currentSession = {
         mode: 'practice',
+        tense: tense,
         verbs: shuffleArray(verbs).slice(0, count),
         currentIndex: 0,
         score: 0,
         mistakes: []
     };
+    
+    // Show/hide input fields based on tense selection
+    document.getElementById('input-group-imperfekt').style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
+    document.getElementById('input-group-perfekt').style.display = (tense === 'perfekt' || tense === 'both') ? 'block' : 'none';
+    document.getElementById('feedback-imperfekt').style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
+    document.getElementById('feedback-perfekt').style.display = (tense === 'perfekt' || tense === 'both') ? 'block' : 'none';
     
     elements.practiceTotalNum.textContent = currentSession.verbs.length;
     showScreen('practice');
@@ -185,7 +193,12 @@ function displayPracticeVerb() {
     elements.submitBtn.style.display = 'block';
     elements.feedback.classList.add('hidden');
     
-    elements.praeteritum.focus();
+    // Focus the appropriate input
+    if (currentSession.tense === 'perfekt') {
+        elements.partizip.focus();
+    } else {
+        elements.praeteritum.focus();
+    }
 }
 
 function normalizeAnswer(str) {
@@ -200,6 +213,7 @@ function checkAnswer(e) {
     e.preventDefault();
     
     const verb = currentSession.verbs[currentSession.currentIndex];
+    const tense = currentSession.tense;
     const praeteritumAnswer = elements.praeteritum.value;
     const partizipAnswer = elements.partizip.value;
     
@@ -207,16 +221,19 @@ function checkAnswer(e) {
     const correctPraeteritum = verb.imperfekt['ich'].german;
     const correctPartizip = verb.perfekt['ich'].german;
     
-    const praeteritumCorrect = isCorrect(praeteritumAnswer, correctPraeteritum);
-    const partizipCorrect = isCorrect(partizipAnswer, correctPartizip);
+    // Check based on selected tense
+    const praeteritumCorrect = (tense === 'perfekt') ? true : isCorrect(praeteritumAnswer, correctPraeteritum);
+    const partizipCorrect = (tense === 'imperfekt') ? true : isCorrect(partizipAnswer, correctPartizip);
     
-    // Update input styles
-    elements.praeteritum.classList.add(praeteritumCorrect ? 'correct' : 'incorrect');
-    elements.partizip.classList.add(partizipCorrect ? 'correct' : 'incorrect');
-    
-    // Disable inputs
-    elements.praeteritum.disabled = true;
-    elements.partizip.disabled = true;
+    // Update input styles based on tense
+    if (tense === 'imperfekt' || tense === 'both') {
+        elements.praeteritum.classList.add(praeteritumCorrect ? 'correct' : 'incorrect');
+        elements.praeteritum.disabled = true;
+    }
+    if (tense === 'perfekt' || tense === 'both') {
+        elements.partizip.classList.add(partizipCorrect ? 'correct' : 'incorrect');
+        elements.partizip.disabled = true;
+    }
     
     // Show feedback
     elements.correctPraeteritum.textContent = correctPraeteritum;
@@ -288,14 +305,20 @@ function showPracticeResults() {
 // ==================
 
 function startMemorize() {
-    const countValue = elements.memorizeVerbCount.value;
+    const countValue = document.querySelector('input[name="memorize-verb-count"]:checked').value;
     const count = countValue === 'all' ? verbs.length : parseInt(countValue);
+    const tense = document.querySelector('input[name="memorize-tense"]:checked').value;
     
     currentSession = {
         mode: 'memorize',
+        tense: tense,
         verbs: shuffleArray(verbs).slice(0, count),
         currentIndex: 0
     };
+    
+    // Show/hide flashcards based on tense selection
+    elements.flashcardImperfekt.style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
+    elements.flashcardPerfekt.style.display = (tense === 'perfekt' || tense === 'both') ? 'block' : 'none';
     
     elements.memorizeTotalNum.textContent = currentSession.verbs.length;
     showScreen('memorize');

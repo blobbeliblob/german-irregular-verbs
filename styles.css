@@ -138,26 +138,48 @@ main {
     margin-bottom: 25px;
 }
 
-.options label {
+.options-label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-weight: 600;
     color: var(--text-primary);
 }
 
-.options select {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 1rem;
-    background: white;
-    cursor: pointer;
-    transition: border-color 0.3s;
+/* Radio Button Group */
+.radio-group {
+    display: flex;
+    gap: 10px;
 }
 
-.options select:focus {
-    outline: none;
+.radio-option {
+    flex: 1;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-btn {
+    display: block;
+    padding: 12px 8px;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.radio-option input[type="radio"]:checked + .radio-btn {
+    border-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+}
+
+.radio-option:hover .radio-btn {
     border-color: var(--primary-color);
 }
 
