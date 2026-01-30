@@ -186,16 +186,17 @@ main {
 /* Wrapped radio group for many options */
 .radio-group-wrap {
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .radio-group-wrap .radio-option {
-    flex: 0 0 calc(33.333% - 7px);
-    min-width: 0;
+    flex: 1 1 auto;
 }
 
 .radio-group-wrap .radio-btn {
-    padding: 10px 6px;
+    padding: 10px 8px;
     font-size: 0.85rem;
+    white-space: nowrap;
 }
 
 /* Buttons */
