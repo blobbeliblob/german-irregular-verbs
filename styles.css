@@ -183,6 +183,21 @@ main {
     border-color: var(--primary-color);
 }
 
+/* Wrapped radio group for many options */
+.radio-group-wrap {
+    flex-wrap: wrap;
+}
+
+.radio-group-wrap .radio-option {
+    flex: 0 0 calc(33.333% - 7px);
+    min-width: 0;
+}
+
+.radio-group-wrap .radio-btn {
+    padding: 10px 6px;
+    font-size: 0.85rem;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;

@@ -75,6 +75,35 @@
                             </label>
                         </div>
                     </div>
+                    <div class="options">
+                        <span class="options-label">Subject:</span>
+                        <div class="radio-group radio-group-wrap">
+                            <label class="radio-option">
+                                <input type="radio" name="practice-subject" value="ich" checked>
+                                <span class="radio-btn">ich</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-subject" value="du">
+                                <span class="radio-btn">du</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-subject" value="er/sie/es">
+                                <span class="radio-btn">er/sie/es</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-subject" value="wir">
+                                <span class="radio-btn">wir</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-subject" value="ihr">
+                                <span class="radio-btn">ihr</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-subject" value="sie/Sie">
+                                <span class="radio-btn">sie/Sie</span>
+                            </label>
+                        </div>
+                    </div>
                     <button id="start-practice-btn" class="btn primary">Start Practice</button>
                 </div>
             </section>
@@ -95,11 +124,11 @@
 
                     <form id="answer-form">
                         <div class="input-group" id="input-group-imperfekt">
-                            <label for="praeteritum">Imperfekt (ich)</label>
+                            <label for="praeteritum">Imperfekt (<span id="label-subject-imperfekt">ich</span>)</label>
                             <input type="text" id="praeteritum" autocomplete="off" placeholder="e.g., ging">
                         </div>
                         <div class="input-group" id="input-group-perfekt">
-                            <label for="partizip">Perfekt (ich)</label>
+                            <label for="partizip">Perfekt (<span id="label-subject-perfekt">ich</span>)</label>
                             <input type="text" id="partizip" autocomplete="off" placeholder="e.g., habe gegangen">
                         </div>
                         <button type="submit" class="btn primary" id="submit-btn">Check Answer</button>
@@ -172,6 +201,35 @@
                             <label class="radio-option">
                                 <input type="radio" name="memorize-tense" value="both" checked>
                                 <span class="radio-btn">Both</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <span class="options-label">Subject:</span>
+                        <div class="radio-group radio-group-wrap">
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-subject" value="ich" checked>
+                                <span class="radio-btn">ich</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-subject" value="du">
+                                <span class="radio-btn">du</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-subject" value="er/sie/es">
+                                <span class="radio-btn">er/sie/es</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-subject" value="wir">
+                                <span class="radio-btn">wir</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-subject" value="ihr">
+                                <span class="radio-btn">ihr</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-subject" value="sie/Sie">
+                                <span class="radio-btn">sie/Sie</span>
                             </label>
                         </div>
                     </div>

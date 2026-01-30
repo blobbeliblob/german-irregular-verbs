@@ -150,15 +150,21 @@ function startPractice() {
     const countValue = document.querySelector('input[name="practice-verb-count"]:checked').value;
     const count = countValue === 'all' ? verbs.length : parseInt(countValue);
     const tense = document.querySelector('input[name="practice-tense"]:checked').value;
+    const subject = document.querySelector('input[name="practice-subject"]:checked').value;
     
     currentSession = {
         mode: 'practice',
         tense: tense,
+        subject: subject,
         verbs: shuffleArray(verbs).slice(0, count),
         currentIndex: 0,
         score: 0,
         mistakes: []
     };
+    
+    // Update labels with selected subject
+    document.getElementById('label-subject-imperfekt').textContent = subject;
+    document.getElementById('label-subject-perfekt').textContent = subject;
     
     // Show/hide input fields based on tense selection
     document.getElementById('input-group-imperfekt').style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
@@ -214,12 +220,13 @@ function checkAnswer(e) {
     
     const verb = currentSession.verbs[currentSession.currentIndex];
     const tense = currentSession.tense;
+    const subject = currentSession.subject;
     const praeteritumAnswer = elements.praeteritum.value;
     const partizipAnswer = elements.partizip.value;
     
-    // Get correct answers from the verb data (ich form of imperfekt and perfekt)
-    const correctPraeteritum = verb.imperfekt['ich'].german;
-    const correctPartizip = verb.perfekt['ich'].german;
+    // Get correct answers from the verb data using selected subject
+    const correctPraeteritum = verb.imperfekt[subject].german;
+    const correctPartizip = verb.perfekt[subject].german;
     
     // Check based on selected tense
     const praeteritumCorrect = (tense === 'perfekt') ? true : isCorrect(praeteritumAnswer, correctPraeteritum);
@@ -308,13 +315,21 @@ function startMemorize() {
     const countValue = document.querySelector('input[name="memorize-verb-count"]:checked').value;
     const count = countValue === 'all' ? verbs.length : parseInt(countValue);
     const tense = document.querySelector('input[name="memorize-tense"]:checked').value;
+    const subject = document.querySelector('input[name="memorize-subject"]:checked').value;
     
     currentSession = {
         mode: 'memorize',
         tense: tense,
+        subject: subject,
         verbs: shuffleArray(verbs).slice(0, count),
         currentIndex: 0
     };
+    
+    // Update flashcard labels with selected subject
+    document.querySelector('#flashcard-imperfekt .flashcard-label').textContent = `Imperfekt (${subject})`;
+    document.querySelector('#flashcard-imperfekt .flashcard-back .flashcard-label').textContent = `Imperfekt (${subject})`;
+    document.querySelector('#flashcard-perfekt .flashcard-label').textContent = `Perfekt (${subject})`;
+    document.querySelector('#flashcard-perfekt .flashcard-back .flashcard-label').textContent = `Perfekt (${subject})`;
     
     // Show/hide flashcards based on tense selection
     elements.flashcardImperfekt.style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
@@ -337,9 +352,10 @@ function displayMemorizeVerb() {
     elements.memorizeInfinitive.textContent = verb.infinitive;
     elements.memorizeTranslation.textContent = verb.translation;
     
-    // Set flashcard answers
-    elements.memorizeImperfekt.textContent = verb.imperfekt['ich'].german;
-    elements.memorizePerfekt.textContent = verb.perfekt['ich'].german;
+    // Set flashcard answers using selected subject
+    const subject = currentSession.subject;
+    elements.memorizeImperfekt.textContent = verb.imperfekt[subject].german;
+    elements.memorizePerfekt.textContent = verb.perfekt[subject].german;
     
     // Reset flashcards (unflip them)
     elements.flashcardImperfekt.classList.remove('flipped');
