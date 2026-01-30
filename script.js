@@ -297,7 +297,7 @@ function showPracticeResults() {
             <li>
                 <strong>${m.verb}</strong> (${m.translation})<br>
                 Präteritum: ${m.praeteritum} (you wrote: ${m.userPraeteritum})<br>
-                Perfekt: ${m.partizip} (you wrote: ${m.userPartizip})
+                Partizip Perfekt: ${m.partizip} (you wrote: ${m.userPartizip})
             </li>
         `).join('');
     } else {
@@ -327,10 +327,10 @@ function startMemorize() {
     };
     
     // Update flashcard labels with selected subject
-    document.querySelector('#flashcard-imperfekt .flashcard-label').textContent = `Imperfekt (${subject})`;
-    document.querySelector('#flashcard-imperfekt .flashcard-back .flashcard-label').textContent = `Imperfekt (${subject})`;
-    document.querySelector('#flashcard-perfekt .flashcard-label').textContent = `Perfekt (${subject})`;
-    document.querySelector('#flashcard-perfekt .flashcard-back .flashcard-label').textContent = `Perfekt (${subject})`;
+    document.querySelector('#flashcard-imperfekt .flashcard-label').textContent = `Präteritum (${subject})`;
+    document.querySelector('#flashcard-imperfekt .flashcard-back .flashcard-label').textContent = `Präteritum (${subject})`;
+    document.querySelector('#flashcard-perfekt .flashcard-label').textContent = `Partizip Perfekt (${subject})`;
+    document.querySelector('#flashcard-perfekt .flashcard-back .flashcard-label').textContent = `Partizip Perfekt (${subject})`;
     
     // Show/hide flashcards based on tense selection
     elements.flashcardImperfekt.style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
