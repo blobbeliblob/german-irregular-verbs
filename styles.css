@@ -86,7 +86,7 @@ header h1 {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--secondary-color);
     border: none;
     border-radius: 50%;
     width: 44px;
@@ -100,8 +100,9 @@ header h1 {
 }
 
 .home-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--secondary-color);
     transform: translateY(-50%) scale(1.1);
+    filter: brightness(1.1);
 }
 
 .home-btn img {
@@ -208,13 +209,13 @@ main {
 }
 
 .radio-option input[type="radio"]:checked + .radio-btn {
-    border-color: var(--primary-color);
-    background: var(--primary-color);
-    color: white;
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--text-primary);
 }
 
 .radio-option:hover .radio-btn {
-    border-color: var(--primary-color);
+    border-color: var(--secondary-color);
 }
 
 /* Wrapped radio group for many options */
