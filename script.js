@@ -255,6 +255,10 @@ function checkAnswer(e) {
     elements.correctPraeteritum.classList.remove('answer-hidden');
     elements.correctPartizip.classList.remove('answer-hidden');
     elements.submitBtn.classList.add('hidden');
+    
+    // Update next button text based on position
+    const isLastVerb = currentSession.currentIndex >= currentSession.verbs.length - 1;
+    elements.nextBtn.textContent = isLastVerb ? 'Finish Practice' : 'Next Verb';
     elements.nextBtn.classList.remove('hidden');
     
     // Update score
@@ -367,6 +371,10 @@ function displayMemorizeVerb() {
     // Reset flashcards (unflip them)
     elements.flashcardImperfekt.classList.remove('flipped');
     elements.flashcardPerfekt.classList.remove('flipped');
+    
+    // Update next button text based on position
+    const isLastVerb = currentSession.currentIndex >= currentSession.verbs.length - 1;
+    elements.memorizeNextBtn.textContent = isLastVerb ? 'Finish Review' : 'Next Verb';
 }
 
 function flipCard(cardId) {
