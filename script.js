@@ -101,14 +101,9 @@ function setupEventListeners() {
         });
     });
     
-    // Home button (with confirmation only during active practice/memorize)
+    // Home button
     elements.homeBtn.addEventListener('click', () => {
-        const activeScreen = document.querySelector('.screen.active')?.id;
-        const needsConfirmation = ['practice-screen', 'memorize-screen'].includes(activeScreen);
-        
-        if (!needsConfirmation || confirm('Are you sure you want to quit and return to the menu?')) {
-            showScreen('menu');
-        }
+        showScreen('menu');
     });
     
     // Practice mode
