@@ -75,6 +75,11 @@ header h1 {
     transform: translateY(-50%) scale(1.1);
 }
 
+.home-btn img {
+    width: 24px;
+    height: 24px;
+}
+
 .home-btn.hidden {
     display: none;
 }
@@ -449,6 +454,11 @@ main {
 .mode-icon {
     font-size: 2.5rem;
     margin-bottom: 10px;
+}
+
+.mode-icon img {
+    width: 48px;
+    height: 48px;
 }
 
 .mode-title {
