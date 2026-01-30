@@ -208,7 +208,8 @@ function displayPracticeVerb() {
 }
 
 function normalizeAnswer(str) {
-    return str.toLowerCase().trim();
+    // Normalize: lowercase, trim, and convert ß to ss for comparison
+    return str.toLowerCase().trim().replace(/ß/g, 'ss');
 }
 
 function isCorrect(userAnswer, correctAnswer) {
