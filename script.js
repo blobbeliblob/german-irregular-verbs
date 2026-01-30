@@ -379,4 +379,8 @@ function nextMemorizeVerb() {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', () => {
+    init();
+    // Footer year update
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+});

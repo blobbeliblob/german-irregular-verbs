@@ -578,6 +578,12 @@ footer {
     font-size: 0.9rem;
 }
 
+footer .copyright {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
 /* Responsive */
 @media (max-width: 480px) {
     .container {
