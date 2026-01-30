@@ -11,42 +11,61 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>🇩🇪 German Irregular Verbs</h1>
+        <header>            <button id="home-btn" class="home-btn hidden" title="Back to Menu">🏠</button>            <h1>German Irregular Verbs</h1>
             <p class="subtitle">Practice and master German strong verbs</p>
         </header>
 
         <main>
-            <!-- Start Screen -->
-            <section id="start-screen" class="screen active">
+            <!-- Main Menu Screen -->
+            <section id="menu-screen" class="screen active">
                 <div class="card">
-                    <h2>Welcome!</h2>
+                    <h2>Choose a Mode</h2>
+                    <p>Select how you want to learn German irregular verbs today.</p>
+                    <div class="mode-buttons">
+                        <button class="mode-btn" data-mode="practice">
+                            <span class="mode-icon">✍️</span>
+                            <span class="mode-title">Practice</span>
+                            <span class="mode-desc">Test yourself by typing the correct forms</span>
+                        </button>
+                        <button class="mode-btn" data-mode="memorize">
+                            <span class="mode-icon">🧠</span>
+                            <span class="mode-title">Memorize</span>
+                            <span class="mode-desc">Review verbs with flashcards</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Practice Setup Screen -->
+            <section id="practice-setup-screen" class="screen">
+                <div class="card">
+                    <h2>Practice Mode</h2>
                     <p>Test your knowledge of German irregular verbs. You'll be given the infinitive form and need to provide the correct conjugations.</p>
                     <div class="options">
-                        <label for="verb-count">Number of verbs:</label>
-                        <select id="verb-count">
+                        <label for="practice-verb-count">Number of verbs:</label>
+                        <select id="practice-verb-count">
                             <option value="5">5 verbs</option>
                             <option value="10" selected>10 verbs</option>
                             <option value="20">20 verbs</option>
                             <option value="all">All verbs</option>
                         </select>
                     </div>
-                    <button id="start-btn" class="btn primary">Start Practice</button>
+                    <button id="start-practice-btn" class="btn primary">Start Practice</button>
                 </div>
             </section>
 
             <!-- Practice Screen -->
             <section id="practice-screen" class="screen">
                 <div class="progress-bar">
-                    <div class="progress" id="progress"></div>
+                    <div class="progress" id="practice-progress"></div>
                 </div>
-                <p class="progress-text"><span id="current-num">1</span> / <span id="total-num">10</span></p>
+                <p class="progress-text"><span id="practice-current-num">1</span> / <span id="practice-total-num">10</span></p>
 
                 <div class="card practice-card">
                     <div class="verb-prompt">
                         <span class="label">Infinitive</span>
-                        <span class="verb" id="infinitive">—</span>
-                        <span class="translation" id="translation">—</span>
+                        <span class="verb" id="practice-infinitive">—</span>
+                        <span class="translation" id="practice-translation">—</span>
                     </div>
 
                     <form id="answer-form">
@@ -72,8 +91,8 @@
                 </div>
             </section>
 
-            <!-- Results Screen -->
-            <section id="results-screen" class="screen">
+            <!-- Practice Results Screen -->
+            <section id="practice-results-screen" class="screen">
                 <div class="card">
                     <h2>Practice Complete! 🎉</h2>
                     <div class="score">
@@ -85,7 +104,85 @@
                         <h3>Review your mistakes:</h3>
                         <ul id="mistakes-list"></ul>
                     </div>
-                    <button id="restart-btn" class="btn primary">Practice Again</button>
+                    <div class="results-buttons">
+                        <button id="practice-again-btn" class="btn primary">Practice Again</button>
+                        <button id="practice-menu-btn" class="btn secondary">Back to Menu</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Memorize Setup Screen -->
+            <section id="memorize-setup-screen" class="screen">
+                <div class="card">
+                    <h2>Memorize Mode</h2>
+                    <p>Review verbs at your own pace. Click on the cards to reveal the past tense forms.</p>
+                    <div class="options">
+                        <label for="memorize-verb-count">Number of verbs:</label>
+                        <select id="memorize-verb-count">
+                            <option value="5">5 verbs</option>
+                            <option value="10" selected>10 verbs</option>
+                            <option value="20">20 verbs</option>
+                            <option value="all">All verbs</option>
+                        </select>
+                    </div>
+                    <button id="start-memorize-btn" class="btn primary">Start Memorizing</button>
+                </div>
+            </section>
+
+            <!-- Memorize Screen -->
+            <section id="memorize-screen" class="screen">
+                <div class="progress-bar">
+                    <div class="progress" id="memorize-progress"></div>
+                </div>
+                <p class="progress-text"><span id="memorize-current-num">1</span> / <span id="memorize-total-num">10</span></p>
+
+                <div class="card memorize-card">
+                    <div class="verb-prompt">
+                        <span class="label">Infinitive</span>
+                        <span class="verb" id="memorize-infinitive">—</span>
+                        <span class="translation" id="memorize-translation">—</span>
+                    </div>
+
+                    <div class="flashcards">
+                        <div class="flashcard" id="flashcard-imperfekt">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">
+                                    <span class="flashcard-label">Imperfekt (ich)</span>
+                                    <span class="flashcard-hint">Click to reveal</span>
+                                </div>
+                                <div class="flashcard-back">
+                                    <span class="flashcard-label">Imperfekt (ich)</span>
+                                    <span class="flashcard-answer" id="memorize-imperfekt">—</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flashcard" id="flashcard-perfekt">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">
+                                    <span class="flashcard-label">Perfekt (ich)</span>
+                                    <span class="flashcard-hint">Click to reveal</span>
+                                </div>
+                                <div class="flashcard-back">
+                                    <span class="flashcard-label">Perfekt (ich)</span>
+                                    <span class="flashcard-answer" id="memorize-perfekt">—</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="memorize-next-btn" class="btn secondary">Next Verb</button>
+                </div>
+            </section>
+
+            <!-- Memorize Complete Screen -->
+            <section id="memorize-complete-screen" class="screen">
+                <div class="card">
+                    <h2>Review Complete! 🎉</h2>
+                    <p>You've reviewed all the verbs. Great job!</p>
+                    <div class="results-buttons">
+                        <button id="memorize-again-btn" class="btn primary">Review Again</button>
+                        <button id="memorize-menu-btn" class="btn secondary">Back to Menu</button>
+                    </div>
                 </div>
             </section>
         </main>
@@ -95,7 +192,6 @@
         </footer>
     </div>
 
-    <script src="verbs.json" type="application/json"></script>
     <script src="script.js"></script>
 </body>
 </html>

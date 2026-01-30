@@ -4,47 +4,72 @@
 // State management
 let verbs = [];
 let currentSession = {
+    mode: null,
     verbs: [],
     currentIndex: 0,
     score: 0,
     mistakes: []
 };
 
-// DOM Elements
-const screens = {
-    start: document.getElementById('start-screen'),
-    practice: document.getElementById('practice-screen'),
-    results: document.getElementById('results-screen')
-};
-
-const elements = {
-    verbCount: document.getElementById('verb-count'),
-    startBtn: document.getElementById('start-btn'),
-    progress: document.getElementById('progress'),
-    currentNum: document.getElementById('current-num'),
-    totalNum: document.getElementById('total-num'),
-    infinitive: document.getElementById('infinitive'),
-    translation: document.getElementById('translation'),
-    answerForm: document.getElementById('answer-form'),
-    praeteritum: document.getElementById('praeteritum'),
-    partizip: document.getElementById('partizip'),
-    submitBtn: document.getElementById('submit-btn'),
-    feedback: document.getElementById('feedback'),
-    correctPraeteritum: document.getElementById('correct-praeteritum'),
-    correctPartizip: document.getElementById('correct-partizip'),
-    nextBtn: document.getElementById('next-btn'),
-    finalScore: document.getElementById('final-score'),
-    finalTotal: document.getElementById('final-total'),
-    scorePercentage: document.getElementById('score-percentage'),
-    mistakesSummary: document.getElementById('mistakes-summary'),
-    mistakesList: document.getElementById('mistakes-list'),
-    restartBtn: document.getElementById('restart-btn')
-};
+// DOM Elements - will be initialized after DOM loads
+let elements = {};
 
 // Initialize the app
 async function init() {
     await loadVerbs();
+    initializeElements();
     setupEventListeners();
+}
+
+// Initialize DOM element references
+function initializeElements() {
+    elements = {
+        // Navigation
+        homeBtn: document.getElementById('home-btn'),
+        
+        // Mode buttons
+        modeButtons: document.querySelectorAll('.mode-btn'),
+        
+        // Practice elements
+        practiceVerbCount: document.getElementById('practice-verb-count'),
+        startPracticeBtn: document.getElementById('start-practice-btn'),
+        practiceProgress: document.getElementById('practice-progress'),
+        practiceCurrentNum: document.getElementById('practice-current-num'),
+        practiceTotalNum: document.getElementById('practice-total-num'),
+        practiceInfinitive: document.getElementById('practice-infinitive'),
+        practiceTranslation: document.getElementById('practice-translation'),
+        answerForm: document.getElementById('answer-form'),
+        praeteritum: document.getElementById('praeteritum'),
+        partizip: document.getElementById('partizip'),
+        submitBtn: document.getElementById('submit-btn'),
+        feedback: document.getElementById('feedback'),
+        correctPraeteritum: document.getElementById('correct-praeteritum'),
+        correctPartizip: document.getElementById('correct-partizip'),
+        nextBtn: document.getElementById('next-btn'),
+        finalScore: document.getElementById('final-score'),
+        finalTotal: document.getElementById('final-total'),
+        scorePercentage: document.getElementById('score-percentage'),
+        mistakesSummary: document.getElementById('mistakes-summary'),
+        mistakesList: document.getElementById('mistakes-list'),
+        practiceAgainBtn: document.getElementById('practice-again-btn'),
+        practiceMenuBtn: document.getElementById('practice-menu-btn'),
+        
+        // Memorize elements
+        memorizeVerbCount: document.getElementById('memorize-verb-count'),
+        startMemorizeBtn: document.getElementById('start-memorize-btn'),
+        memorizeProgress: document.getElementById('memorize-progress'),
+        memorizeCurrentNum: document.getElementById('memorize-current-num'),
+        memorizeTotalNum: document.getElementById('memorize-total-num'),
+        memorizeInfinitive: document.getElementById('memorize-infinitive'),
+        memorizeTranslation: document.getElementById('memorize-translation'),
+        flashcardImperfekt: document.getElementById('flashcard-imperfekt'),
+        flashcardPerfekt: document.getElementById('flashcard-perfekt'),
+        memorizeImperfekt: document.getElementById('memorize-imperfekt'),
+        memorizePerfekt: document.getElementById('memorize-perfekt'),
+        memorizeNextBtn: document.getElementById('memorize-next-btn'),
+        memorizeAgainBtn: document.getElementById('memorize-again-btn'),
+        memorizeMenuBtn: document.getElementById('memorize-menu-btn')
+    };
 }
 
 // Load verbs from JSON file
@@ -58,23 +83,58 @@ async function loadVerbs() {
         console.log(`Loaded ${verbs.length} verbs`);
     } catch (error) {
         console.error('Error loading verbs:', error);
-        // Show error to user
         alert('Failed to load verbs. Please refresh the page.');
     }
 }
 
 // Setup event listeners
 function setupEventListeners() {
-    elements.startBtn.addEventListener('click', startPractice);
+    // Mode selection
+    elements.modeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const mode = btn.dataset.mode;
+            if (mode === 'practice') {
+                showScreen('practice-setup');
+            } else if (mode === 'memorize') {
+                showScreen('memorize-setup');
+            }
+        });
+    });
+    
+    // Home button (with confirmation only during active practice/memorize)
+    elements.homeBtn.addEventListener('click', () => {
+        const activeScreen = document.querySelector('.screen.active')?.id;
+        const needsConfirmation = ['practice-screen', 'memorize-screen'].includes(activeScreen);
+        
+        if (!needsConfirmation || confirm('Are you sure you want to quit and return to the menu?')) {
+            showScreen('menu');
+        }
+    });
+    
+    // Practice mode
+    elements.startPracticeBtn.addEventListener('click', startPractice);
     elements.answerForm.addEventListener('submit', checkAnswer);
-    elements.nextBtn.addEventListener('click', nextVerb);
-    elements.restartBtn.addEventListener('click', restartPractice);
+    elements.nextBtn.addEventListener('click', nextPracticeVerb);
+    elements.practiceAgainBtn.addEventListener('click', () => showScreen('practice-setup'));
+    elements.practiceMenuBtn.addEventListener('click', () => showScreen('menu'));
+    
+    // Memorize mode
+    elements.startMemorizeBtn.addEventListener('click', startMemorize);
+    elements.flashcardImperfekt.addEventListener('click', () => flipCard('flashcard-imperfekt'));
+    elements.flashcardPerfekt.addEventListener('click', () => flipCard('flashcard-perfekt'));
+    elements.memorizeNextBtn.addEventListener('click', nextMemorizeVerb);
+    elements.memorizeAgainBtn.addEventListener('click', () => showScreen('memorize-setup'));
+    elements.memorizeMenuBtn.addEventListener('click', () => showScreen('menu'));
 }
 
 // Switch between screens
 function showScreen(screenName) {
-    Object.values(screens).forEach(screen => screen.classList.remove('active'));
-    screens[screenName].classList.add('active');
+    document.querySelectorAll('.screen').forEach(screen => screen.classList.remove('active'));
+    document.getElementById(`${screenName}-screen`).classList.add('active');
+    
+    // Show/hide home button based on screen
+    const showHomeBtn = ['practice', 'memorize', 'practice-setup', 'memorize-setup'].includes(screenName);
+    elements.homeBtn.classList.toggle('hidden', !showHomeBtn);
 }
 
 // Shuffle array (Fisher-Yates algorithm)
@@ -87,38 +147,38 @@ function shuffleArray(array) {
     return shuffled;
 }
 
-// Start practice session
+// ==================
+// PRACTICE MODE
+// ==================
+
 function startPractice() {
-    const countValue = elements.verbCount.value;
+    const countValue = elements.practiceVerbCount.value;
     const count = countValue === 'all' ? verbs.length : parseInt(countValue);
     
-    // Reset session
     currentSession = {
+        mode: 'practice',
         verbs: shuffleArray(verbs).slice(0, count),
         currentIndex: 0,
         score: 0,
         mistakes: []
     };
     
-    // Update UI
-    elements.totalNum.textContent = currentSession.verbs.length;
-    
+    elements.practiceTotalNum.textContent = currentSession.verbs.length;
     showScreen('practice');
-    displayCurrentVerb();
+    displayPracticeVerb();
 }
 
-// Display the current verb
-function displayCurrentVerb() {
+function displayPracticeVerb() {
     const verb = currentSession.verbs[currentSession.currentIndex];
     
     // Update progress
-    elements.currentNum.textContent = currentSession.currentIndex + 1;
+    elements.practiceCurrentNum.textContent = currentSession.currentIndex + 1;
     const progressPercent = (currentSession.currentIndex / currentSession.verbs.length) * 100;
-    elements.progress.style.width = `${progressPercent}%`;
+    elements.practiceProgress.style.width = `${progressPercent}%`;
     
     // Display verb
-    elements.infinitive.textContent = verb.infinitive;
-    elements.translation.textContent = verb.translation;
+    elements.practiceInfinitive.textContent = verb.infinitive;
+    elements.practiceTranslation.textContent = verb.translation;
     
     // Reset form
     elements.praeteritum.value = '';
@@ -130,35 +190,17 @@ function displayCurrentVerb() {
     elements.submitBtn.style.display = 'block';
     elements.feedback.classList.add('hidden');
     
-    // Focus first input
     elements.praeteritum.focus();
 }
 
-// Normalize string for comparison (handle umlauts, spaces, etc.)
 function normalizeAnswer(str) {
     return str.toLowerCase().trim();
 }
 
-// Check if answer is correct (handles multiple acceptable answers)
-function isCorrect(userAnswer, correctAnswers) {
-    const normalized = normalizeAnswer(userAnswer);
-    
-    // correctAnswers can be a string or array
-    if (Array.isArray(correctAnswers)) {
-        return correctAnswers.some(answer => normalizeAnswer(answer) === normalized);
-    }
-    return normalizeAnswer(correctAnswers) === normalized;
+function isCorrect(userAnswer, correctAnswer) {
+    return normalizeAnswer(userAnswer) === normalizeAnswer(correctAnswer);
 }
 
-// Format correct answers for display
-function formatCorrectAnswers(answers) {
-    if (Array.isArray(answers)) {
-        return answers.join(' / ');
-    }
-    return answers;
-}
-
-// Check the user's answer
 function checkAnswer(e) {
     e.preventDefault();
     
@@ -166,8 +208,12 @@ function checkAnswer(e) {
     const praeteritumAnswer = elements.praeteritum.value;
     const partizipAnswer = elements.partizip.value;
     
-    const praeteritumCorrect = isCorrect(praeteritumAnswer, verb.praeteritum);
-    const partizipCorrect = isCorrect(partizipAnswer, verb.partizip);
+    // Get correct answers from the verb data (ich form of imperfekt and perfekt)
+    const correctPraeteritum = verb.imperfekt['ich'].german;
+    const correctPartizip = verb.perfekt['ich'].german;
+    
+    const praeteritumCorrect = isCorrect(praeteritumAnswer, correctPraeteritum);
+    const partizipCorrect = isCorrect(partizipAnswer, correctPartizip);
     
     // Update input styles
     elements.praeteritum.classList.add(praeteritumCorrect ? 'correct' : 'incorrect');
@@ -178,8 +224,8 @@ function checkAnswer(e) {
     elements.partizip.disabled = true;
     
     // Show feedback
-    elements.correctPraeteritum.textContent = formatCorrectAnswers(verb.praeteritum);
-    elements.correctPartizip.textContent = formatCorrectAnswers(verb.partizip);
+    elements.correctPraeteritum.textContent = correctPraeteritum;
+    elements.correctPartizip.textContent = correctPartizip;
     elements.submitBtn.style.display = 'none';
     elements.feedback.classList.remove('hidden');
     
@@ -190,27 +236,25 @@ function checkAnswer(e) {
         currentSession.mistakes.push({
             verb: verb.infinitive,
             translation: verb.translation,
-            praeteritum: formatCorrectAnswers(verb.praeteritum),
-            partizip: formatCorrectAnswers(verb.partizip),
+            praeteritum: correctPraeteritum,
+            partizip: correctPartizip,
             userPraeteritum: praeteritumAnswer || '(empty)',
             userPartizip: partizipAnswer || '(empty)'
         });
     }
 }
 
-// Move to next verb
-function nextVerb() {
+function nextPracticeVerb() {
     currentSession.currentIndex++;
     
     if (currentSession.currentIndex >= currentSession.verbs.length) {
-        showResults();
+        showPracticeResults();
     } else {
-        displayCurrentVerb();
+        displayPracticeVerb();
     }
 }
 
-// Show results screen
-function showResults() {
+function showPracticeResults() {
     const total = currentSession.verbs.length;
     const score = currentSession.score;
     const percentage = Math.round((score / total) * 100);
@@ -219,7 +263,6 @@ function showResults() {
     elements.finalTotal.textContent = total;
     elements.scorePercentage.textContent = `${percentage}%`;
     
-    // Set color based on score
     if (percentage >= 80) {
         elements.scorePercentage.style.color = 'var(--success)';
     } else if (percentage >= 50) {
@@ -228,29 +271,76 @@ function showResults() {
         elements.scorePercentage.style.color = 'var(--error)';
     }
     
-    // Show mistakes if any
     if (currentSession.mistakes.length > 0) {
         elements.mistakesSummary.classList.remove('hidden');
         elements.mistakesList.innerHTML = currentSession.mistakes.map(m => `
             <li>
                 <strong>${m.verb}</strong> (${m.translation})<br>
                 Präteritum: ${m.praeteritum} (you wrote: ${m.userPraeteritum})<br>
-                Partizip II: ${m.partizip} (you wrote: ${m.userPartizip})
+                Perfekt: ${m.partizip} (you wrote: ${m.userPartizip})
             </li>
         `).join('');
     } else {
         elements.mistakesSummary.classList.add('hidden');
     }
     
-    // Update progress bar to 100%
-    elements.progress.style.width = '100%';
-    
-    showScreen('results');
+    elements.practiceProgress.style.width = '100%';
+    showScreen('practice-results');
 }
 
-// Restart practice
-function restartPractice() {
-    showScreen('start');
+// ==================
+// MEMORIZE MODE
+// ==================
+
+function startMemorize() {
+    const countValue = elements.memorizeVerbCount.value;
+    const count = countValue === 'all' ? verbs.length : parseInt(countValue);
+    
+    currentSession = {
+        mode: 'memorize',
+        verbs: shuffleArray(verbs).slice(0, count),
+        currentIndex: 0
+    };
+    
+    elements.memorizeTotalNum.textContent = currentSession.verbs.length;
+    showScreen('memorize');
+    displayMemorizeVerb();
+}
+
+function displayMemorizeVerb() {
+    const verb = currentSession.verbs[currentSession.currentIndex];
+    
+    // Update progress
+    elements.memorizeCurrentNum.textContent = currentSession.currentIndex + 1;
+    const progressPercent = (currentSession.currentIndex / currentSession.verbs.length) * 100;
+    elements.memorizeProgress.style.width = `${progressPercent}%`;
+    
+    // Display verb
+    elements.memorizeInfinitive.textContent = verb.infinitive;
+    elements.memorizeTranslation.textContent = verb.translation;
+    
+    // Set flashcard answers
+    elements.memorizeImperfekt.textContent = verb.imperfekt['ich'].german;
+    elements.memorizePerfekt.textContent = verb.perfekt['ich'].german;
+    
+    // Reset flashcards (unflip them)
+    elements.flashcardImperfekt.classList.remove('flipped');
+    elements.flashcardPerfekt.classList.remove('flipped');
+}
+
+function flipCard(cardId) {
+    document.getElementById(cardId).classList.toggle('flipped');
+}
+
+function nextMemorizeVerb() {
+    currentSession.currentIndex++;
+    
+    if (currentSession.currentIndex >= currentSession.verbs.length) {
+        elements.memorizeProgress.style.width = '100%';
+        showScreen('memorize-complete');
+    } else {
+        displayMemorizeVerb();
+    }
 }
 
 // Initialize when DOM is loaded
