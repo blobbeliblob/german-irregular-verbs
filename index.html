@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Irregular Verbs Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇩🇪 German Irregular Verbs</h1>
+            <p class="subtitle">Practice and master German strong verbs</p>
+        </header>
+
+        <main>
+            <!-- Start Screen -->
+            <section id="start-screen" class="screen active">
+                <div class="card">
+                    <h2>Welcome!</h2>
+                    <p>Test your knowledge of German irregular verbs. You'll be given the infinitive form and need to provide the correct conjugations.</p>
+                    <div class="options">
+                        <label for="verb-count">Number of verbs:</label>
+                        <select id="verb-count">
+                            <option value="5">5 verbs</option>
+                            <option value="10" selected>10 verbs</option>
+                            <option value="20">20 verbs</option>
+                            <option value="all">All verbs</option>
+                        </select>
+                    </div>
+                    <button id="start-btn" class="btn primary">Start Practice</button>
+                </div>
+            </section>
+
+            <!-- Practice Screen -->
+            <section id="practice-screen" class="screen">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <p class="progress-text"><span id="current-num">1</span> / <span id="total-num">10</span></p>
+
+                <div class="card practice-card">
+                    <div class="verb-prompt">
+                        <span class="label">Infinitive</span>
+                        <span class="verb" id="infinitive">—</span>
+                        <span class="translation" id="translation">—</span>
+                    </div>
+
+                    <form id="answer-form">
+                        <div class="input-group">
+                            <label for="praeteritum">Präteritum (ich)</label>
+                            <input type="text" id="praeteritum" autocomplete="off" placeholder="e.g., ging">
+                        </div>
+                        <div class="input-group">
+                            <label for="partizip">Partizip II</label>
+                            <input type="text" id="partizip" autocomplete="off" placeholder="e.g., gegangen">
+                        </div>
+                        <button type="submit" class="btn primary" id="submit-btn">Check Answer</button>
+                    </form>
+
+                    <div id="feedback" class="feedback hidden">
+                        <div class="correct-answers">
+                            <p><strong>Correct answers:</strong></p>
+                            <p>Präteritum: <span id="correct-praeteritum">—</span></p>
+                            <p>Partizip II: <span id="correct-partizip">—</span></p>
+                        </div>
+                        <button id="next-btn" class="btn secondary">Next Verb</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Screen -->
+            <section id="results-screen" class="screen">
+                <div class="card">
+                    <h2>Practice Complete! 🎉</h2>
+                    <div class="score">
+                        <span class="score-number" id="final-score">0</span>
+                        <span class="score-label">out of <span id="final-total">10</span> correct</span>
+                    </div>
+                    <div class="score-percentage" id="score-percentage">0%</div>
+                    <div id="mistakes-summary" class="mistakes-summary hidden">
+                        <h3>Review your mistakes:</h3>
+                        <ul id="mistakes-list"></ul>
+                    </div>
+                    <button id="restart-btn" class="btn primary">Practice Again</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for German learners</p>
+        </footer>
+    </div>
+
+    <script src="verbs.json" type="application/json"></script>
+    <script src="script.js"></script>
+</body>
+</html>
