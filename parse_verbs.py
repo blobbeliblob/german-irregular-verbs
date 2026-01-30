@@ -1,11 +1,30 @@
 import json
 import pandas as pd
+import re
 
 # Read the Excel file, skip first 3 rows (header rows)
 df = pd.read_excel('verbs.xlsx', header=None, skiprows=3)
 
 # Conjugation order for each tense
 pronouns = ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie']
+
+# Patterns to remove subjects from German verb forms
+subject_patterns = [
+    r'^ich\s+',
+    r'^du\s+',
+    r'^er/sie/es\s+',
+    r'^er/si/es\s+',  # Handle typo variant
+    r'^wir\s+',
+    r'^ihr\s+',
+    r'^sie/Sie\s+',
+]
+
+def remove_subject(text):
+    """Remove the subject pronoun from the beginning of a German verb form."""
+    text = str(text).strip()
+    for pattern in subject_patterns:
+        text = re.sub(pattern, '', text, flags=re.IGNORECASE)
+    return text.strip()
 
 # Column layout based on Excel inspection:
 # Col 0: Infinitive
@@ -41,7 +60,7 @@ for i in range(0, len(df) - 1, 2):
         german_val = german_row[col_idx] if not pd.isna(german_row[col_idx]) else ''
         english_val = english_row[col_idx] if not pd.isna(english_row[col_idx]) else ''
         verb['present'][pronoun] = {
-            'german': str(german_val).strip(),
+            'german': remove_subject(german_val),
             'english': str(english_val).strip()
         }
     
@@ -51,7 +70,7 @@ for i in range(0, len(df) - 1, 2):
         german_val = german_row[col_idx] if col_idx < len(german_row) and not pd.isna(german_row[col_idx]) else ''
         english_val = english_row[col_idx] if col_idx < len(english_row) and not pd.isna(english_row[col_idx]) else ''
         verb['perfekt'][pronoun] = {
-            'german': str(german_val).strip(),
+            'german': remove_subject(german_val),
             'english': str(english_val).strip()
         }
     
@@ -61,7 +80,7 @@ for i in range(0, len(df) - 1, 2):
         german_val = german_row[col_idx] if col_idx < len(german_row) and not pd.isna(german_row[col_idx]) else ''
         english_val = english_row[col_idx] if col_idx < len(english_row) and not pd.isna(english_row[col_idx]) else ''
         verb['imperfekt'][pronoun] = {
-            'german': str(german_val).strip(),
+            'german': remove_subject(german_val),
             'english': str(english_val).strip()
         }
     
