@@ -339,11 +339,14 @@ main {
     display: block;
     margin-bottom: 6px;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     font-size: 0.95rem;
 }
 
-.input-tense,
+.input-tense {
+    text-transform: uppercase;
+}
+
 .feedback-tense {
     text-transform: uppercase;
     color: var(--text-secondary);
