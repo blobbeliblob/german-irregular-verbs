@@ -40,7 +40,7 @@
     --secondary-color: #ffc107;
     --background: #f5f5f5;
     --card-bg: #f8f9fa;
-    --text-primary: #212121;
+    --text-primary: #1a1a1a;
     --text-secondary: #757575;
     --success: #4caf50;
     --error: #f44336;
@@ -51,7 +51,7 @@
 
 body {
     font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: #1a1a1a;
     min-height: 100vh;
     color: var(--text-primary);
     line-height: 1.6;
