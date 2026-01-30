@@ -35,15 +35,15 @@
 }
 
 :root {
-    --primary-color: #d32f2f;
-    --primary-dark: #b71c1c;
-    --secondary-color: #ffc107;
+    --primary-color: #c75050;
+    --primary-dark: #a84444;
+    --secondary-color: #e6b44c;
     --background: #f5f5f5;
     --card-bg: #f8f9fa;
     --text-primary: #1a1a1a;
     --text-secondary: #757575;
-    --success: #4caf50;
-    --error: #f44336;
+    --success: #6db070;
+    --error: #d96a6a;
     --border-radius: 12px;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -209,7 +209,7 @@ main {
 
 .radio-option input[type="radio"]:checked + .radio-btn {
     border-color: var(--primary-color);
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    background: var(--primary-color);
     color: white;
 }
 
@@ -247,13 +247,13 @@ main {
 }
 
 .btn.primary {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    background: var(--primary-color);
     color: white;
 }
 
 .btn.primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.4);
+    box-shadow: 0 4px 12px rgba(199, 80, 80, 0.4);
 }
 
 .btn.secondary {
@@ -276,7 +276,7 @@ main {
 }
 
 .progress {
-    background: linear-gradient(90deg, var(--secondary-color), #ffeb3b);
+    background: var(--secondary-color);
     height: 100%;
     width: 0%;
     transition: width 0.3s ease;
@@ -296,7 +296,7 @@ main {
 }
 
 .verb-prompt {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #6b7db3;
     border-radius: 10px;
     padding: 25px;
     margin-bottom: 25px;
@@ -566,12 +566,12 @@ main {
 }
 
 .flashcard-front {
-    background: linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 100%);
+    background: #d0d0d0;
     color: var(--text-secondary);
 }
 
 .flashcard-back {
-    background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+    background: var(--success);
     color: white;
     transform: rotateX(180deg);
 }
