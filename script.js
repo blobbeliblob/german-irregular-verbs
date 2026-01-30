@@ -196,8 +196,14 @@ function displayPracticeVerb() {
     elements.partizip.classList.remove('correct', 'incorrect');
     elements.praeteritum.disabled = false;
     elements.partizip.disabled = false;
-    elements.submitBtn.style.display = 'block';
-    elements.feedback.classList.add('hidden');
+    elements.submitBtn.classList.remove('hidden');
+    
+    // Hide answers and next button
+    elements.correctPraeteritum.classList.add('answer-hidden');
+    elements.correctPartizip.classList.add('answer-hidden');
+    elements.correctPraeteritum.textContent = '—';
+    elements.correctPartizip.textContent = '—';
+    elements.nextBtn.classList.add('hidden');
     
     // Focus the appropriate input
     if (currentSession.tense === 'perfekt') {
@@ -246,8 +252,10 @@ function checkAnswer(e) {
     // Show feedback
     elements.correctPraeteritum.textContent = correctPraeteritum;
     elements.correctPartizip.textContent = correctPartizip;
-    elements.submitBtn.style.display = 'none';
-    elements.feedback.classList.remove('hidden');
+    elements.correctPraeteritum.classList.remove('answer-hidden');
+    elements.correctPartizip.classList.remove('answer-hidden');
+    elements.submitBtn.classList.add('hidden');
+    elements.nextBtn.classList.remove('hidden');
     
     // Update score
     if (praeteritumCorrect && partizipCorrect) {

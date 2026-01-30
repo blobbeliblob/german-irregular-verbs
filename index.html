@@ -130,16 +130,19 @@
                             <label for="partizip"><span class="input-tense">Partizip Perfekt</span> (<span id="label-subject-perfekt">ich</span>)</label>
                             <input type="text" id="partizip" autocomplete="off" placeholder="e.g., bin gegangen">
                         </div>
-                        <button type="submit" class="btn primary" id="submit-btn">Check Answer</button>
                     </form>
 
-                    <div id="feedback" class="feedback hidden">
+                    <div id="feedback" class="feedback">
                         <div class="correct-answers">
                             <p><strong>Correct answers:</strong></p>
-                            <p id="feedback-imperfekt"><span class="feedback-tense">Präteritum</span>: <span id="correct-praeteritum">—</span></p>
-                            <p id="feedback-perfekt"><span class="feedback-tense">Partizip Perfekt</span>: <span id="correct-partizip">—</span></p>
+                            <p id="feedback-imperfekt"><span class="feedback-tense">Präteritum</span>: <span id="correct-praeteritum" class="answer-hidden">—</span></p>
+                            <p id="feedback-perfekt"><span class="feedback-tense">Partizip Perfekt</span>: <span id="correct-partizip" class="answer-hidden">—</span></p>
                         </div>
-                        <button id="next-btn" class="btn secondary">Next Verb</button>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button type="submit" form="answer-form" class="btn primary" id="submit-btn">Check Answer</button>
+                        <button id="next-btn" class="btn secondary hidden">Next Verb</button>
                     </div>
                 </div>
             </section>
