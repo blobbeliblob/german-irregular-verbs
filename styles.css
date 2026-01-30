@@ -5,12 +5,41 @@
     box-sizing: border-box;
 }
 
+/* Lato Font */
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato/Lato-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
 :root {
     --primary-color: #d32f2f;
     --primary-dark: #b71c1c;
     --secondary-color: #ffc107;
     --background: #f5f5f5;
-    --card-bg: #ffffff;
+    --card-bg: #f8f9fa;
     --text-primary: #212121;
     --text-secondary: #757575;
     --success: #4caf50;
@@ -21,8 +50,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     min-height: 100vh;
     color: var(--text-primary);
     line-height: 1.6;
