@@ -343,6 +343,12 @@ main {
     font-size: 0.95rem;
 }
 
+.input-tense,
+.feedback-tense {
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
 .input-group input {
     width: 100%;
     padding: 14px 16px;
