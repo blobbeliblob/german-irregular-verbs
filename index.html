@@ -59,7 +59,11 @@
                     </div>
                     <div class="options">
                         <span class="options-label">Tense:</span>
-                        <div class="radio-group">
+                        <div class="radio-group radio-group-wrap">
+                            <label class="radio-option">
+                                <input type="radio" name="practice-tense" value="praesens">
+                                <span class="radio-btn">Präsens</span>
+                            </label>
                             <label class="radio-option">
                                 <input type="radio" name="practice-tense" value="imperfekt">
                                 <span class="radio-btn">Präteritum</span>
@@ -69,8 +73,8 @@
                                 <span class="radio-btn">Partizip Perfekt</span>
                             </label>
                             <label class="radio-option">
-                                <input type="radio" name="practice-tense" value="both" checked>
-                                <span class="radio-btn">Both</span>
+                                <input type="radio" name="practice-tense" value="all" checked>
+                                <span class="radio-btn">All</span>
                             </label>
                         </div>
                     </div>
@@ -122,6 +126,10 @@
                     </div>
 
                     <form id="answer-form">
+                        <div class="input-group" id="input-group-praesens">
+                            <label for="praesens"><span class="input-tense">Präsens</span> (<span id="label-subject-praesens">ich</span>)</label>
+                            <input type="text" id="praesens" autocomplete="off" placeholder="e.g., gehe">
+                        </div>
                         <div class="input-group" id="input-group-imperfekt">
                             <label for="praeteritum"><span class="input-tense">Präteritum</span> (<span id="label-subject-imperfekt">ich</span>)</label>
                             <input type="text" id="praeteritum" autocomplete="off" placeholder="e.g., ging">
@@ -135,6 +143,7 @@
                     <div id="feedback" class="feedback">
                         <div class="correct-answers">
                             <p><strong>Correct answers:</strong></p>
+                            <p id="feedback-praesens"><span class="feedback-tense">Präsens:</span> <span id="correct-praesens" class="answer-hidden">—</span></p>
                             <p id="feedback-imperfekt"><span class="feedback-tense">Präteritum:</span> <span id="correct-praeteritum" class="answer-hidden">—</span></p>
                             <p id="feedback-perfekt"><span class="feedback-tense">Partizip Perfekt:</span> <span id="correct-partizip" class="answer-hidden">—</span></p>
                         </div>
@@ -191,7 +200,11 @@
                     </div>
                     <div class="options">
                         <span class="options-label">Tense:</span>
-                        <div class="radio-group">
+                        <div class="radio-group radio-group-wrap">
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-tense" value="praesens">
+                                <span class="radio-btn">Präsens</span>
+                            </label>
                             <label class="radio-option">
                                 <input type="radio" name="memorize-tense" value="imperfekt">
                                 <span class="radio-btn">Präteritum</span>
@@ -201,8 +214,8 @@
                                 <span class="radio-btn">Partizip Perfekt</span>
                             </label>
                             <label class="radio-option">
-                                <input type="radio" name="memorize-tense" value="both" checked>
-                                <span class="radio-btn">Both</span>
+                                <input type="radio" name="memorize-tense" value="all" checked>
+                                <span class="radio-btn">All</span>
                             </label>
                         </div>
                     </div>
@@ -254,6 +267,18 @@
                     </div>
 
                     <div class="flashcards">
+                        <div class="flashcard" id="flashcard-praesens">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">
+                                    <span class="flashcard-label"><span class="flashcard-tense">Präsens</span> (<span class="flashcard-subject">ich</span>)</span>
+                                    <span class="flashcard-hint">Click to reveal</span>
+                                </div>
+                                <div class="flashcard-back">
+                                    <span class="flashcard-label"><span class="flashcard-tense">Präsens</span> (<span class="flashcard-subject">ich</span>)</span>
+                                    <span class="flashcard-answer" id="memorize-praesens">—</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="flashcard" id="flashcard-imperfekt">
                             <div class="flashcard-inner">
                                 <div class="flashcard-front">

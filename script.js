@@ -39,10 +39,12 @@ function initializeElements() {
         practiceInfinitive: document.getElementById('practice-infinitive'),
         practiceTranslation: document.getElementById('practice-translation'),
         answerForm: document.getElementById('answer-form'),
+        praesens: document.getElementById('praesens'),
         praeteritum: document.getElementById('praeteritum'),
         partizip: document.getElementById('partizip'),
         submitBtn: document.getElementById('submit-btn'),
         feedback: document.getElementById('feedback'),
+        correctPraesens: document.getElementById('correct-praesens'),
         correctPraeteritum: document.getElementById('correct-praeteritum'),
         correctPartizip: document.getElementById('correct-partizip'),
         nextBtn: document.getElementById('next-btn'),
@@ -62,8 +64,10 @@ function initializeElements() {
         memorizeTotalNum: document.getElementById('memorize-total-num'),
         memorizeInfinitive: document.getElementById('memorize-infinitive'),
         memorizeTranslation: document.getElementById('memorize-translation'),
+        flashcardPraesens: document.getElementById('flashcard-praesens'),
         flashcardImperfekt: document.getElementById('flashcard-imperfekt'),
         flashcardPerfekt: document.getElementById('flashcard-perfekt'),
+        memorizePraesens: document.getElementById('memorize-praesens'),
         memorizeImperfekt: document.getElementById('memorize-imperfekt'),
         memorizePerfekt: document.getElementById('memorize-perfekt'),
         memorizeNextBtn: document.getElementById('memorize-next-btn'),
@@ -115,6 +119,7 @@ function setupEventListeners() {
     
     // Memorize mode
     elements.startMemorizeBtn.addEventListener('click', startMemorize);
+    elements.flashcardPraesens.addEventListener('click', () => flipCard('flashcard-praesens'));
     elements.flashcardImperfekt.addEventListener('click', () => flipCard('flashcard-imperfekt'));
     elements.flashcardPerfekt.addEventListener('click', () => flipCard('flashcard-perfekt'));
     elements.memorizeNextBtn.addEventListener('click', nextMemorizeVerb);
@@ -163,14 +168,17 @@ function startPractice() {
     };
     
     // Update labels with selected subject
+    document.getElementById('label-subject-praesens').textContent = subject;
     document.getElementById('label-subject-imperfekt').textContent = subject;
     document.getElementById('label-subject-perfekt').textContent = subject;
     
     // Show/hide input fields based on tense selection
-    document.getElementById('input-group-imperfekt').style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
-    document.getElementById('input-group-perfekt').style.display = (tense === 'perfekt' || tense === 'both') ? 'block' : 'none';
-    document.getElementById('feedback-imperfekt').style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
-    document.getElementById('feedback-perfekt').style.display = (tense === 'perfekt' || tense === 'both') ? 'block' : 'none';
+    document.getElementById('input-group-praesens').style.display = (tense === 'praesens' || tense === 'all') ? 'block' : 'none';
+    document.getElementById('input-group-imperfekt').style.display = (tense === 'imperfekt' || tense === 'all') ? 'block' : 'none';
+    document.getElementById('input-group-perfekt').style.display = (tense === 'perfekt' || tense === 'all') ? 'block' : 'none';
+    document.getElementById('feedback-praesens').style.display = (tense === 'praesens' || tense === 'all') ? 'block' : 'none';
+    document.getElementById('feedback-imperfekt').style.display = (tense === 'imperfekt' || tense === 'all') ? 'block' : 'none';
+    document.getElementById('feedback-perfekt').style.display = (tense === 'perfekt' || tense === 'all') ? 'block' : 'none';
     
     elements.practiceTotalNum.textContent = currentSession.verbs.length;
     showScreen('practice');
@@ -190,26 +198,35 @@ function displayPracticeVerb() {
     elements.practiceTranslation.textContent = verb.translation;
     
     // Reset form
+    elements.praesens.value = '';
     elements.praeteritum.value = '';
     elements.partizip.value = '';
+    elements.praesens.classList.remove('correct', 'incorrect');
     elements.praeteritum.classList.remove('correct', 'incorrect');
     elements.partizip.classList.remove('correct', 'incorrect');
+    elements.praesens.disabled = false;
     elements.praeteritum.disabled = false;
     elements.partizip.disabled = false;
     elements.submitBtn.classList.remove('hidden');
     
     // Hide answers and next button
+    elements.correctPraesens.classList.add('answer-hidden');
     elements.correctPraeteritum.classList.add('answer-hidden');
     elements.correctPartizip.classList.add('answer-hidden');
+    elements.correctPraesens.textContent = '—';
     elements.correctPraeteritum.textContent = '—';
     elements.correctPartizip.textContent = '—';
     elements.nextBtn.classList.add('hidden');
     
     // Focus the appropriate input
-    if (currentSession.tense === 'perfekt') {
+    if (currentSession.tense === 'praesens') {
+        elements.praesens.focus();
+    } else if (currentSession.tense === 'imperfekt') {
+        elements.praeteritum.focus();
+    } else if (currentSession.tense === 'perfekt') {
         elements.partizip.focus();
     } else {
-        elements.praeteritum.focus();
+        elements.praesens.focus();
     }
 }
 
@@ -228,30 +245,39 @@ function checkAnswer(e) {
     const verb = currentSession.verbs[currentSession.currentIndex];
     const tense = currentSession.tense;
     const subject = currentSession.subject;
+    const praesensAnswer = elements.praesens.value;
     const praeteritumAnswer = elements.praeteritum.value;
     const partizipAnswer = elements.partizip.value;
     
     // Get correct answers from the verb data using selected subject
+    const correctPraesens = verb.present[subject].german;
     const correctPraeteritum = verb.imperfekt[subject].german;
     const correctPartizip = verb.perfekt[subject].german;
     
     // Check based on selected tense
-    const praeteritumCorrect = (tense === 'perfekt') ? true : isCorrect(praeteritumAnswer, correctPraeteritum);
-    const partizipCorrect = (tense === 'imperfekt') ? true : isCorrect(partizipAnswer, correctPartizip);
+    const praesensCorrect = (tense === 'imperfekt' || tense === 'perfekt') ? true : isCorrect(praesensAnswer, correctPraesens);
+    const praeteritumCorrect = (tense === 'praesens' || tense === 'perfekt') ? true : isCorrect(praeteritumAnswer, correctPraeteritum);
+    const partizipCorrect = (tense === 'praesens' || tense === 'imperfekt') ? true : isCorrect(partizipAnswer, correctPartizip);
     
     // Update input styles based on tense
-    if (tense === 'imperfekt' || tense === 'both') {
+    if (tense === 'praesens' || tense === 'all') {
+        elements.praesens.classList.add(praesensCorrect ? 'correct' : 'incorrect');
+        elements.praesens.disabled = true;
+    }
+    if (tense === 'imperfekt' || tense === 'all') {
         elements.praeteritum.classList.add(praeteritumCorrect ? 'correct' : 'incorrect');
         elements.praeteritum.disabled = true;
     }
-    if (tense === 'perfekt' || tense === 'both') {
+    if (tense === 'perfekt' || tense === 'all') {
         elements.partizip.classList.add(partizipCorrect ? 'correct' : 'incorrect');
         elements.partizip.disabled = true;
     }
     
     // Show feedback
+    elements.correctPraesens.textContent = correctPraesens;
     elements.correctPraeteritum.textContent = correctPraeteritum;
     elements.correctPartizip.textContent = correctPartizip;
+    elements.correctPraesens.classList.remove('answer-hidden');
     elements.correctPraeteritum.classList.remove('answer-hidden');
     elements.correctPartizip.classList.remove('answer-hidden');
     elements.submitBtn.classList.add('hidden');
@@ -262,14 +288,16 @@ function checkAnswer(e) {
     elements.nextBtn.classList.remove('hidden');
     
     // Update score
-    if (praeteritumCorrect && partizipCorrect) {
+    if (praesensCorrect && praeteritumCorrect && partizipCorrect) {
         currentSession.score++;
     } else {
         currentSession.mistakes.push({
             verb: verb.infinitive,
             translation: verb.translation,
+            praesens: correctPraesens,
             praeteritum: correctPraeteritum,
             partizip: correctPartizip,
+            userPraesens: praesensAnswer || '(empty)',
             userPraeteritum: praeteritumAnswer || '(empty)',
             userPartizip: partizipAnswer || '(empty)'
         });
@@ -308,6 +336,7 @@ function showPracticeResults() {
         elements.mistakesList.innerHTML = currentSession.mistakes.map(m => `
             <li>
                 <strong>${m.verb}</strong> (${m.translation})<br>
+                Präsens: ${m.praesens} (you wrote: ${m.userPraesens})<br>
                 Präteritum: ${m.praeteritum} (you wrote: ${m.userPraeteritum})<br>
                 Partizip Perfekt: ${m.partizip} (you wrote: ${m.userPartizip})
             </li>
@@ -339,12 +368,14 @@ function startMemorize() {
     };
     
     // Update flashcard labels with selected subject
+    document.querySelectorAll('#flashcard-praesens .flashcard-subject').forEach(el => el.textContent = subject);
     document.querySelectorAll('#flashcard-imperfekt .flashcard-subject').forEach(el => el.textContent = subject);
     document.querySelectorAll('#flashcard-perfekt .flashcard-subject').forEach(el => el.textContent = subject);
     
     // Show/hide flashcards based on tense selection
-    elements.flashcardImperfekt.style.display = (tense === 'imperfekt' || tense === 'both') ? 'block' : 'none';
-    elements.flashcardPerfekt.style.display = (tense === 'perfekt' || tense === 'both') ? 'block' : 'none';
+    elements.flashcardPraesens.style.display = (tense === 'praesens' || tense === 'all') ? 'block' : 'none';
+    elements.flashcardImperfekt.style.display = (tense === 'imperfekt' || tense === 'all') ? 'block' : 'none';
+    elements.flashcardPerfekt.style.display = (tense === 'perfekt' || tense === 'all') ? 'block' : 'none';
     
     elements.memorizeTotalNum.textContent = currentSession.verbs.length;
     showScreen('memorize');
@@ -365,10 +396,12 @@ function displayMemorizeVerb() {
     
     // Set flashcard answers using selected subject
     const subject = currentSession.subject;
+    elements.memorizePraesens.textContent = verb.present[subject].german;
     elements.memorizeImperfekt.textContent = verb.imperfekt[subject].german;
     elements.memorizePerfekt.textContent = verb.perfekt[subject].german;
     
     // Reset flashcards (unflip them)
+    elements.flashcardPraesens.classList.remove('flipped');
     elements.flashcardImperfekt.classList.remove('flipped');
     elements.flashcardPerfekt.classList.remove('flipped');
     
