@@ -382,10 +382,35 @@ function checkAnswer(e) {
     elements.nextBtn.textContent = isLastVerb ? 'Finish Practice' : 'Next Verb';
     elements.nextBtn.classList.remove('hidden');
     
-    // Update score
-    if (praesensCorrect && praeteritumCorrect && partizipCorrect) {
-        currentSession.score++;
-    } else {
+    // Update score - count each tense separately
+    let hasMistake = false;
+    
+    if (tense === 'praesens' || tense === 'all') {
+        if (praesensCorrect) {
+            currentSession.score++;
+        } else {
+            hasMistake = true;
+        }
+    }
+    
+    if (tense === 'imperfekt' || tense === 'all') {
+        if (praeteritumCorrect) {
+            currentSession.score++;
+        } else {
+            hasMistake = true;
+        }
+    }
+    
+    if (tense === 'perfekt' || tense === 'all') {
+        if (partizipCorrect) {
+            currentSession.score++;
+        } else {
+            hasMistake = true;
+        }
+    }
+    
+    // Track mistakes for review
+    if (hasMistake) {
         currentSession.mistakes.push({
             verb: verb.infinitive,
             translation: verb.translation,
@@ -394,7 +419,10 @@ function checkAnswer(e) {
             partizip: correctPartizip,
             userPraesens: praesensAnswer || '(empty)',
             userPraeteritum: praeteritumAnswer || '(empty)',
-            userPartizip: auxiliaryAnswer ? `${auxiliaryAnswer} ${partizipAnswer}` : partizipAnswer || '(empty)'
+            userPartizip: auxiliaryAnswer ? `${auxiliaryAnswer} ${partizipAnswer}` : partizipAnswer || '(empty)',
+            praesensCorrect: praesensCorrect,
+            praeteritumCorrect: praeteritumCorrect,
+            partizipCorrect: partizipCorrect
         });
     }
 }
@@ -410,7 +438,13 @@ function nextPracticeVerb() {
 }
 
 function showPracticeResults() {
-    const total = currentSession.verbs.length;
+    // Calculate total based on tenses being practiced
+    const tense = currentSession.tense;
+    let tensesCount = 1;
+    if (tense === 'all') {
+        tensesCount = 3; // praesens, praeteritum, partizip
+    }
+    const total = currentSession.verbs.length * tensesCount;
     const score = currentSession.score;
     const percentage = Math.round((score / total) * 100);
     
@@ -428,14 +462,23 @@ function showPracticeResults() {
     
     if (currentSession.mistakes.length > 0) {
         elements.mistakesSummary.classList.remove('hidden');
-        elements.mistakesList.innerHTML = currentSession.mistakes.map(m => `
-            <li>
-                <strong>${m.verb}</strong> (${m.translation})<br>
-                Präsens: ${m.praesens} (you wrote: ${m.userPraesens})<br>
-                Präteritum: ${m.praeteritum} (you wrote: ${m.userPraeteritum})<br>
-                Partizip Perfekt: ${m.partizip} (you wrote: ${m.userPartizip})
-            </li>
-        `).join('');
+        const tense = currentSession.tense;
+        elements.mistakesList.innerHTML = currentSession.mistakes.map(m => {
+            let lines = [`<strong>${m.verb}</strong> (${m.translation})`];
+            
+            // Only show tenses that were practiced and incorrect
+            if ((tense === 'praesens' || tense === 'all') && !m.praesensCorrect) {
+                lines.push(`Präsens: ${m.praesens} (you wrote: ${m.userPraesens})`);
+            }
+            if ((tense === 'imperfekt' || tense === 'all') && !m.praeteritumCorrect) {
+                lines.push(`Präteritum: ${m.praeteritum} (you wrote: ${m.userPraeteritum})`);
+            }
+            if ((tense === 'perfekt' || tense === 'all') && !m.partizipCorrect) {
+                lines.push(`Partizip Perfekt: ${m.partizip} (you wrote: ${m.userPartizip})`);
+            }
+            
+            return `<li>${lines.join('<br>')}</li>`;
+        }).join('');
     } else {
         elements.mistakesSummary.classList.add('hidden');
     }
