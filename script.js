@@ -41,6 +41,8 @@ function initializeElements() {
         answerForm: document.getElementById('answer-form'),
         praesens: document.getElementById('praesens'),
         praeteritum: document.getElementById('praeteritum'),
+        auxiliarySelector: document.getElementById('auxiliary-selector'),
+        auxiliaryRadios: document.querySelectorAll('input[name="auxiliary"]'),
         partizip: document.getElementById('partizip'),
         submitBtn: document.getElementById('submit-btn'),
         feedback: document.getElementById('feedback'),
@@ -209,6 +211,9 @@ function displayPracticeVerb() {
     elements.partizip.disabled = false;
     elements.submitBtn.classList.remove('hidden');
     
+    // Generate auxiliary selector with conjugated forms for current subject
+    generateAuxiliarySelector(currentSession.subject);
+    
     // Hide answers and next button
     elements.correctPraesens.classList.add('answer-hidden');
     elements.correctPraeteritum.classList.add('answer-hidden');
@@ -235,6 +240,66 @@ function normalizeAnswer(str) {
     return str.toLowerCase().trim().replace(/ß/g, 'ss');
 }
 
+// Conjugation maps for haben and sein
+const HABEN_CONJUGATIONS = {
+    'ich': 'habe',
+    'du': 'hast',
+    'er/sie/es': 'hat',
+    'wir': 'haben',
+    'ihr': 'habt',
+    'sie/Sie': 'haben'
+};
+
+const SEIN_CONJUGATIONS = {
+    'ich': 'bin',
+    'du': 'bist',
+    'er/sie/es': 'ist',
+    'wir': 'sind',
+    'ihr': 'seid',
+    'sie/Sie': 'sind'
+};
+
+// Helper function to parse Perfekt answer into auxiliary and participle options
+function parsePerfektAnswer(perfektString) {
+    const parts = perfektString.split(' ');
+    const auxPart = parts[0]; // e.g., "bin" or "bin/habe"
+    const participlePart = parts.slice(1).join(' '); // e.g., "gegangen" or "gelaufen/geloffen"
+    
+    // Parse auxiliary forms (keeping them as-is, not mapping to infinitive)
+    const auxForms = auxPart.split('/');
+    const auxiliaries = auxForms.map(a => a.toLowerCase());
+    
+    // Parse participle options
+    const participles = participlePart.split('/').map(p => p.trim());
+    
+    return {
+        auxiliaries: auxiliaries,
+        participles: participles,
+        fullAnswer: perfektString
+    };
+}
+
+// Generate auxiliary radio buttons for current subject
+function generateAuxiliarySelector(subject) {
+    const container = elements.auxiliarySelector;
+    const habenForm = HABEN_CONJUGATIONS[subject];
+    const seinForm = SEIN_CONJUGATIONS[subject];
+    
+    container.innerHTML = `
+        <label class="radio-option auxiliary-option">
+            <input type="radio" name="auxiliary" value="${habenForm}">
+            <span class="radio-btn">${habenForm}</span>
+        </label>
+        <label class="radio-option auxiliary-option">
+            <input type="radio" name="auxiliary" value="${seinForm}">
+            <span class="radio-btn">${seinForm}</span>
+        </label>
+    `;
+    
+    // Update the auxiliaryRadios reference
+    elements.auxiliaryRadios = document.querySelectorAll('input[name="auxiliary"]');
+}
+
 function isCorrect(userAnswer, correctAnswer) {
     return normalizeAnswer(userAnswer) === normalizeAnswer(correctAnswer);
 }
@@ -248,16 +313,37 @@ function checkAnswer(e) {
     const praesensAnswer = elements.praesens.value;
     const praeteritumAnswer = elements.praeteritum.value;
     const partizipAnswer = elements.partizip.value;
+    const selectedAuxiliary = document.querySelector('input[name="auxiliary"]:checked');
+    const auxiliaryAnswer = selectedAuxiliary ? selectedAuxiliary.value : '';
     
     // Get correct answers from the verb data using selected subject
     const correctPraesens = verb.present[subject].german;
     const correctPraeteritum = verb.imperfekt[subject].german;
     const correctPartizip = verb.perfekt[subject].german;
     
+    // Parse the Perfekt answer for auxiliary and participle options
+    const perfektParsed = parsePerfektAnswer(correctPartizip);
+    
+    // Check Perfekt: both auxiliary and participle must be correct
+    let partizipCorrect = true;
+    let auxiliaryCorrect = true;
+    let participleCorrect = true;
+    
+    if (tense === 'perfekt' || tense === 'all') {
+        // Check if selected auxiliary is one of the valid options
+        auxiliaryCorrect = perfektParsed.auxiliaries.includes(auxiliaryAnswer);
+        
+        // Check if participle matches any of the valid options
+        participleCorrect = perfektParsed.participles.some(p => 
+            normalizeAnswer(partizipAnswer) === normalizeAnswer(p)
+        );
+        
+        partizipCorrect = auxiliaryCorrect && participleCorrect;
+    }
+    
     // Check based on selected tense
     const praesensCorrect = (tense === 'imperfekt' || tense === 'perfekt') ? true : isCorrect(praesensAnswer, correctPraesens);
     const praeteritumCorrect = (tense === 'praesens' || tense === 'perfekt') ? true : isCorrect(praeteritumAnswer, correctPraeteritum);
-    const partizipCorrect = (tense === 'praesens' || tense === 'imperfekt') ? true : isCorrect(partizipAnswer, correctPartizip);
     
     // Update input styles based on tense
     if (tense === 'praesens' || tense === 'all') {
@@ -269,7 +355,16 @@ function checkAnswer(e) {
         elements.praeteritum.disabled = true;
     }
     if (tense === 'perfekt' || tense === 'all') {
-        elements.partizip.classList.add(partizipCorrect ? 'correct' : 'incorrect');
+        // Style the auxiliary selector
+        elements.auxiliaryRadios.forEach(radio => {
+            radio.disabled = true;
+            if (radio.checked) {
+                radio.parentElement.classList.add(auxiliaryCorrect ? 'correct' : 'incorrect');
+            }
+        });
+        
+        // Style the participle input
+        elements.partizip.classList.add(participleCorrect ? 'correct' : 'incorrect');
         elements.partizip.disabled = true;
     }
     
@@ -299,7 +394,7 @@ function checkAnswer(e) {
             partizip: correctPartizip,
             userPraesens: praesensAnswer || '(empty)',
             userPraeteritum: praeteritumAnswer || '(empty)',
-            userPartizip: partizipAnswer || '(empty)'
+            userPartizip: auxiliaryAnswer ? `${auxiliaryAnswer} ${partizipAnswer}` : partizipAnswer || '(empty)'
         });
     }
 }

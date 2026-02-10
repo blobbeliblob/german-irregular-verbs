@@ -136,7 +136,12 @@
                         </div>
                         <div class="input-group" id="input-group-perfekt">
                             <label for="partizip"><span class="input-tense">Partizip Perfekt</span> (<span id="label-subject-perfekt">ich</span>)</label>
-                            <input type="text" id="partizip" autocomplete="off" placeholder="e.g., bin gegangen">
+                            <div class="perfekt-input-row">
+                                <div class="auxiliary-selector" id="auxiliary-selector">
+                                    <!-- Dynamically populated with conjugated haben/sein forms -->
+                                </div>
+                                <input type="text" id="partizip" autocomplete="off" placeholder="e.g., gegangen">
+                            </div>
                         </div>
                     </form>
 

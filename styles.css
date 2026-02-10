@@ -378,6 +378,38 @@ main {
     background-color: rgba(244, 67, 54, 0.1);
 }
 
+/* Perfekt auxiliary selector */
+.perfekt-input-row {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.auxiliary-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.auxiliary-option {
+    flex: 1;
+}
+
+.auxiliary-option .radio-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    min-width: 60px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfekt-input-row input[type="text"] {
+    flex: 1;
+}
+
 /* Feedback */
 .feedback {
     margin-top: 20px;
