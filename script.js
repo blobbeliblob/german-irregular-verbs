@@ -155,15 +155,25 @@ function shuffleArray(array) {
 
 function startPractice() {
     const countValue = document.querySelector('input[name="practice-verb-count"]:checked').value;
-    const count = countValue === 'all' ? verbs.length : parseInt(countValue);
     const tense = document.querySelector('input[name="practice-tense"]:checked').value;
     const subject = document.querySelector('input[name="practice-subject"]:checked').value;
+    const verbType = document.querySelector('input[name="practice-verb-type"]:checked').value;
+    
+    // Filter verbs by type
+    let filteredVerbs = verbs;
+    if (verbType === 'irregular') {
+        filteredVerbs = verbs.filter(v => v.irregular === true);
+    } else if (verbType === 'regular') {
+        filteredVerbs = verbs.filter(v => v.irregular === false);
+    }
+    
+    const count = countValue === 'all' ? filteredVerbs.length : parseInt(countValue);
     
     currentSession = {
         mode: 'practice',
         tense: tense,
         subject: subject,
-        verbs: shuffleArray(verbs).slice(0, count),
+        verbs: shuffleArray(filteredVerbs).slice(0, count),
         currentIndex: 0,
         score: 0,
         mistakes: []
@@ -493,15 +503,25 @@ function showPracticeResults() {
 
 function startMemorize() {
     const countValue = document.querySelector('input[name="memorize-verb-count"]:checked').value;
-    const count = countValue === 'all' ? verbs.length : parseInt(countValue);
     const tense = document.querySelector('input[name="memorize-tense"]:checked').value;
     const subject = document.querySelector('input[name="memorize-subject"]:checked').value;
+    const verbType = document.querySelector('input[name="memorize-verb-type"]:checked').value;
+    
+    // Filter verbs by type
+    let filteredVerbs = verbs;
+    if (verbType === 'irregular') {
+        filteredVerbs = verbs.filter(v => v.irregular === true);
+    } else if (verbType === 'regular') {
+        filteredVerbs = verbs.filter(v => v.irregular === false);
+    }
+    
+    const count = countValue === 'all' ? filteredVerbs.length : parseInt(countValue);
     
     currentSession = {
         mode: 'memorize',
         tense: tense,
         subject: subject,
-        verbs: shuffleArray(verbs).slice(0, count),
+        verbs: shuffleArray(filteredVerbs).slice(0, count),
         currentIndex: 0
     };
     

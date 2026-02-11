@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>German Irregular Verbs Practice</title>
+    <title>German Verbs</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -11,8 +11,12 @@
 </head>
 <body>
     <div class="container">
-        <header>            <button id="home-btn" class="home-btn hidden" title="Back to Menu"><img src="home.png" alt="Home"></button>            <h1>German Irregular Verbs</h1>
-            <p class="subtitle">Practice and master German strong verbs</p>
+        <header>
+            <button id="home-btn" class="home-btn hidden" title="Back to Menu">
+                <img src="home.png" alt="Home">
+            </button>
+            <h1>German Verbs</h1>
+            <p class="subtitle">Practice and master German verbs</p>
         </header>
 
         <main>
@@ -39,7 +43,7 @@
             <section id="practice-setup-screen" class="screen">
                 <div class="card">
                     <h2>Practice Mode</h2>
-                    <p>Test your knowledge of German irregular verbs. You will be given the infinitive form and need to provide the correct conjugations.</p>
+                    <p>Test your knowledge of German verbs. You will be given the infinitive form and need to provide the correct conjugations.</p>
                     <div class="options">
                         <span class="options-label">Number of verbs:</span>
                         <div class="radio-group">
@@ -54,6 +58,23 @@
                             <label class="radio-option">
                                 <input type="radio" name="practice-verb-count" value="all">
                                 <span class="radio-btn">All</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <span class="options-label">Verb type:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="practice-verb-type" value="both" checked>
+                                <span class="radio-btn">Both</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-verb-type" value="irregular">
+                                <span class="radio-btn">Irregular</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="practice-verb-type" value="regular">
+                                <span class="radio-btn">Regular</span>
                             </label>
                         </div>
                     </div>
@@ -200,6 +221,23 @@
                             <label class="radio-option">
                                 <input type="radio" name="memorize-verb-count" value="all">
                                 <span class="radio-btn">All</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <span class="options-label">Verb type:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-verb-type" value="both" checked>
+                                <span class="radio-btn">Both</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-verb-type" value="irregular">
+                                <span class="radio-btn">Irregular</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="memorize-verb-type" value="regular">
+                                <span class="radio-btn">Regular</span>
                             </label>
                         </div>
                     </div>
