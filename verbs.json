@@ -4023,79 +4023,79 @@
     "present": {
       "ich": {
         "german": "kenne",
-        "english": "I know (k)"
+        "english": "I know"
       },
       "du": {
         "german": "kennst",
-        "english": "you know (k)"
+        "english": "you know"
       },
       "er/sie/es": {
         "german": "kennt",
-        "english": "he/she/it knows (k)"
+        "english": "he/she/it knows"
       },
       "wir": {
         "german": "kennen",
-        "english": "we know (k)"
+        "english": "we know"
       },
       "ihr": {
         "german": "kennt",
-        "english": "y'all know (k)"
+        "english": "y'all know"
       },
       "sie/Sie": {
         "german": "kennen",
-        "english": "they know (k)"
+        "english": "they know"
       }
     },
     "perfekt": {
       "ich": {
         "german": "habe gekannt",
-        "english": "I have known (k)"
+        "english": "I have known"
       },
       "du": {
         "german": "hast gekannt",
-        "english": "you have known (k)"
+        "english": "you have known"
       },
       "er/sie/es": {
         "german": "hat gekannt",
-        "english": "he/she/it has known (k)"
+        "english": "he/she/it has known"
       },
       "wir": {
         "german": "haben gekannt",
-        "english": "we have known (k)"
+        "english": "we have known"
       },
       "ihr": {
         "german": "habt gekannt",
-        "english": "y'all have known (k)"
+        "english": "y'all have known"
       },
       "sie/Sie": {
         "german": "haben gekannt",
-        "english": "they have known (k)"
+        "english": "they have known"
       }
     },
     "imperfekt": {
       "ich": {
         "german": "kannte",
-        "english": "I knew (k)"
+        "english": "I knew"
       },
       "du": {
         "german": "kanntest",
-        "english": "you knew (k)"
+        "english": "you knew"
       },
       "er/sie/es": {
         "german": "kannte",
-        "english": "he/she/it knew (k)"
+        "english": "he/she/it knew"
       },
       "wir": {
         "german": "kannten",
-        "english": "we knew (k)"
+        "english": "we knew"
       },
       "ihr": {
         "german": "kanntet",
-        "english": "y'all knew (k)"
+        "english": "y'all knew"
       },
       "sie/Sie": {
         "german": "kannten",
-        "english": "they knew (k)"
+        "english": "they knew"
       }
     }
   },
@@ -4515,79 +4515,79 @@
     "present": {
       "ich": {
         "german": "laufe",
-        "english": "I run (l)"
+        "english": "I run"
       },
       "du": {
         "german": "läufst",
-        "english": "you run (l)"
+        "english": "you run"
       },
       "er/sie/es": {
         "german": "läuft",
-        "english": "he/she/it runs (l)"
+        "english": "he/she/it runs"
       },
       "wir": {
         "german": "laufen",
-        "english": "we run (l)"
+        "english": "we run"
       },
       "ihr": {
         "german": "lauft",
-        "english": "y'all run (l)"
+        "english": "y'all run"
       },
       "sie/Sie": {
         "german": "laufen",
-        "english": "they run (l)"
+        "english": "they run"
       }
     },
     "perfekt": {
       "ich": {
         "german": "bin gelaufen",
-        "english": "I have run (l)"
+        "english": "I have run"
       },
       "du": {
         "german": "bist gelaufen",
-        "english": "you have run (l)"
+        "english": "you have run"
       },
       "er/sie/es": {
         "german": "ist gelaufen",
-        "english": "he/she/it has run (l)"
+        "english": "he/she/it has run"
       },
       "wir": {
         "german": "sind gelaufen",
-        "english": "we have run (l)"
+        "english": "we have run"
       },
       "ihr": {
         "german": "seid gelaufen",
-        "english": "y'all have run (l)"
+        "english": "y'all have run"
       },
       "sie/Sie": {
         "german": "sind gelaufen",
-        "english": "they have run (l)"
+        "english": "they have run"
       }
     },
     "imperfekt": {
       "ich": {
         "german": "lief",
-        "english": "I ran (l)"
+        "english": "I ran"
       },
       "du": {
         "german": "liefst",
-        "english": "you ran (l)"
+        "english": "you ran"
       },
       "er/sie/es": {
         "german": "lief",
-        "english": "he/she/it ran (l)"
+        "english": "he/she/it ran"
       },
       "wir": {
         "german": "liefen",
-        "english": "we ran (l)"
+        "english": "we ran"
       },
       "ihr": {
         "german": "lieft",
-        "english": "y'all ran (l)"
+        "english": "y'all ran"
       },
       "sie/Sie": {
         "german": "liefen",
-        "english": "they ran (l)"
+        "english": "they ran"
       }
     }
   },
@@ -4652,7 +4652,7 @@
         "english": "I suffered"
       },
       "du": {
-        "german": "litt(e)st",
+        "german": "littest/littst",
         "english": "you suffered"
       },
       "er/sie/es": {
@@ -4813,27 +4813,27 @@
     "imperfekt": {
       "ich": {
         "german": "las",
-        "english": "I read (red)"
+        "english": "I read"
       },
       "du": {
         "german": "lasest",
-        "english": "you read (red)"
+        "english": "you read"
       },
       "er/sie/es": {
         "german": "las",
-        "english": "he/she/it read (red)"
+        "english": "he/she/it read"
       },
       "wir": {
         "german": "lasen",
-        "english": "we read (red)"
+        "english": "we read"
       },
       "ihr": {
         "german": "last",
-        "english": "y'all read (red)"
+        "english": "y'all read"
       },
       "sie/Sie": {
         "german": "lasen",
-        "english": "they read (red)"
+        "english": "they read"
       }
     }
   },
@@ -5991,79 +5991,79 @@
     "present": {
       "ich": {
         "german": "renne",
-        "english": "I run (r)"
+        "english": "I run"
       },
       "du": {
         "german": "rennst",
-        "english": "you run (r)"
+        "english": "you run"
       },
       "er/sie/es": {
         "german": "rennt",
-        "english": "he/she/it runs (l)"
+        "english": "he/she/it runs"
       },
       "wir": {
         "german": "rennen",
-        "english": "we run (r)"
+        "english": "we run"
       },
       "ihr": {
         "german": "rennt",
-        "english": "y'all run (r)"
+        "english": "y'all run"
       },
       "sie/Sie": {
         "german": "rennen",
-        "english": "they run (r)"
+        "english": "they run"
       }
     },
     "perfekt": {
       "ich": {
         "german": "bin gerannt",
-        "english": "I have run (r)"
+        "english": "I have run"
       },
       "du": {
         "german": "bist gerannt",
-        "english": "you have run (r)"
+        "english": "you have run"
       },
       "er/sie/es": {
         "german": "ist gerannt",
-        "english": "he/she/it has run (r)"
+        "english": "he/she/it has run"
       },
       "wir": {
         "german": "sind gerannt",
-        "english": "we have run (r)"
+        "english": "we have run"
       },
       "ihr": {
         "german": "seid gerannt",
-        "english": "y'all have run (r)"
+        "english": "y'all have run"
       },
       "sie/Sie": {
         "german": "sind gerannt",
-        "english": "they have run (r)"
+        "english": "they have run"
       }
     },
     "imperfekt": {
       "ich": {
         "german": "rannte",
-        "english": "I ran (r)"
+        "english": "I ran"
       },
       "du": {
         "german": "ranntest",
-        "english": "you ran (r)"
+        "english": "you ran"
       },
       "er/sie/es": {
         "german": "rannte",
-        "english": "he/she/it ran (r)"
+        "english": "he/she/it ran"
       },
       "wir": {
         "german": "rannten",
-        "english": "we ran (r)"
+        "english": "we ran"
       },
       "ihr": {
         "german": "ranntet",
-        "english": "y'all ran (r)"
+        "english": "y'all ran"
       },
       "sie/Sie": {
         "german": "rannten",
-        "english": "they ran (r)"
+        "english": "they ran"
       }
     }
   },
@@ -6565,27 +6565,27 @@
     "present": {
       "ich": {
         "german": "schlage",
-        "english": "I hit (pres.)"
+        "english": "I hit"
       },
       "du": {
         "german": "schlägst",
-        "english": "you hit (pres.)"
+        "english": "you hit"
       },
       "er/sie/es": {
         "german": "schlägt",
-        "english": "he/she/it hits (pres.)"
+        "english": "he/she/it hits"
       },
       "wir": {
         "german": "schlagen",
-        "english": "we hit (pres.)"
+        "english": "we hit"
       },
       "ihr": {
         "german": "schlagt",
-        "english": "y'all hit (pres.)"
+        "english": "y'all hit"
       },
       "sie/Sie": {
         "german": "schlagen",
-        "english": "they hit (pres.)"
+        "english": "they hit"
       }
     },
     "perfekt": {
@@ -6617,27 +6617,27 @@
     "imperfekt": {
       "ich": {
         "german": "schlug",
-        "english": "I hit (past)"
+        "english": "I hit"
       },
       "du": {
         "german": "schlugst",
-        "english": "you hit (past)"
+        "english": "you hit"
       },
       "er/sie/es": {
         "german": "schlug",
-        "english": "he/she/it hit (past)"
+        "english": "he/she/it hit"
       },
       "wir": {
         "german": "schlugen",
-        "english": "we hit (past)"
+        "english": "we hit"
       },
       "ihr": {
         "german": "schlugt",
-        "english": "y'all hit (past)"
+        "english": "y'all hit"
       },
       "sie/Sie": {
         "german": "schlugen",
-        "english": "they hit (past)"
+        "english": "they hit"
       }
     }
   },
@@ -6781,27 +6781,27 @@
     "imperfekt": {
       "ich": {
         "german": "schnitt",
-        "english": "I cut (past)"
+        "english": "I cut"
       },
       "du": {
         "german": "schnittst",
-        "english": "you cut (past)"
+        "english": "you cut"
       },
       "er/sie/es": {
         "german": "schnitt",
-        "english": "he/she/it cut (past)"
+        "english": "he/she/it cut"
       },
       "wir": {
         "german": "schnitten",
-        "english": "we cut (past)"
+        "english": "we cut"
       },
       "ihr": {
         "german": "schnittet",
-        "english": "y'all cut (past)"
+        "english": "y'all cut"
       },
       "sie/Sie": {
         "german": "schnitten",
-        "english": "they cut (past)"
+        "english": "they cut"
       }
     }
   },
@@ -8014,7 +8014,7 @@
         "english": "I stood"
       },
       "du": {
-        "german": "stand(e)st",
+        "german": "standest/standst",
         "english": "you stood"
       },
       "er/sie/es": {
@@ -8943,79 +8943,79 @@
     "present": {
       "ich": {
         "german": "tue",
-        "english": "I do (short)"
+        "english": "I do"
       },
       "du": {
         "german": "tust",
-        "english": "you do (short)"
+        "english": "you do"
       },
       "er/sie/es": {
         "german": "tut",
-        "english": "he/she/it does (short)"
+        "english": "he/she/it does"
       },
       "wir": {
         "german": "tun",
-        "english": "we do (short)"
+        "english": "we do"
       },
       "ihr": {
         "german": "tut",
-        "english": "y'all do (short)"
+        "english": "y'all do"
       },
       "sie/Sie": {
         "german": "tun",
-        "english": "they do (short)"
+        "english": "they do"
       }
     },
     "perfekt": {
       "ich": {
         "german": "habe getan",
-        "english": "I have done (short)"
+        "english": "I have done"
       },
       "du": {
         "german": "hast getan",
-        "english": "you have done (short)"
+        "english": "you have done"
       },
       "er/sie/es": {
         "german": "hat getan",
-        "english": "he/she/it has done (short)"
+        "english": "he/she/it has done"
       },
       "wir": {
         "german": "haben getan",
-        "english": "we have done (short)"
+        "english": "we have done"
       },
       "ihr": {
         "german": "habt getan",
-        "english": "y'all have done (short)"
+        "english": "y'all have done"
       },
       "sie/Sie": {
         "german": "haben getan",
-        "english": "they have done (short)"
+        "english": "they have done"
       }
     },
     "imperfekt": {
       "ich": {
         "german": "tat",
-        "english": "I did (short)"
+        "english": "I did"
       },
       "du": {
         "german": "tatest/tatst",
-        "english": "you did (short)"
+        "english": "you did"
       },
       "er/sie/es": {
         "german": "tat",
-        "english": "he/she/it did (short)"
+        "english": "he/she/it did"
       },
       "wir": {
         "german": "taten",
-        "english": "we did (short)"
+        "english": "we did"
       },
       "ihr": {
         "german": "tatet",
-        "english": "y'all did (short)"
+        "english": "y'all did"
       },
       "sie/Sie": {
         "german": "taten",
-        "english": "they did (short)"
+        "english": "they did"
       }
     }
   },
@@ -9598,7 +9598,7 @@
     "translation": "to roam",
     "present": {
       "ich": {
-        "german": "wand(e)re",
+        "german": "wandere/wandre",
         "english": "I roam"
       },
       "du": {
@@ -10091,79 +10091,79 @@
     "present": {
       "ich": {
         "german": "weiß",
-        "english": "I know (w)"
+        "english": "I know"
       },
       "du": {
         "german": "weißt",
-        "english": "you know (w)"
+        "english": "you know"
       },
       "er/sie/es": {
         "german": "weiß",
-        "english": "he/she/it knows (w)"
+        "english": "he/she/it knows"
       },
       "wir": {
         "german": "wissen",
-        "english": "we know (w)"
+        "english": "we know"
       },
       "ihr": {
         "german": "wisst",
-        "english": "y'all know (w)"
+        "english": "y'all know"
       },
       "sie/Sie": {
         "german": "wissen",
-        "english": "they know (w)"
+        "english": "they know"
       }
     },
     "perfekt": {
       "ich": {
         "german": "habe gewusst",
-        "english": "I have known (w)"
+        "english": "I have known"
       },
       "du": {
         "german": "hast gewusst",
-        "english": "you have known (w)"
+        "english": "you have known"
       },
       "er/sie/es": {
         "german": "hat gewusst",
-        "english": "he/she/it has known (w)"
+        "english": "he/she/it has known"
       },
       "wir": {
         "german": "haben gewusst",
-        "english": "we have known (w)"
+        "english": "we have known"
       },
       "ihr": {
         "german": "habt gewusst",
-        "english": "y'all have known (w)"
+        "english": "y'all have known"
       },
       "sie/Sie": {
         "german": "haben gewusst",
-        "english": "they have known (w)"
+        "english": "they have known"
       }
     },
     "imperfekt": {
       "ich": {
         "german": "wusste",
-        "english": "I knew (w)"
+        "english": "I knew"
       },
       "du": {
         "german": "wusstest",
-        "english": "you knew (w)"
+        "english": "you knew"
       },
       "er/sie/es": {
         "german": "wusste",
-        "english": "he/she/it knew (w)"
+        "english": "he/she/it knew"
       },
       "wir": {
         "german": "wussten",
-        "english": "we knew (w)"
+        "english": "we knew"
       },
       "ihr": {
         "german": "wusstet",
-        "english": "y'all knew (w)"
+        "english": "y'all knew"
       },
       "sie/Sie": {
         "german": "wussten",
-        "english": "they knew (w)"
+        "english": "they knew"
       }
     }
   },
