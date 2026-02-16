@@ -1,8 +1,423 @@
 [
   {
+    "infinitive": "abfahren",
+    "translation": "to depart",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "fahre ab",
+        "english": "I depart"
+      },
+      "du": {
+        "german": "fährst ab",
+        "english": "you depart"
+      },
+      "er/sie/es": {
+        "german": "fährt ab",
+        "english": "he/she/it departs"
+      },
+      "wir": {
+        "german": "fahren ab",
+        "english": "we depart"
+      },
+      "ihr": {
+        "german": "fahrt ab",
+        "english": "y'all depart"
+      },
+      "sie/Sie": {
+        "german": "fahren ab",
+        "english": "they depart"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin abgefahren",
+        "english": "I have departed"
+      },
+      "du": {
+        "german": "bist abgefahren",
+        "english": "you have departed"
+      },
+      "er/sie/es": {
+        "german": "ist abgefahren",
+        "english": "he/she/it has departed"
+      },
+      "wir": {
+        "german": "sind abgefahren",
+        "english": "we have departed"
+      },
+      "ihr": {
+        "german": "seid abgefahren",
+        "english": "y'all have departed"
+      },
+      "sie/Sie": {
+        "german": "sind abgefahren",
+        "english": "they have departed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fuhr ab",
+        "english": "I departed"
+      },
+      "du": {
+        "german": "fuhrst ab",
+        "english": "you departed"
+      },
+      "er/sie/es": {
+        "german": "fuhr ab",
+        "english": "he/she/it departed"
+      },
+      "wir": {
+        "german": "fuhren ab",
+        "english": "we departed"
+      },
+      "ihr": {
+        "german": "fuhrt ab",
+        "english": "y'all departed"
+      },
+      "sie/Sie": {
+        "german": "fuhren ab",
+        "english": "they departed"
+      }
+    }
+  },
+  {
+    "infinitive": "abwaschen",
+    "translation": "to do dishes",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "wasche ab",
+        "english": "I do dishes"
+      },
+      "du": {
+        "german": "wäschst ab",
+        "english": "you do dishes"
+      },
+      "er/sie/es": {
+        "german": "wäscht ab",
+        "english": "he/she/it do disheses"
+      },
+      "wir": {
+        "german": "waschen ab",
+        "english": "we do dishes"
+      },
+      "ihr": {
+        "german": "wascht ab",
+        "english": "y'all do dishes"
+      },
+      "sie/Sie": {
+        "german": "waschen ab",
+        "english": "they do dishes"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe abgewaschen",
+        "english": "I have do dishesed"
+      },
+      "du": {
+        "german": "hast abgewaschen",
+        "english": "you have do dishesed"
+      },
+      "er/sie/es": {
+        "german": "hat abgewaschen",
+        "english": "he/she/it has do dishesed"
+      },
+      "wir": {
+        "german": "haben abgewaschen",
+        "english": "we have do dishesed"
+      },
+      "ihr": {
+        "german": "habt abgewaschen",
+        "english": "y'all have do dishesed"
+      },
+      "sie/Sie": {
+        "german": "haben abgewaschen",
+        "english": "they have do dishesed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "wusch ab",
+        "english": "I do dishesed"
+      },
+      "du": {
+        "german": "wuschst ab",
+        "english": "you do dishesed"
+      },
+      "er/sie/es": {
+        "german": "wusch ab",
+        "english": "he/she/it do dishesed"
+      },
+      "wir": {
+        "german": "wuschen ab",
+        "english": "we do dishesed"
+      },
+      "ihr": {
+        "german": "wuscht ab",
+        "english": "y'all do dishesed"
+      },
+      "sie/Sie": {
+        "german": "wuschen ab",
+        "english": "they do dishesed"
+      }
+    }
+  },
+  {
+    "infinitive": "anbieten",
+    "translation": "to offer",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "biete an",
+        "english": "I offer"
+      },
+      "du": {
+        "german": "bietest an",
+        "english": "you offer"
+      },
+      "er/sie/es": {
+        "german": "bietet an",
+        "english": "he/she/it offers"
+      },
+      "wir": {
+        "german": "bieten an",
+        "english": "we offer"
+      },
+      "ihr": {
+        "german": "bietet an",
+        "english": "y'all offer"
+      },
+      "sie/Sie": {
+        "german": "bieten an",
+        "english": "they offer"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe angeboten",
+        "english": "I have offered"
+      },
+      "du": {
+        "german": "hast angeboten",
+        "english": "you have offered"
+      },
+      "er/sie/es": {
+        "german": "hat angeboten",
+        "english": "he/she/it has offered"
+      },
+      "wir": {
+        "german": "haben angeboten",
+        "english": "we have offered"
+      },
+      "ihr": {
+        "german": "habt angeboten",
+        "english": "y'all have offered"
+      },
+      "sie/Sie": {
+        "german": "haben angeboten",
+        "english": "they have offered"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "bot an",
+        "english": "I offered"
+      },
+      "du": {
+        "german": "botst an",
+        "english": "you offered"
+      },
+      "er/sie/es": {
+        "german": "bot an",
+        "english": "he/she/it offered"
+      },
+      "wir": {
+        "german": "boten an",
+        "english": "we offered"
+      },
+      "ihr": {
+        "german": "botet an",
+        "english": "y'all offered"
+      },
+      "sie/Sie": {
+        "german": "boten an",
+        "english": "they offered"
+      }
+    }
+  },
+  {
+    "infinitive": "anfangen",
+    "translation": "to begin",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "fange an",
+        "english": "I begin"
+      },
+      "du": {
+        "german": "fängst an",
+        "english": "you begin"
+      },
+      "er/sie/es": {
+        "german": "fängt an",
+        "english": "he/she/it begins"
+      },
+      "wir": {
+        "german": "fangen an",
+        "english": "we begin"
+      },
+      "ihr": {
+        "german": "fangt an",
+        "english": "y'all begin"
+      },
+      "sie/Sie": {
+        "german": "fangen an",
+        "english": "they begin"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe angefangen",
+        "english": "I have begined"
+      },
+      "du": {
+        "german": "hast angefangen",
+        "english": "you have begined"
+      },
+      "er/sie/es": {
+        "german": "hat angefangen",
+        "english": "he/she/it has begined"
+      },
+      "wir": {
+        "german": "haben angefangen",
+        "english": "we have begined"
+      },
+      "ihr": {
+        "german": "habt angefangen",
+        "english": "y'all have begined"
+      },
+      "sie/Sie": {
+        "german": "haben angefangen",
+        "english": "they have begined"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fing an",
+        "english": "I begined"
+      },
+      "du": {
+        "german": "fingst an",
+        "english": "you begined"
+      },
+      "er/sie/es": {
+        "german": "fing an",
+        "english": "he/she/it begined"
+      },
+      "wir": {
+        "german": "fingen an",
+        "english": "we begined"
+      },
+      "ihr": {
+        "german": "fingt an",
+        "english": "y'all begined"
+      },
+      "sie/Sie": {
+        "german": "fingen an",
+        "english": "they begined"
+      }
+    }
+  },
+  {
+    "infinitive": "ankommen",
+    "translation": "to arrive",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "komme an",
+        "english": "I arrive"
+      },
+      "du": {
+        "german": "kommst an",
+        "english": "you arrive"
+      },
+      "er/sie/es": {
+        "german": "kommt an",
+        "english": "he/she/it arrives"
+      },
+      "wir": {
+        "german": "kommen an",
+        "english": "we arrive"
+      },
+      "ihr": {
+        "german": "kommt an",
+        "english": "y'all arrive"
+      },
+      "sie/Sie": {
+        "german": "kommen an",
+        "english": "they arrive"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin angekommen",
+        "english": "I have arrived"
+      },
+      "du": {
+        "german": "bist angekommen",
+        "english": "you have arrived"
+      },
+      "er/sie/es": {
+        "german": "ist angekommen",
+        "english": "he/she/it has arrived"
+      },
+      "wir": {
+        "german": "sind angekommen",
+        "english": "we have arrived"
+      },
+      "ihr": {
+        "german": "seid angekommen",
+        "english": "y'all have arrived"
+      },
+      "sie/Sie": {
+        "german": "sind angekommen",
+        "english": "they have arrived"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "kam an",
+        "english": "I arrived"
+      },
+      "du": {
+        "german": "kamst an",
+        "english": "you arrived"
+      },
+      "er/sie/es": {
+        "german": "kam an",
+        "english": "he/she/it arrived"
+      },
+      "wir": {
+        "german": "kamen an",
+        "english": "we arrived"
+      },
+      "ihr": {
+        "german": "kamt an",
+        "english": "y'all arrived"
+      },
+      "sie/Sie": {
+        "german": "kamen an",
+        "english": "they arrived"
+      }
+    }
+  },
+  {
     "infinitive": "annehmen",
     "translation": "to accept",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "nehme an",
@@ -79,6 +494,338 @@
       "sie/Sie": {
         "german": "nahmen an",
         "english": "they accepted"
+      }
+    }
+  },
+  {
+    "infinitive": "anrufen",
+    "translation": "to call",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "rufe an",
+        "english": "I call"
+      },
+      "du": {
+        "german": "rufst an",
+        "english": "you call"
+      },
+      "er/sie/es": {
+        "german": "ruft an",
+        "english": "he/she/it calls"
+      },
+      "wir": {
+        "german": "rufen an",
+        "english": "we call"
+      },
+      "ihr": {
+        "german": "ruft an",
+        "english": "y'all call"
+      },
+      "sie/Sie": {
+        "german": "rufen an",
+        "english": "they call"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe angerufen",
+        "english": "I have called"
+      },
+      "du": {
+        "german": "hast angerufen",
+        "english": "you have called"
+      },
+      "er/sie/es": {
+        "german": "hat angerufen",
+        "english": "he/she/it has called"
+      },
+      "wir": {
+        "german": "haben angerufen",
+        "english": "we have called"
+      },
+      "ihr": {
+        "german": "habt angerufen",
+        "english": "y'all have called"
+      },
+      "sie/Sie": {
+        "german": "haben angerufen",
+        "english": "they have called"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "rief an",
+        "english": "I called"
+      },
+      "du": {
+        "german": "riefst an",
+        "english": "you called"
+      },
+      "er/sie/es": {
+        "german": "rief an",
+        "english": "he/she/it called"
+      },
+      "wir": {
+        "german": "riefen an",
+        "english": "we called"
+      },
+      "ihr": {
+        "german": "rieft an",
+        "english": "y'all called"
+      },
+      "sie/Sie": {
+        "german": "riefen an",
+        "english": "they called"
+      }
+    }
+  },
+  {
+    "infinitive": "ansehen",
+    "translation": "to look at",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "sehe an",
+        "english": "I look at"
+      },
+      "du": {
+        "german": "siehst an",
+        "english": "you look at"
+      },
+      "er/sie/es": {
+        "german": "sieht an",
+        "english": "he/she/it look ats"
+      },
+      "wir": {
+        "german": "sehen an",
+        "english": "we look at"
+      },
+      "ihr": {
+        "german": "seht an",
+        "english": "y'all look at"
+      },
+      "sie/Sie": {
+        "german": "sehen an",
+        "english": "they look at"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe angesehen",
+        "english": "I have look ated"
+      },
+      "du": {
+        "german": "hast angesehen",
+        "english": "you have look ated"
+      },
+      "er/sie/es": {
+        "german": "hat angesehen",
+        "english": "he/she/it has look ated"
+      },
+      "wir": {
+        "german": "haben angesehen",
+        "english": "we have look ated"
+      },
+      "ihr": {
+        "german": "habt angesehen",
+        "english": "y'all have look ated"
+      },
+      "sie/Sie": {
+        "german": "haben angesehen",
+        "english": "they have look ated"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "sah an",
+        "english": "I look ated"
+      },
+      "du": {
+        "german": "sahst an",
+        "english": "you look ated"
+      },
+      "er/sie/es": {
+        "german": "sah an",
+        "english": "he/she/it look ated"
+      },
+      "wir": {
+        "german": "sahen an",
+        "english": "we look ated"
+      },
+      "ihr": {
+        "german": "saht an",
+        "english": "y'all look ated"
+      },
+      "sie/Sie": {
+        "german": "sahen an",
+        "english": "they look ated"
+      }
+    }
+  },
+  {
+    "infinitive": "anschließen",
+    "translation": "to join",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "schließe an",
+        "english": "I join"
+      },
+      "du": {
+        "german": "schließt an",
+        "english": "you join"
+      },
+      "er/sie/es": {
+        "german": "schließt an",
+        "english": "he/she/it joins"
+      },
+      "wir": {
+        "german": "schließen an",
+        "english": "we join"
+      },
+      "ihr": {
+        "german": "schließt an",
+        "english": "y'all join"
+      },
+      "sie/Sie": {
+        "german": "schließen an",
+        "english": "they join"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe angeschlossen",
+        "english": "I have joined"
+      },
+      "du": {
+        "german": "hast angeschlossen",
+        "english": "you have joined"
+      },
+      "er/sie/es": {
+        "german": "hat angeschlossen",
+        "english": "he/she/it has joined"
+      },
+      "wir": {
+        "german": "haben angeschlossen",
+        "english": "we have joined"
+      },
+      "ihr": {
+        "german": "habt angeschlossen",
+        "english": "y'all have joined"
+      },
+      "sie/Sie": {
+        "german": "haben angeschlossen",
+        "english": "they have joined"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "schloss an",
+        "english": "I joined"
+      },
+      "du": {
+        "german": "schlossest an",
+        "english": "you joined"
+      },
+      "er/sie/es": {
+        "german": "schloss an",
+        "english": "he/she/it joined"
+      },
+      "wir": {
+        "german": "schlossen an",
+        "english": "we joined"
+      },
+      "ihr": {
+        "german": "schlosst an",
+        "english": "y'all joined"
+      },
+      "sie/Sie": {
+        "german": "schlossen an",
+        "english": "they joined"
+      }
+    }
+  },
+  {
+    "infinitive": "anziehen (sich)",
+    "translation": "to get dressed",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "ziehe an",
+        "english": "I get dressed"
+      },
+      "du": {
+        "german": "ziehst an",
+        "english": "you get dressed"
+      },
+      "er/sie/es": {
+        "german": "zieht an",
+        "english": "he/she/it get dresseds"
+      },
+      "wir": {
+        "german": "ziehen an",
+        "english": "we get dressed"
+      },
+      "ihr": {
+        "german": "zieht an",
+        "english": "y'all get dressed"
+      },
+      "sie/Sie": {
+        "german": "ziehen an",
+        "english": "they get dressed"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe angezogen",
+        "english": "I have get dresseded"
+      },
+      "du": {
+        "german": "hast angezogen",
+        "english": "you have get dresseded"
+      },
+      "er/sie/es": {
+        "german": "hat angezogen",
+        "english": "he/she/it has get dresseded"
+      },
+      "wir": {
+        "german": "haben angezogen",
+        "english": "we have get dresseded"
+      },
+      "ihr": {
+        "german": "habt angezogen",
+        "english": "y'all have get dresseded"
+      },
+      "sie/Sie": {
+        "german": "haben angezogen",
+        "english": "they have get dresseded"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "zog an",
+        "english": "I get dresseded"
+      },
+      "du": {
+        "german": "zogst an",
+        "english": "you get dresseded"
+      },
+      "er/sie/es": {
+        "german": "zog an",
+        "english": "he/she/it get dresseded"
+      },
+      "wir": {
+        "german": "zogen an",
+        "english": "we get dresseded"
+      },
+      "ihr": {
+        "german": "zogt an",
+        "english": "y'all get dresseded"
+      },
+      "sie/Sie": {
+        "german": "zogen an",
+        "english": "they get dresseded"
       }
     }
   },
@@ -249,6 +996,753 @@
     }
   },
   {
+    "infinitive": "aufladen",
+    "translation": "to charge",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "lade auf",
+        "english": "I charge"
+      },
+      "du": {
+        "german": "lädst auf",
+        "english": "you charge"
+      },
+      "er/sie/es": {
+        "german": "lädt auf",
+        "english": "he/she/it charges"
+      },
+      "wir": {
+        "german": "laden auf",
+        "english": "we charge"
+      },
+      "ihr": {
+        "german": "ladet auf",
+        "english": "y'all charge"
+      },
+      "sie/Sie": {
+        "german": "laden auf",
+        "english": "they charge"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe aufgeladen",
+        "english": "I have charged"
+      },
+      "du": {
+        "german": "hast aufgeladen",
+        "english": "you have charged"
+      },
+      "er/sie/es": {
+        "german": "hat aufgeladen",
+        "english": "he/she/it has charged"
+      },
+      "wir": {
+        "german": "haben aufgeladen",
+        "english": "we have charged"
+      },
+      "ihr": {
+        "german": "habt aufgeladen",
+        "english": "y'all have charged"
+      },
+      "sie/Sie": {
+        "german": "haben aufgeladen",
+        "english": "they have charged"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "lud auf",
+        "english": "I charged"
+      },
+      "du": {
+        "german": "ludst auf",
+        "english": "you charged"
+      },
+      "er/sie/es": {
+        "german": "lud auf",
+        "english": "he/she/it charged"
+      },
+      "wir": {
+        "german": "luden auf",
+        "english": "we charged"
+      },
+      "ihr": {
+        "german": "ludet auf",
+        "english": "y'all charged"
+      },
+      "sie/Sie": {
+        "german": "luden auf",
+        "english": "they charged"
+      }
+    }
+  },
+  {
+    "infinitive": "aufstehen",
+    "translation": "to get/stand up",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "stehe auf",
+        "english": "I get/stand up"
+      },
+      "du": {
+        "german": "stehst auf",
+        "english": "you get/stand up"
+      },
+      "er/sie/es": {
+        "german": "steht auf",
+        "english": "he/she/it get/stand ups"
+      },
+      "wir": {
+        "german": "stehen auf",
+        "english": "we get/stand up"
+      },
+      "ihr": {
+        "german": "steht auf",
+        "english": "y'all get/stand up"
+      },
+      "sie/Sie": {
+        "german": "stehen auf",
+        "english": "they get/stand up"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin aufgestanden",
+        "english": "I have get/stand uped"
+      },
+      "du": {
+        "german": "bist aufgestanden",
+        "english": "you have get/stand uped"
+      },
+      "er/sie/es": {
+        "german": "ist aufgestanden",
+        "english": "he/she/it has get/stand uped"
+      },
+      "wir": {
+        "german": "sind aufgestanden",
+        "english": "we have get/stand uped"
+      },
+      "ihr": {
+        "german": "seid aufgestanden",
+        "english": "y'all have get/stand uped"
+      },
+      "sie/Sie": {
+        "german": "sind aufgestanden",
+        "english": "they have get/stand uped"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "stand auf",
+        "english": "I get/stand uped"
+      },
+      "du": {
+        "german": "standst/standest auf",
+        "english": "you get/stand uped"
+      },
+      "er/sie/es": {
+        "german": "stand auf",
+        "english": "he/she/it get/stand uped"
+      },
+      "wir": {
+        "german": "standen auf",
+        "english": "we get/stand uped"
+      },
+      "ihr": {
+        "german": "standet auf",
+        "english": "y'all get/stand uped"
+      },
+      "sie/Sie": {
+        "german": "standen auf",
+        "english": "they get/stand uped"
+      }
+    }
+  },
+  {
+    "infinitive": "auftreten",
+    "translation": "to occur",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "trete auf",
+        "english": "I occur"
+      },
+      "du": {
+        "german": "trittst auf",
+        "english": "you occur"
+      },
+      "er/sie/es": {
+        "german": "tritt auf",
+        "english": "he/she/it occurs"
+      },
+      "wir": {
+        "german": "treten auf",
+        "english": "we occur"
+      },
+      "ihr": {
+        "german": "tretet auf",
+        "english": "y'all occur"
+      },
+      "sie/Sie": {
+        "german": "treten auf",
+        "english": "they occur"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin aufgetreten",
+        "english": "I have occured"
+      },
+      "du": {
+        "german": "bist aufgetreten",
+        "english": "you have occured"
+      },
+      "er/sie/es": {
+        "german": "ist aufgetreten",
+        "english": "he/she/it has occured"
+      },
+      "wir": {
+        "german": "sind aufgetreten",
+        "english": "we have occured"
+      },
+      "ihr": {
+        "german": "seid aufgetreten",
+        "english": "y'all have occured"
+      },
+      "sie/Sie": {
+        "german": "sind aufgetreten",
+        "english": "they have occured"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "trat auf",
+        "english": "I occured"
+      },
+      "du": {
+        "german": "tratst auf",
+        "english": "you occured"
+      },
+      "er/sie/es": {
+        "german": "trat auf",
+        "english": "he/she/it occured"
+      },
+      "wir": {
+        "german": "traten auf",
+        "english": "we occured"
+      },
+      "ihr": {
+        "german": "tratet auf",
+        "english": "y'all occured"
+      },
+      "sie/Sie": {
+        "german": "traten auf",
+        "english": "they occured"
+      }
+    }
+  },
+  {
+    "infinitive": "ausbrechen",
+    "translation": "to break out",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "breche aus",
+        "english": "I break out"
+      },
+      "du": {
+        "german": "brichst aus",
+        "english": "you break out"
+      },
+      "er/sie/es": {
+        "german": "bricht aus",
+        "english": "he/she/it break outs"
+      },
+      "wir": {
+        "german": "brechen aus",
+        "english": "we break out"
+      },
+      "ihr": {
+        "german": "brecht aus",
+        "english": "y'all break out"
+      },
+      "sie/Sie": {
+        "german": "brechen aus",
+        "english": "they break out"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin ausgebrochen",
+        "english": "I have break outed"
+      },
+      "du": {
+        "german": "bist ausgebrochen",
+        "english": "you have break outed"
+      },
+      "er/sie/es": {
+        "german": "ist ausgebrochen",
+        "english": "he/she/it has break outed"
+      },
+      "wir": {
+        "german": "sind ausgebrochen",
+        "english": "we have break outed"
+      },
+      "ihr": {
+        "german": "seid ausgebrochen",
+        "english": "y'all have break outed"
+      },
+      "sie/Sie": {
+        "german": "sind ausgebrochen",
+        "english": "they have break outed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "brach aus",
+        "english": "I break outed"
+      },
+      "du": {
+        "german": "brachst aus",
+        "english": "you break outed"
+      },
+      "er/sie/es": {
+        "german": "brach aus",
+        "english": "he/she/it break outed"
+      },
+      "wir": {
+        "german": "brachen aus",
+        "english": "we break outed"
+      },
+      "ihr": {
+        "german": "bracht aus",
+        "english": "y'all break outed"
+      },
+      "sie/Sie": {
+        "german": "brachen aus",
+        "english": "they break outed"
+      }
+    }
+  },
+  {
+    "infinitive": "ausfallen",
+    "translation": "to be cancelled/turn out",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "falle aus",
+        "english": "I be cancelled/turn out"
+      },
+      "du": {
+        "german": "fällst aus",
+        "english": "you be cancelled/turn out"
+      },
+      "er/sie/es": {
+        "german": "fällt aus",
+        "english": "he/she/it be cancelled/turn outs"
+      },
+      "wir": {
+        "german": "fallen aus",
+        "english": "we be cancelled/turn out"
+      },
+      "ihr": {
+        "german": "fallt aus",
+        "english": "y'all be cancelled/turn out"
+      },
+      "sie/Sie": {
+        "german": "fallen aus",
+        "english": "they be cancelled/turn out"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin ausgefallen",
+        "english": "I have be cancelled/turn outed"
+      },
+      "du": {
+        "german": "bist ausgefallen",
+        "english": "you have be cancelled/turn outed"
+      },
+      "er/sie/es": {
+        "german": "ist ausgefallen",
+        "english": "he/she/it has be cancelled/turn outed"
+      },
+      "wir": {
+        "german": "sind ausgefallen",
+        "english": "we have be cancelled/turn outed"
+      },
+      "ihr": {
+        "german": "seid ausgefallen",
+        "english": "y'all have be cancelled/turn outed"
+      },
+      "sie/Sie": {
+        "german": "sind ausgefallen",
+        "english": "they have be cancelled/turn outed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fiel aus",
+        "english": "I be cancelled/turn outed"
+      },
+      "du": {
+        "german": "fielst aus",
+        "english": "you be cancelled/turn outed"
+      },
+      "er/sie/es": {
+        "german": "fiel aus",
+        "english": "he/she/it be cancelled/turn outed"
+      },
+      "wir": {
+        "german": "fielen aus",
+        "english": "we be cancelled/turn outed"
+      },
+      "ihr": {
+        "german": "fielt aus",
+        "english": "y'all be cancelled/turn outed"
+      },
+      "sie/Sie": {
+        "german": "fielen aus",
+        "english": "they be cancelled/turn outed"
+      }
+    }
+  },
+  {
+    "infinitive": "ausgeben",
+    "translation": "to spend",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "gebe aus",
+        "english": "I spend"
+      },
+      "du": {
+        "german": "gibst aus",
+        "english": "you spend"
+      },
+      "er/sie/es": {
+        "german": "gibt aus",
+        "english": "he/she/it spends"
+      },
+      "wir": {
+        "german": "geben aus",
+        "english": "we spend"
+      },
+      "ihr": {
+        "german": "gebt aus",
+        "english": "y'all spend"
+      },
+      "sie/Sie": {
+        "german": "geben aus",
+        "english": "they spend"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe ausgegeben",
+        "english": "I have spended"
+      },
+      "du": {
+        "german": "hast ausgegeben",
+        "english": "you have spended"
+      },
+      "er/sie/es": {
+        "german": "hat ausgegeben",
+        "english": "he/she/it has spended"
+      },
+      "wir": {
+        "german": "haben ausgegeben",
+        "english": "we have spended"
+      },
+      "ihr": {
+        "german": "habt ausgegeben",
+        "english": "y'all have spended"
+      },
+      "sie/Sie": {
+        "german": "haben ausgegeben",
+        "english": "they have spended"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "gab aus",
+        "english": "I spended"
+      },
+      "du": {
+        "german": "gabst aus",
+        "english": "you spended"
+      },
+      "er/sie/es": {
+        "german": "gab aus",
+        "english": "he/she/it spended"
+      },
+      "wir": {
+        "german": "gaben aus",
+        "english": "we spended"
+      },
+      "ihr": {
+        "german": "gabt aus",
+        "english": "y'all spended"
+      },
+      "sie/Sie": {
+        "german": "gaben aus",
+        "english": "they spended"
+      }
+    }
+  },
+  {
+    "infinitive": "ausgehen",
+    "translation": "to go out",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "gehe aus",
+        "english": "I go out"
+      },
+      "du": {
+        "german": "gehst aus",
+        "english": "you go out"
+      },
+      "er/sie/es": {
+        "german": "geht aus",
+        "english": "he/she/it go outs"
+      },
+      "wir": {
+        "german": "gehen aus",
+        "english": "we go out"
+      },
+      "ihr": {
+        "german": "geht aus",
+        "english": "y'all go out"
+      },
+      "sie/Sie": {
+        "german": "gehen aus",
+        "english": "they go out"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin ausgegangen",
+        "english": "I have go outed"
+      },
+      "du": {
+        "german": "bist ausgegangen",
+        "english": "you have go outed"
+      },
+      "er/sie/es": {
+        "german": "ist ausgegangen",
+        "english": "he/she/it has go outed"
+      },
+      "wir": {
+        "german": "sind ausgegangen",
+        "english": "we have go outed"
+      },
+      "ihr": {
+        "german": "seid ausgegangen",
+        "english": "y'all have go outed"
+      },
+      "sie/Sie": {
+        "german": "sind ausgegangen",
+        "english": "they have go outed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "ging aus",
+        "english": "I go outed"
+      },
+      "du": {
+        "german": "gingst aus",
+        "english": "you go outed"
+      },
+      "er/sie/es": {
+        "german": "ging aus",
+        "english": "he/she/it go outed"
+      },
+      "wir": {
+        "german": "gingen aus",
+        "english": "we go outed"
+      },
+      "ihr": {
+        "german": "gingt aus",
+        "english": "y'all go outed"
+      },
+      "sie/Sie": {
+        "german": "gingen aus",
+        "english": "they go outed"
+      }
+    }
+  },
+  {
+    "infinitive": "ausschlafen",
+    "translation": "to sleep in",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "schlafe aus",
+        "english": "I sleep in"
+      },
+      "du": {
+        "german": "schläfst aus",
+        "english": "you sleep in"
+      },
+      "er/sie/es": {
+        "german": "schläft aus",
+        "english": "he/she/it sleep ins"
+      },
+      "wir": {
+        "german": "schlafen aus",
+        "english": "we sleep in"
+      },
+      "ihr": {
+        "german": "schlaft aus",
+        "english": "y'all sleep in"
+      },
+      "sie/Sie": {
+        "german": "schlafen aus",
+        "english": "they sleep in"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe ausgeschlafen",
+        "english": "I have sleep ined"
+      },
+      "du": {
+        "german": "hast ausgeschlafen",
+        "english": "you have sleep ined"
+      },
+      "er/sie/es": {
+        "german": "hat ausgeschlafen",
+        "english": "he/she/it has sleep ined"
+      },
+      "wir": {
+        "german": "haben ausgeschlafen",
+        "english": "we have sleep ined"
+      },
+      "ihr": {
+        "german": "habt ausgeschlafen",
+        "english": "y'all have sleep ined"
+      },
+      "sie/Sie": {
+        "german": "haben ausgeschlafen",
+        "english": "they have sleep ined"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "schlief aus",
+        "english": "I sleep ined"
+      },
+      "du": {
+        "german": "schliefst aus",
+        "english": "you sleep ined"
+      },
+      "er/sie/es": {
+        "german": "schlief aus",
+        "english": "he/she/it sleep ined"
+      },
+      "wir": {
+        "german": "schliefen aus",
+        "english": "we sleep ined"
+      },
+      "ihr": {
+        "german": "schlieft aus",
+        "english": "y'all sleep ined"
+      },
+      "sie/Sie": {
+        "german": "schliefen aus",
+        "english": "they sleep ined"
+      }
+    }
+  },
+  {
+    "infinitive": "aussehen",
+    "translation": "to look/appear",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "sehe aus",
+        "english": "I look/appear"
+      },
+      "du": {
+        "german": "siehst aus",
+        "english": "you look/appear"
+      },
+      "er/sie/es": {
+        "german": "sieht aus",
+        "english": "he/she/it look/appears"
+      },
+      "wir": {
+        "german": "sehen aus",
+        "english": "we look/appear"
+      },
+      "ihr": {
+        "german": "seht aus",
+        "english": "y'all look/appear"
+      },
+      "sie/Sie": {
+        "german": "sehen aus",
+        "english": "they look/appear"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe ausgesehen",
+        "english": "I have look/appeared"
+      },
+      "du": {
+        "german": "hast ausgesehen",
+        "english": "you have look/appeared"
+      },
+      "er/sie/es": {
+        "german": "hat ausgesehen",
+        "english": "he/she/it has look/appeared"
+      },
+      "wir": {
+        "german": "haben ausgesehen",
+        "english": "we have look/appeared"
+      },
+      "ihr": {
+        "german": "habt ausgesehen",
+        "english": "y'all have look/appeared"
+      },
+      "sie/Sie": {
+        "german": "haben ausgesehen",
+        "english": "they have look/appeared"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "sah aus",
+        "english": "I look/appeared"
+      },
+      "du": {
+        "german": "sahst aus",
+        "english": "you look/appeared"
+      },
+      "er/sie/es": {
+        "german": "sah aus",
+        "english": "he/she/it look/appeared"
+      },
+      "wir": {
+        "german": "sahen aus",
+        "english": "we look/appeared"
+      },
+      "ihr": {
+        "german": "saht aus",
+        "english": "y'all look/appeared"
+      },
+      "sie/Sie": {
+        "german": "sahen aus",
+        "english": "they look/appeared"
+      }
+    }
+  },
+  {
     "infinitive": "ausreichen",
     "translation": "to be enough",
     "irregular": false,
@@ -332,9 +1826,92 @@
     }
   },
   {
+    "infinitive": "ausziehen (sich)",
+    "translation": "to undress",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "ziehe aus",
+        "english": "I undress"
+      },
+      "du": {
+        "german": "ziehst aus",
+        "english": "you undress"
+      },
+      "er/sie/es": {
+        "german": "zieht aus",
+        "english": "he/she/it undresses"
+      },
+      "wir": {
+        "german": "ziehen aus",
+        "english": "we undress"
+      },
+      "ihr": {
+        "german": "zieht aus",
+        "english": "y'all undress"
+      },
+      "sie/Sie": {
+        "german": "ziehen aus",
+        "english": "they undress"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe ausgezogen",
+        "english": "I have undressed"
+      },
+      "du": {
+        "german": "hast ausgezogen",
+        "english": "you have undressed"
+      },
+      "er/sie/es": {
+        "german": "hat ausgezogen",
+        "english": "he/she/it has undressed"
+      },
+      "wir": {
+        "german": "haben ausgezogen",
+        "english": "we have undressed"
+      },
+      "ihr": {
+        "german": "habt ausgezogen",
+        "english": "y'all have undressed"
+      },
+      "sie/Sie": {
+        "german": "haben ausgezogen",
+        "english": "they have undressed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "zog aus",
+        "english": "I undressed"
+      },
+      "du": {
+        "german": "zogst aus",
+        "english": "you undressed"
+      },
+      "er/sie/es": {
+        "german": "zog aus",
+        "english": "he/she/it undressed"
+      },
+      "wir": {
+        "german": "zogen aus",
+        "english": "we undressed"
+      },
+      "ihr": {
+        "german": "zogt aus",
+        "english": "y'all undressed"
+      },
+      "sie/Sie": {
+        "german": "zogen aus",
+        "english": "they undressed"
+      }
+    }
+  },
+  {
     "infinitive": "befehlen",
     "translation": "to command",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "befehle",
@@ -417,7 +1994,7 @@
   {
     "infinitive": "beginnen",
     "translation": "to begin",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "beginne",
@@ -500,7 +2077,7 @@
   {
     "infinitive": "beißen",
     "translation": "to bite",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "beiße",
@@ -577,6 +2154,255 @@
       "sie/Sie": {
         "german": "bissen",
         "english": "they bit"
+      }
+    }
+  },
+  {
+    "infinitive": "bekommen",
+    "translation": "to get",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "bekomme",
+        "english": "I get"
+      },
+      "du": {
+        "german": "bekommst",
+        "english": "you get"
+      },
+      "er/sie/es": {
+        "german": "bekommt",
+        "english": "he/she/it gets"
+      },
+      "wir": {
+        "german": "bekommen",
+        "english": "we get"
+      },
+      "ihr": {
+        "german": "bekommt",
+        "english": "y'all get"
+      },
+      "sie/Sie": {
+        "german": "bekommen",
+        "english": "they get"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe bekommen",
+        "english": "I have geted"
+      },
+      "du": {
+        "german": "hast bekommen",
+        "english": "you have geted"
+      },
+      "er/sie/es": {
+        "german": "hat bekommen",
+        "english": "he/she/it has geted"
+      },
+      "wir": {
+        "german": "haben bekommen",
+        "english": "we have geted"
+      },
+      "ihr": {
+        "german": "habt bekommen",
+        "english": "y'all have geted"
+      },
+      "sie/Sie": {
+        "german": "haben bekommen",
+        "english": "they have geted"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "bekam",
+        "english": "I geted"
+      },
+      "du": {
+        "german": "bekamst",
+        "english": "you geted"
+      },
+      "er/sie/es": {
+        "german": "bekam",
+        "english": "he/she/it geted"
+      },
+      "wir": {
+        "german": "bekamen",
+        "english": "we geted"
+      },
+      "ihr": {
+        "german": "bekamt",
+        "english": "y'all geted"
+      },
+      "sie/Sie": {
+        "german": "bekamen",
+        "english": "they geted"
+      }
+    }
+  },
+  {
+    "infinitive": "beraten",
+    "translation": "to advice",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "berate",
+        "english": "I advice"
+      },
+      "du": {
+        "german": "berätst",
+        "english": "you advice"
+      },
+      "er/sie/es": {
+        "german": "berät",
+        "english": "he/she/it advices"
+      },
+      "wir": {
+        "german": "beraten",
+        "english": "we advice"
+      },
+      "ihr": {
+        "german": "beratet",
+        "english": "y'all advice"
+      },
+      "sie/Sie": {
+        "german": "beraten",
+        "english": "they advice"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe beraten",
+        "english": "I have adviced"
+      },
+      "du": {
+        "german": "hast beraten",
+        "english": "you have adviced"
+      },
+      "er/sie/es": {
+        "german": "hat beraten",
+        "english": "he/she/it has adviced"
+      },
+      "wir": {
+        "german": "haben beraten",
+        "english": "we have adviced"
+      },
+      "ihr": {
+        "german": "habt beraten",
+        "english": "y'all have adviced"
+      },
+      "sie/Sie": {
+        "german": "haben beraten",
+        "english": "they have adviced"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "beriet",
+        "english": "I adviced"
+      },
+      "du": {
+        "german": "berietst",
+        "english": "you adviced"
+      },
+      "er/sie/es": {
+        "german": "beriet",
+        "english": "he/she/it adviced"
+      },
+      "wir": {
+        "german": "berieten",
+        "english": "we adviced"
+      },
+      "ihr": {
+        "german": "berietet",
+        "english": "y'all adviced"
+      },
+      "sie/Sie": {
+        "german": "berieten",
+        "english": "they adviced"
+      }
+    }
+  },
+  {
+    "infinitive": "bestehen",
+    "translation": "to pass",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "bestehe",
+        "english": "I pass"
+      },
+      "du": {
+        "german": "bestehst",
+        "english": "you pass"
+      },
+      "er/sie/es": {
+        "german": "besteht",
+        "english": "he/she/it passes"
+      },
+      "wir": {
+        "german": "bestehen",
+        "english": "we pass"
+      },
+      "ihr": {
+        "german": "besteht",
+        "english": "y'all pass"
+      },
+      "sie/Sie": {
+        "german": "bestehen",
+        "english": "they pass"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe bestanden",
+        "english": "I have passed"
+      },
+      "du": {
+        "german": "hast bestanden",
+        "english": "you have passed"
+      },
+      "er/sie/es": {
+        "german": "hat bestanden",
+        "english": "he/she/it has passed"
+      },
+      "wir": {
+        "german": "haben bestanden",
+        "english": "we have passed"
+      },
+      "ihr": {
+        "german": "habt bestanden",
+        "english": "y'all have passed"
+      },
+      "sie/Sie": {
+        "german": "haben bestanden",
+        "english": "they have passed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "bestand",
+        "english": "I passed"
+      },
+      "du": {
+        "german": "bestandst/bestandest",
+        "english": "you passed"
+      },
+      "er/sie/es": {
+        "german": "bestand",
+        "english": "he/she/it passed"
+      },
+      "wir": {
+        "german": "bestanden",
+        "english": "we passed"
+      },
+      "ihr": {
+        "german": "bestandet",
+        "english": "y'all passed"
+      },
+      "sie/Sie": {
+        "german": "bestanden",
+        "english": "they passed"
       }
     }
   },
@@ -664,9 +2490,175 @@
     }
   },
   {
+    "infinitive": "beweisen",
+    "translation": "to prove",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "beweise",
+        "english": "I prove"
+      },
+      "du": {
+        "german": "beweist",
+        "english": "you prove"
+      },
+      "er/sie/es": {
+        "german": "beweist",
+        "english": "he/she/it proves"
+      },
+      "wir": {
+        "german": "beweisen",
+        "english": "we prove"
+      },
+      "ihr": {
+        "german": "beweist",
+        "english": "y'all prove"
+      },
+      "sie/Sie": {
+        "german": "beweisen",
+        "english": "they prove"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe bewiesen",
+        "english": "I have proved"
+      },
+      "du": {
+        "german": "hast bewiesen",
+        "english": "you have proved"
+      },
+      "er/sie/es": {
+        "german": "hat bewiesen",
+        "english": "he/she/it has proved"
+      },
+      "wir": {
+        "german": "haben bewiesen",
+        "english": "we have proved"
+      },
+      "ihr": {
+        "german": "habt bewiesen",
+        "english": "y'all have proved"
+      },
+      "sie/Sie": {
+        "german": "haben bewiesen",
+        "english": "they have proved"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "bewies",
+        "english": "I proved"
+      },
+      "du": {
+        "german": "bewiesest",
+        "english": "you proved"
+      },
+      "er/sie/es": {
+        "german": "bewies",
+        "english": "he/she/it proved"
+      },
+      "wir": {
+        "german": "bewiesen",
+        "english": "we proved"
+      },
+      "ihr": {
+        "german": "bewieset",
+        "english": "y'all proved"
+      },
+      "sie/Sie": {
+        "german": "bewiesen",
+        "english": "they proved"
+      }
+    }
+  },
+  {
+    "infinitive": "bewerben (sich)",
+    "translation": "to apply",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "bewerbe",
+        "english": "I apply"
+      },
+      "du": {
+        "german": "bewirbst",
+        "english": "you apply"
+      },
+      "er/sie/es": {
+        "german": "bewirbt",
+        "english": "he/she/it applies"
+      },
+      "wir": {
+        "german": "bewerben",
+        "english": "we apply"
+      },
+      "ihr": {
+        "german": "bewerbt",
+        "english": "y'all apply"
+      },
+      "sie/Sie": {
+        "german": "bewerben",
+        "english": "they apply"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe beworben",
+        "english": "I have applied"
+      },
+      "du": {
+        "german": "hast beworben",
+        "english": "you have applied"
+      },
+      "er/sie/es": {
+        "german": "hat beworben",
+        "english": "he/she/it has applied"
+      },
+      "wir": {
+        "german": "haben beworben",
+        "english": "we have applied"
+      },
+      "ihr": {
+        "german": "habt beworben",
+        "english": "y'all have applied"
+      },
+      "sie/Sie": {
+        "german": "haben beworben",
+        "english": "they have applied"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "bewarb",
+        "english": "I applied"
+      },
+      "du": {
+        "german": "bewarbst",
+        "english": "you applied"
+      },
+      "er/sie/es": {
+        "german": "bewarb",
+        "english": "he/she/it applied"
+      },
+      "wir": {
+        "german": "bewarben",
+        "english": "we applied"
+      },
+      "ihr": {
+        "german": "bewarbt",
+        "english": "y'all applied"
+      },
+      "sie/Sie": {
+        "german": "bewarben",
+        "english": "they applied"
+      }
+    }
+  },
+  {
     "infinitive": "biegen",
     "translation": "to bend",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "biege",
@@ -749,7 +2741,7 @@
   {
     "infinitive": "bieten",
     "translation": "to offer",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "biete",
@@ -832,7 +2824,7 @@
   {
     "infinitive": "binden",
     "translation": "to tie",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "binde",
@@ -915,7 +2907,7 @@
   {
     "infinitive": "bitten",
     "translation": "to request",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "bitte",
@@ -998,7 +2990,7 @@
   {
     "infinitive": "bleiben",
     "translation": "to remain",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "bleibe",
@@ -1081,7 +3073,7 @@
   {
     "infinitive": "brechen",
     "translation": "to break",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "breche",
@@ -1164,7 +3156,7 @@
   {
     "infinitive": "brennen",
     "translation": "to burn",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "brenne",
@@ -1247,7 +3239,7 @@
   {
     "infinitive": "bringen",
     "translation": "to bring",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "bringe",
@@ -1330,7 +3322,7 @@
   {
     "infinitive": "denken",
     "translation": "to think",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "denke",
@@ -1496,7 +3488,7 @@
   {
     "infinitive": "dürfen",
     "translation": "to be allowed to",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "darf",
@@ -1577,9 +3569,341 @@
     }
   },
   {
+    "infinitive": "einfallen",
+    "translation": "to think of",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "falle ein",
+        "english": "I think of"
+      },
+      "du": {
+        "german": "fällst ein",
+        "english": "you think of"
+      },
+      "er/sie/es": {
+        "german": "fällt ein",
+        "english": "he/she/it think ofs"
+      },
+      "wir": {
+        "german": "fallen ein",
+        "english": "we think of"
+      },
+      "ihr": {
+        "german": "fallt ein",
+        "english": "y'all think of"
+      },
+      "sie/Sie": {
+        "german": "fallen ein",
+        "english": "they think of"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin eingefallen",
+        "english": "I have think ofed"
+      },
+      "du": {
+        "german": "bist eingefallen",
+        "english": "you have think ofed"
+      },
+      "er/sie/es": {
+        "german": "ist eingefallen",
+        "english": "he/she/it has think ofed"
+      },
+      "wir": {
+        "german": "sind eingefallen",
+        "english": "we have think ofed"
+      },
+      "ihr": {
+        "german": "seid eingefallen",
+        "english": "y'all have think ofed"
+      },
+      "sie/Sie": {
+        "german": "sind eingefallen",
+        "english": "they have think ofed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fiel ein",
+        "english": "I think ofed"
+      },
+      "du": {
+        "german": "fielst ein",
+        "english": "you think ofed"
+      },
+      "er/sie/es": {
+        "german": "fiel ein",
+        "english": "he/she/it think ofed"
+      },
+      "wir": {
+        "german": "fielen ein",
+        "english": "we think ofed"
+      },
+      "ihr": {
+        "german": "fielt ein",
+        "english": "y'all think ofed"
+      },
+      "sie/Sie": {
+        "german": "fielen ein",
+        "english": "they think ofed"
+      }
+    }
+  },
+  {
+    "infinitive": "eingeben",
+    "translation": "to enter",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "gebe ein",
+        "english": "I enter"
+      },
+      "du": {
+        "german": "gibst ein",
+        "english": "you enter"
+      },
+      "er/sie/es": {
+        "german": "gibt ein",
+        "english": "he/she/it enters"
+      },
+      "wir": {
+        "german": "geben ein",
+        "english": "we enter"
+      },
+      "ihr": {
+        "german": "gebt ein",
+        "english": "y'all enter"
+      },
+      "sie/Sie": {
+        "german": "geben ein",
+        "english": "they enter"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe eingegeben",
+        "english": "I have entered"
+      },
+      "du": {
+        "german": "hast eingegeben",
+        "english": "you have entered"
+      },
+      "er/sie/es": {
+        "german": "hat eingegeben",
+        "english": "he/she/it has entered"
+      },
+      "wir": {
+        "german": "haben eingegeben",
+        "english": "we have entered"
+      },
+      "ihr": {
+        "german": "habt eingegeben",
+        "english": "y'all have entered"
+      },
+      "sie/Sie": {
+        "german": "haben eingegeben",
+        "english": "they have entered"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "gab ein",
+        "english": "I entered"
+      },
+      "du": {
+        "german": "gabst ein",
+        "english": "you entered"
+      },
+      "er/sie/es": {
+        "german": "gab ein",
+        "english": "he/she/it entered"
+      },
+      "wir": {
+        "german": "gaben ein",
+        "english": "we entered"
+      },
+      "ihr": {
+        "german": "gabt ein",
+        "english": "y'all entered"
+      },
+      "sie/Sie": {
+        "german": "gaben ein",
+        "english": "they entered"
+      }
+    }
+  },
+  {
+    "infinitive": "einladen",
+    "translation": "to invite",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "lade ein",
+        "english": "I invite"
+      },
+      "du": {
+        "german": "lädst ein",
+        "english": "you invite"
+      },
+      "er/sie/es": {
+        "german": "lädt ein",
+        "english": "he/she/it invites"
+      },
+      "wir": {
+        "german": "laden ein",
+        "english": "we invite"
+      },
+      "ihr": {
+        "german": "ladet ein",
+        "english": "y'all invite"
+      },
+      "sie/Sie": {
+        "german": "laden ein",
+        "english": "they invite"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe eingeladen",
+        "english": "I have invited"
+      },
+      "du": {
+        "german": "hast eingeladen",
+        "english": "you have invited"
+      },
+      "er/sie/es": {
+        "german": "hat eingeladen",
+        "english": "he/she/it has invited"
+      },
+      "wir": {
+        "german": "haben eingeladen",
+        "english": "we have invited"
+      },
+      "ihr": {
+        "german": "habt eingeladen",
+        "english": "y'all have invited"
+      },
+      "sie/Sie": {
+        "german": "haben eingeladen",
+        "english": "they have invited"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "lud ein",
+        "english": "I invited"
+      },
+      "du": {
+        "german": "ludst ein",
+        "english": "you invited"
+      },
+      "er/sie/es": {
+        "german": "lud ein",
+        "english": "he/she/it invited"
+      },
+      "wir": {
+        "german": "luden ein",
+        "english": "we invited"
+      },
+      "ihr": {
+        "german": "ludet ein",
+        "english": "y'all invited"
+      },
+      "sie/Sie": {
+        "german": "luden ein",
+        "english": "they invited"
+      }
+    }
+  },
+  {
+    "infinitive": "einziehen",
+    "translation": "to move in",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "ziehe ein",
+        "english": "I move in"
+      },
+      "du": {
+        "german": "ziehst ein",
+        "english": "you move in"
+      },
+      "er/sie/es": {
+        "german": "zieht ein",
+        "english": "he/she/it move ins"
+      },
+      "wir": {
+        "german": "ziehen ein",
+        "english": "we move in"
+      },
+      "ihr": {
+        "german": "zieht ein",
+        "english": "y'all move in"
+      },
+      "sie/Sie": {
+        "german": "ziehen ein",
+        "english": "they move in"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin eingezogen",
+        "english": "I have move ined"
+      },
+      "du": {
+        "german": "bist eingezogen",
+        "english": "you have move ined"
+      },
+      "er/sie/es": {
+        "german": "ist eingezogen",
+        "english": "he/she/it has move ined"
+      },
+      "wir": {
+        "german": "sind eingezogen",
+        "english": "we have move ined"
+      },
+      "ihr": {
+        "german": "seid eingezogen",
+        "english": "y'all have move ined"
+      },
+      "sie/Sie": {
+        "german": "sind eingezogen",
+        "english": "they have move ined"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "zog ein",
+        "english": "I move ined"
+      },
+      "du": {
+        "german": "zogst ein",
+        "english": "you move ined"
+      },
+      "er/sie/es": {
+        "german": "zog ein",
+        "english": "he/she/it move ined"
+      },
+      "wir": {
+        "german": "zogen ein",
+        "english": "we move ined"
+      },
+      "ihr": {
+        "german": "zogt ein",
+        "english": "y'all move ined"
+      },
+      "sie/Sie": {
+        "german": "zogen ein",
+        "english": "they move ined"
+      }
+    }
+  },
+  {
     "infinitive": "empfehlen",
     "translation": "to recommend",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "empfehle",
@@ -1743,9 +4067,424 @@
     }
   },
   {
+    "infinitive": "enthalten",
+    "translation": "to contain",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "enthalte",
+        "english": "I contain"
+      },
+      "du": {
+        "german": "enthältst",
+        "english": "you contain"
+      },
+      "er/sie/es": {
+        "german": "enthält",
+        "english": "he/she/it contains"
+      },
+      "wir": {
+        "german": "enthalten",
+        "english": "we contain"
+      },
+      "ihr": {
+        "german": "enthaltet",
+        "english": "y'all contain"
+      },
+      "sie/Sie": {
+        "german": "enthalten",
+        "english": "they contain"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe enthalten",
+        "english": "I have contained"
+      },
+      "du": {
+        "german": "hast enthalten",
+        "english": "you have contained"
+      },
+      "er/sie/es": {
+        "german": "hat enthalten",
+        "english": "he/she/it has contained"
+      },
+      "wir": {
+        "german": "haben enthalten",
+        "english": "we have contained"
+      },
+      "ihr": {
+        "german": "habt enthalten",
+        "english": "y'all have contained"
+      },
+      "sie/Sie": {
+        "german": "haben enthalten",
+        "english": "they have contained"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "enthielt",
+        "english": "I contained"
+      },
+      "du": {
+        "german": "enthieltst",
+        "english": "you contained"
+      },
+      "er/sie/es": {
+        "german": "enthielt",
+        "english": "he/she/it contained"
+      },
+      "wir": {
+        "german": "enthielten",
+        "english": "we contained"
+      },
+      "ihr": {
+        "german": "enthieltet",
+        "english": "y'all contained"
+      },
+      "sie/Sie": {
+        "german": "enthielten",
+        "english": "they contained"
+      }
+    }
+  },
+  {
+    "infinitive": "entscheiden",
+    "translation": "to decide",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "entscheide",
+        "english": "I decide"
+      },
+      "du": {
+        "german": "entscheidest",
+        "english": "you decide"
+      },
+      "er/sie/es": {
+        "german": "entscheidet",
+        "english": "he/she/it decides"
+      },
+      "wir": {
+        "german": "entscheiden",
+        "english": "we decide"
+      },
+      "ihr": {
+        "german": "entscheidet",
+        "english": "y'all decide"
+      },
+      "sie/Sie": {
+        "german": "entscheiden",
+        "english": "they decide"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe entschieden",
+        "english": "I have decided"
+      },
+      "du": {
+        "german": "hast entschieden",
+        "english": "you have decided"
+      },
+      "er/sie/es": {
+        "german": "hat entschieden",
+        "english": "he/she/it has decided"
+      },
+      "wir": {
+        "german": "haben entschieden",
+        "english": "we have decided"
+      },
+      "ihr": {
+        "german": "habt entschieden",
+        "english": "y'all have decided"
+      },
+      "sie/Sie": {
+        "german": "haben entschieden",
+        "english": "they have decided"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "entschied",
+        "english": "I decided"
+      },
+      "du": {
+        "german": "entschiedst",
+        "english": "you decided"
+      },
+      "er/sie/es": {
+        "german": "entschied",
+        "english": "he/she/it decided"
+      },
+      "wir": {
+        "german": "entschieden",
+        "english": "we decided"
+      },
+      "ihr": {
+        "german": "entschiedet",
+        "english": "y'all decided"
+      },
+      "sie/Sie": {
+        "german": "entschieden",
+        "english": "they decided"
+      }
+    }
+  },
+  {
+    "infinitive": "entstehen",
+    "translation": "to arise/emerge",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "entstehe",
+        "english": "I arise/emerge"
+      },
+      "du": {
+        "german": "entstehst",
+        "english": "you arise/emerge"
+      },
+      "er/sie/es": {
+        "german": "entsteht",
+        "english": "he/she/it arise/emerges"
+      },
+      "wir": {
+        "german": "entstehen",
+        "english": "we arise/emerge"
+      },
+      "ihr": {
+        "german": "entsteht",
+        "english": "y'all arise/emerge"
+      },
+      "sie/Sie": {
+        "german": "entstehen",
+        "english": "they arise/emerge"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin entstanden",
+        "english": "I have arise/emerged"
+      },
+      "du": {
+        "german": "bist entstanden",
+        "english": "you have arise/emerged"
+      },
+      "er/sie/es": {
+        "german": "ist entstanden",
+        "english": "he/she/it has arise/emerged"
+      },
+      "wir": {
+        "german": "sind entstanden",
+        "english": "we have arise/emerged"
+      },
+      "ihr": {
+        "german": "seid entstanden",
+        "english": "y'all have arise/emerged"
+      },
+      "sie/Sie": {
+        "german": "sind entstanden",
+        "english": "they have arise/emerged"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "entstand",
+        "english": "I arise/emerged"
+      },
+      "du": {
+        "german": "entstandst/entstandest",
+        "english": "you arise/emerged"
+      },
+      "er/sie/es": {
+        "german": "entstand",
+        "english": "he/she/it arise/emerged"
+      },
+      "wir": {
+        "german": "entstanden",
+        "english": "we arise/emerged"
+      },
+      "ihr": {
+        "german": "entstandet",
+        "english": "y'all arise/emerged"
+      },
+      "sie/Sie": {
+        "german": "entstanden",
+        "english": "they arise/emerged"
+      }
+    }
+  },
+  {
+    "infinitive": "erfahren",
+    "translation": "to experience/find out",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "erfahre",
+        "english": "I experience/find out"
+      },
+      "du": {
+        "german": "erfährst",
+        "english": "you experience/find out"
+      },
+      "er/sie/es": {
+        "german": "erfährt",
+        "english": "he/she/it experience/find outs"
+      },
+      "wir": {
+        "german": "erfahren",
+        "english": "we experience/find out"
+      },
+      "ihr": {
+        "german": "erfahrt",
+        "english": "y'all experience/find out"
+      },
+      "sie/Sie": {
+        "german": "erfahren",
+        "english": "they experience/find out"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe erfahren",
+        "english": "I have experience/find outed"
+      },
+      "du": {
+        "german": "hast erfahren",
+        "english": "you have experience/find outed"
+      },
+      "er/sie/es": {
+        "german": "hat erfahren",
+        "english": "he/she/it has experience/find outed"
+      },
+      "wir": {
+        "german": "haben erfahren",
+        "english": "we have experience/find outed"
+      },
+      "ihr": {
+        "german": "habt erfahren",
+        "english": "y'all have experience/find outed"
+      },
+      "sie/Sie": {
+        "german": "haben erfahren",
+        "english": "they have experience/find outed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "erfuhr",
+        "english": "I experience/find outed"
+      },
+      "du": {
+        "german": "erfuhrst",
+        "english": "you experience/find outed"
+      },
+      "er/sie/es": {
+        "german": "erfuhr",
+        "english": "he/she/it experience/find outed"
+      },
+      "wir": {
+        "german": "erfuhren",
+        "english": "we experience/find outed"
+      },
+      "ihr": {
+        "german": "erfuhrt",
+        "english": "y'all experience/find outed"
+      },
+      "sie/Sie": {
+        "german": "erfuhren",
+        "english": "they experience/find outed"
+      }
+    }
+  },
+  {
+    "infinitive": "erkennen",
+    "translation": "to recognise",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "erkenne",
+        "english": "I recognise"
+      },
+      "du": {
+        "german": "erkennst",
+        "english": "you recognise"
+      },
+      "er/sie/es": {
+        "german": "erkennt",
+        "english": "he/she/it recognises"
+      },
+      "wir": {
+        "german": "erkennen",
+        "english": "we recognise"
+      },
+      "ihr": {
+        "german": "erkennt",
+        "english": "y'all recognise"
+      },
+      "sie/Sie": {
+        "german": "erkennen",
+        "english": "they recognise"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe erkannt",
+        "english": "I have recognised"
+      },
+      "du": {
+        "german": "hast erkannt",
+        "english": "you have recognised"
+      },
+      "er/sie/es": {
+        "german": "hat erkannt",
+        "english": "he/she/it has recognised"
+      },
+      "wir": {
+        "german": "haben erkannt",
+        "english": "we have recognised"
+      },
+      "ihr": {
+        "german": "habt erkannt",
+        "english": "y'all have recognised"
+      },
+      "sie/Sie": {
+        "german": "haben erkannt",
+        "english": "they have recognised"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "erkannte",
+        "english": "I recognised"
+      },
+      "du": {
+        "german": "erkanntest",
+        "english": "you recognised"
+      },
+      "er/sie/es": {
+        "german": "erkannte",
+        "english": "he/she/it recognised"
+      },
+      "wir": {
+        "german": "erkannten",
+        "english": "we recognised"
+      },
+      "ihr": {
+        "german": "erkanntet",
+        "english": "y'all recognised"
+      },
+      "sie/Sie": {
+        "german": "erkannten",
+        "english": "they recognised"
+      }
+    }
+  },
+  {
     "infinitive": "erschrecken",
     "translation": "to (be) startled",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "erschrecke",
@@ -1911,7 +4650,7 @@
   {
     "infinitive": "essen",
     "translation": "to eat",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "esse",
@@ -1994,7 +4733,7 @@
   {
     "infinitive": "fahren",
     "translation": "to drive",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "fahre",
@@ -2077,7 +4816,7 @@
   {
     "infinitive": "fallen",
     "translation": "to fall",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "falle",
@@ -2160,7 +4899,7 @@
   {
     "infinitive": "fangen",
     "translation": "to catch",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "fange",
@@ -2243,7 +4982,7 @@
   {
     "infinitive": "finden",
     "translation": "to find",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "finde",
@@ -2326,7 +5065,7 @@
   {
     "infinitive": "fliegen",
     "translation": "to fly",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "fliege",
@@ -2409,7 +5148,7 @@
   {
     "infinitive": "fliehen",
     "translation": "to flee",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "fliehe",
@@ -2492,7 +5231,7 @@
   {
     "infinitive": "fließen",
     "translation": "to flow",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "fließe",
@@ -2573,9 +5312,92 @@
     }
   },
   {
+    "infinitive": "fressen",
+    "translation": "to eat (for animals)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "fresse",
+        "english": "I eat (for animals)"
+      },
+      "du": {
+        "german": "frisst",
+        "english": "you eat (for animals)"
+      },
+      "er/sie/es": {
+        "german": "frisst",
+        "english": "he/she/it eat (for animals)s"
+      },
+      "wir": {
+        "german": "fressen",
+        "english": "we eat (for animals)"
+      },
+      "ihr": {
+        "german": "fresst",
+        "english": "y'all eat (for animals)"
+      },
+      "sie/Sie": {
+        "german": "fressen",
+        "english": "they eat (for animals)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe gefressen",
+        "english": "I have eat (for animals)ed"
+      },
+      "du": {
+        "german": "hast gefressen",
+        "english": "you have eat (for animals)ed"
+      },
+      "er/sie/es": {
+        "german": "hat gefressen",
+        "english": "he/she/it has eat (for animals)ed"
+      },
+      "wir": {
+        "german": "haben gefressen",
+        "english": "we have eat (for animals)ed"
+      },
+      "ihr": {
+        "german": "habt gefressen",
+        "english": "y'all have eat (for animals)ed"
+      },
+      "sie/Sie": {
+        "german": "haben gefressen",
+        "english": "they have eat (for animals)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fraß",
+        "english": "I eat (for animals)ed"
+      },
+      "du": {
+        "german": "fraßt",
+        "english": "you eat (for animals)ed"
+      },
+      "er/sie/es": {
+        "german": "fraß",
+        "english": "he/she/it eat (for animals)ed"
+      },
+      "wir": {
+        "german": "fraßen",
+        "english": "we eat (for animals)ed"
+      },
+      "ihr": {
+        "german": "fraßt",
+        "english": "y'all eat (for animals)ed"
+      },
+      "sie/Sie": {
+        "german": "fraßen",
+        "english": "they eat (for animals)ed"
+      }
+    }
+  },
+  {
     "infinitive": "frieren",
     "translation": "to freeze",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "friere",
@@ -2658,7 +5480,7 @@
   {
     "infinitive": "geben",
     "translation": "to give",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "gebe",
@@ -2739,9 +5561,92 @@
     }
   },
   {
+    "infinitive": "gefallen",
+    "translation": "to like/please",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "gefalle",
+        "english": "I like/please"
+      },
+      "du": {
+        "german": "gefällst",
+        "english": "you like/please"
+      },
+      "er/sie/es": {
+        "german": "gefällt",
+        "english": "he/she/it like/pleases"
+      },
+      "wir": {
+        "german": "gefallen",
+        "english": "we like/please"
+      },
+      "ihr": {
+        "german": "gefallt",
+        "english": "y'all like/please"
+      },
+      "sie/Sie": {
+        "german": "gefallen",
+        "english": "they like/please"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe gefallen",
+        "english": "I have like/pleased"
+      },
+      "du": {
+        "german": "hast gefallen",
+        "english": "you have like/pleased"
+      },
+      "er/sie/es": {
+        "german": "hat gefallen",
+        "english": "he/she/it has like/pleased"
+      },
+      "wir": {
+        "german": "haben gefallen",
+        "english": "we have like/pleased"
+      },
+      "ihr": {
+        "german": "habt gefallen",
+        "english": "y'all have like/pleased"
+      },
+      "sie/Sie": {
+        "german": "haben gefallen",
+        "english": "they have like/pleased"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "gefiel",
+        "english": "I like/pleased"
+      },
+      "du": {
+        "german": "gefielst",
+        "english": "you like/pleased"
+      },
+      "er/sie/es": {
+        "german": "gefiel",
+        "english": "he/she/it like/pleased"
+      },
+      "wir": {
+        "german": "gefielen",
+        "english": "we like/pleased"
+      },
+      "ihr": {
+        "german": "gefielt",
+        "english": "y'all like/pleased"
+      },
+      "sie/Sie": {
+        "german": "gefielen",
+        "english": "they like/pleased"
+      }
+    }
+  },
+  {
     "infinitive": "gehen",
     "translation": "to go",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "gehe",
@@ -2907,7 +5812,7 @@
   {
     "infinitive": "genießen",
     "translation": "to enjoy",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "genieße",
@@ -2990,7 +5895,7 @@
   {
     "infinitive": "gewinnen",
     "translation": "to win",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "gewinne",
@@ -3073,7 +5978,7 @@
   {
     "infinitive": "gießen",
     "translation": "to pour",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "gieße",
@@ -3156,7 +6061,7 @@
   {
     "infinitive": "graben",
     "translation": "to dig",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "grabe",
@@ -3239,7 +6144,7 @@
   {
     "infinitive": "greifen",
     "translation": "to seize",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "greife",
@@ -3405,7 +6310,7 @@
   {
     "infinitive": "haben",
     "translation": "to have",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "habe",
@@ -3488,7 +6393,7 @@
   {
     "infinitive": "halten",
     "translation": "to hold",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "halte",
@@ -3654,7 +6559,7 @@
   {
     "infinitive": "hängen",
     "translation": "to hang",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "hänge",
@@ -3737,7 +6642,7 @@
   {
     "infinitive": "heben",
     "translation": "to lift",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "hebe",
@@ -3814,6 +6719,89 @@
       "sie/Sie": {
         "german": "hoben",
         "english": "they lifted"
+      }
+    }
+  },
+  {
+    "infinitive": "heißen",
+    "translation": "to be called",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "heiße",
+        "english": "I be called"
+      },
+      "du": {
+        "german": "heißt",
+        "english": "you be called"
+      },
+      "er/sie/es": {
+        "german": "heißt",
+        "english": "he/she/it be calleds"
+      },
+      "wir": {
+        "german": "heißen",
+        "english": "we be called"
+      },
+      "ihr": {
+        "german": "heißt",
+        "english": "y'all be called"
+      },
+      "sie/Sie": {
+        "german": "heißen",
+        "english": "they be called"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe geheißen",
+        "english": "I have be calleded"
+      },
+      "du": {
+        "german": "hast geheißen",
+        "english": "you have be calleded"
+      },
+      "er/sie/es": {
+        "german": "hat geheißen",
+        "english": "he/she/it has be calleded"
+      },
+      "wir": {
+        "german": "haben geheißen",
+        "english": "we have be calleded"
+      },
+      "ihr": {
+        "german": "habt geheißen",
+        "english": "y'all have be calleded"
+      },
+      "sie/Sie": {
+        "german": "haben geheißen",
+        "english": "they have be calleded"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "hieß",
+        "english": "I be calleded"
+      },
+      "du": {
+        "german": "hießt",
+        "english": "you be calleded"
+      },
+      "er/sie/es": {
+        "german": "hieß",
+        "english": "he/she/it be calleded"
+      },
+      "wir": {
+        "german": "hießen",
+        "english": "we be calleded"
+      },
+      "ihr": {
+        "german": "hießt",
+        "english": "y'all be calleded"
+      },
+      "sie/Sie": {
+        "german": "hießen",
+        "english": "they be calleded"
       }
     }
   },
@@ -3903,7 +6891,7 @@
   {
     "infinitive": "helfen",
     "translation": "to help",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "helfe",
@@ -3980,6 +6968,670 @@
       "sie/Sie": {
         "german": "halfen",
         "english": "they helped"
+      }
+    }
+  },
+  {
+    "infinitive": "herausfinden",
+    "translation": "to find out",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "finde heraus",
+        "english": "I find out"
+      },
+      "du": {
+        "german": "findest heraus",
+        "english": "you find out"
+      },
+      "er/sie/es": {
+        "german": "findet heraus",
+        "english": "he/she/it find outs"
+      },
+      "wir": {
+        "german": "finden heraus",
+        "english": "we find out"
+      },
+      "ihr": {
+        "german": "findet heraus",
+        "english": "y'all find out"
+      },
+      "sie/Sie": {
+        "german": "finden heraus",
+        "english": "they find out"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe herausgefunden",
+        "english": "I have find outed"
+      },
+      "du": {
+        "german": "hast herausgefunden",
+        "english": "you have find outed"
+      },
+      "er/sie/es": {
+        "german": "hat herausgefunden",
+        "english": "he/she/it has find outed"
+      },
+      "wir": {
+        "german": "haben herausgefunden",
+        "english": "we have find outed"
+      },
+      "ihr": {
+        "german": "habt herausgefunden",
+        "english": "y'all have find outed"
+      },
+      "sie/Sie": {
+        "german": "haben herausgefunden",
+        "english": "they have find outed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fand heraus",
+        "english": "I find outed"
+      },
+      "du": {
+        "german": "fandest heraus",
+        "english": "you find outed"
+      },
+      "er/sie/es": {
+        "german": "fand heraus",
+        "english": "he/she/it find outed"
+      },
+      "wir": {
+        "german": "fanden heraus",
+        "english": "we find outed"
+      },
+      "ihr": {
+        "german": "fandet heraus",
+        "english": "y'all find outed"
+      },
+      "sie/Sie": {
+        "german": "fanden heraus",
+        "english": "they find outed"
+      }
+    }
+  },
+  {
+    "infinitive": "herunterladen",
+    "translation": "to download",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "lade herunter",
+        "english": "I download"
+      },
+      "du": {
+        "german": "lädst herunter",
+        "english": "you download"
+      },
+      "er/sie/es": {
+        "german": "lädt herunter",
+        "english": "he/she/it downloads"
+      },
+      "wir": {
+        "german": "laden herunter",
+        "english": "we download"
+      },
+      "ihr": {
+        "german": "ladet herunter",
+        "english": "y'all download"
+      },
+      "sie/Sie": {
+        "german": "laden herunter",
+        "english": "they download"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe heruntergeladen",
+        "english": "I have downloaded"
+      },
+      "du": {
+        "german": "hast heruntergeladen",
+        "english": "you have downloaded"
+      },
+      "er/sie/es": {
+        "german": "hat heruntergeladen",
+        "english": "he/she/it has downloaded"
+      },
+      "wir": {
+        "german": "haben heruntergeladen",
+        "english": "we have downloaded"
+      },
+      "ihr": {
+        "german": "habt heruntergeladen",
+        "english": "y'all have downloaded"
+      },
+      "sie/Sie": {
+        "german": "haben heruntergeladen",
+        "english": "they have downloaded"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "lud herunter",
+        "english": "I downloaded"
+      },
+      "du": {
+        "german": "ludst herunter",
+        "english": "you downloaded"
+      },
+      "er/sie/es": {
+        "german": "lud herunter",
+        "english": "he/she/it downloaded"
+      },
+      "wir": {
+        "german": "luden herunter",
+        "english": "we downloaded"
+      },
+      "ihr": {
+        "german": "ludet herunter",
+        "english": "y'all downloaded"
+      },
+      "sie/Sie": {
+        "german": "luden herunter",
+        "english": "they downloaded"
+      }
+    }
+  },
+  {
+    "infinitive": "hinfahren",
+    "translation": "to drive to",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "fahre hin",
+        "english": "I drive to"
+      },
+      "du": {
+        "german": "fährst hin",
+        "english": "you drive to"
+      },
+      "er/sie/es": {
+        "german": "fährt hin",
+        "english": "he/she/it drive toes"
+      },
+      "wir": {
+        "german": "fahren hin",
+        "english": "we drive to"
+      },
+      "ihr": {
+        "german": "fahrt hin",
+        "english": "y'all drive to"
+      },
+      "sie/Sie": {
+        "german": "fahren hin",
+        "english": "they drive to"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin hingefahren",
+        "english": "I have drive toed"
+      },
+      "du": {
+        "german": "bist hingefahren",
+        "english": "you have drive toed"
+      },
+      "er/sie/es": {
+        "german": "ist hingefahren",
+        "english": "he/she/it has drive toed"
+      },
+      "wir": {
+        "german": "sind hingefahren",
+        "english": "we have drive toed"
+      },
+      "ihr": {
+        "german": "seid hingefahren",
+        "english": "y'all have drive toed"
+      },
+      "sie/Sie": {
+        "german": "sind hingefahren",
+        "english": "they have drive toed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fuhr hin",
+        "english": "I drive toed"
+      },
+      "du": {
+        "german": "fuhrst hin",
+        "english": "you drive toed"
+      },
+      "er/sie/es": {
+        "german": "fuhr hin",
+        "english": "he/she/it drive toed"
+      },
+      "wir": {
+        "german": "fuhren hin",
+        "english": "we drive toed"
+      },
+      "ihr": {
+        "german": "fuhrt hin",
+        "english": "y'all drive toed"
+      },
+      "sie/Sie": {
+        "german": "fuhren hin",
+        "english": "they drive toed"
+      }
+    }
+  },
+  {
+    "infinitive": "hinfallen",
+    "translation": "to fall down",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "falle hin",
+        "english": "I fall down"
+      },
+      "du": {
+        "german": "fällst hin",
+        "english": "you fall down"
+      },
+      "er/sie/es": {
+        "german": "fällt hin",
+        "english": "he/she/it fall downs"
+      },
+      "wir": {
+        "german": "fallen hin",
+        "english": "we fall down"
+      },
+      "ihr": {
+        "german": "fallt hin",
+        "english": "y'all fall down"
+      },
+      "sie/Sie": {
+        "german": "fallen hin",
+        "english": "they fall down"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin hingefallen",
+        "english": "I have fall downed"
+      },
+      "du": {
+        "german": "bist hingefallen",
+        "english": "you have fall downed"
+      },
+      "er/sie/es": {
+        "german": "ist hingefallen",
+        "english": "he/she/it has fall downed"
+      },
+      "wir": {
+        "german": "sind hingefallen",
+        "english": "we have fall downed"
+      },
+      "ihr": {
+        "german": "seid hingefallen",
+        "english": "y'all have fall downed"
+      },
+      "sie/Sie": {
+        "german": "sind hingefallen",
+        "english": "they have fall downed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fiel hin",
+        "english": "I fall downed"
+      },
+      "du": {
+        "german": "fielst hin",
+        "english": "you fall downed"
+      },
+      "er/sie/es": {
+        "german": "fiel hin",
+        "english": "he/she/it fall downed"
+      },
+      "wir": {
+        "german": "fielen hin",
+        "english": "we fall downed"
+      },
+      "ihr": {
+        "german": "fielt hin",
+        "english": "y'all fall downed"
+      },
+      "sie/Sie": {
+        "german": "fielen hin",
+        "english": "they fall downed"
+      }
+    }
+  },
+  {
+    "infinitive": "hingehen",
+    "translation": "to go to",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "gehe hin",
+        "english": "I go to"
+      },
+      "du": {
+        "german": "gehst hin",
+        "english": "you go to"
+      },
+      "er/sie/es": {
+        "german": "geht hin",
+        "english": "he/she/it go toes"
+      },
+      "wir": {
+        "german": "gehen hin",
+        "english": "we go to"
+      },
+      "ihr": {
+        "german": "geht hin",
+        "english": "y'all go to"
+      },
+      "sie/Sie": {
+        "german": "gehen hin",
+        "english": "they go to"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin hingegangen",
+        "english": "I have go toed"
+      },
+      "du": {
+        "german": "bist hingegangen",
+        "english": "you have go toed"
+      },
+      "er/sie/es": {
+        "german": "ist hingegangen",
+        "english": "he/she/it has go toed"
+      },
+      "wir": {
+        "german": "sind hingegangen",
+        "english": "we have go toed"
+      },
+      "ihr": {
+        "german": "seid hingegangen",
+        "english": "y'all have go toed"
+      },
+      "sie/Sie": {
+        "german": "sind hingegangen",
+        "english": "they have go toed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "ging hin",
+        "english": "I go toed"
+      },
+      "du": {
+        "german": "gingst hin",
+        "english": "you go toed"
+      },
+      "er/sie/es": {
+        "german": "ging hin",
+        "english": "he/she/it go toed"
+      },
+      "wir": {
+        "german": "gingen hin",
+        "english": "we go toed"
+      },
+      "ihr": {
+        "german": "gingt hin",
+        "english": "y'all go toed"
+      },
+      "sie/Sie": {
+        "german": "gingen hin",
+        "english": "they go toed"
+      }
+    }
+  },
+  {
+    "infinitive": "hinkommen",
+    "translation": "to come to",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "komme hin",
+        "english": "I come to"
+      },
+      "du": {
+        "german": "kommst hin",
+        "english": "you come to"
+      },
+      "er/sie/es": {
+        "german": "kommt hin",
+        "english": "he/she/it come toes"
+      },
+      "wir": {
+        "german": "kommen hin",
+        "english": "we come to"
+      },
+      "ihr": {
+        "german": "kommt hin",
+        "english": "y'all come to"
+      },
+      "sie/Sie": {
+        "german": "kommen hin",
+        "english": "they come to"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin hingekommen",
+        "english": "I have come toed"
+      },
+      "du": {
+        "german": "bist hingekommen",
+        "english": "you have come toed"
+      },
+      "er/sie/es": {
+        "german": "ist hingekommen",
+        "english": "he/she/it has come toed"
+      },
+      "wir": {
+        "german": "sind hingekommen",
+        "english": "we have come toed"
+      },
+      "ihr": {
+        "german": "seid hingekommen",
+        "english": "y'all have come toed"
+      },
+      "sie/Sie": {
+        "german": "sind hingekommen",
+        "english": "they have come toed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "kam hin",
+        "english": "I come toed"
+      },
+      "du": {
+        "german": "kamst hin",
+        "english": "you come toed"
+      },
+      "er/sie/es": {
+        "german": "kam hin",
+        "english": "he/she/it come toed"
+      },
+      "wir": {
+        "german": "kamen hin",
+        "english": "we come toed"
+      },
+      "ihr": {
+        "german": "kamt hin",
+        "english": "y'all come toed"
+      },
+      "sie/Sie": {
+        "german": "kamen hin",
+        "english": "they come toed"
+      }
+    }
+  },
+  {
+    "infinitive": "hinterlassen",
+    "translation": "to leave behind",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "hinterlasse",
+        "english": "I leave behind"
+      },
+      "du": {
+        "german": "hinterlässt",
+        "english": "you leave behind"
+      },
+      "er/sie/es": {
+        "german": "hinterlässt",
+        "english": "he/she/it leave behinds"
+      },
+      "wir": {
+        "german": "hinterlassen",
+        "english": "we leave behind"
+      },
+      "ihr": {
+        "german": "hinterlasst",
+        "english": "y'all leave behind"
+      },
+      "sie/Sie": {
+        "german": "hinterlassen",
+        "english": "they leave behind"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe hinterlassen",
+        "english": "I have leave behinded"
+      },
+      "du": {
+        "german": "hast hinterlassen",
+        "english": "you have leave behinded"
+      },
+      "er/sie/es": {
+        "german": "hat hinterlassen",
+        "english": "he/she/it has leave behinded"
+      },
+      "wir": {
+        "german": "haben hinterlassen",
+        "english": "we have leave behinded"
+      },
+      "ihr": {
+        "german": "habt hinterlassen",
+        "english": "y'all have leave behinded"
+      },
+      "sie/Sie": {
+        "german": "haben hinterlassen",
+        "english": "they have leave behinded"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "hinterließ",
+        "english": "I leave behinded"
+      },
+      "du": {
+        "german": "hinterließt",
+        "english": "you leave behinded"
+      },
+      "er/sie/es": {
+        "german": "hinterließ",
+        "english": "he/she/it leave behinded"
+      },
+      "wir": {
+        "german": "hinterließen",
+        "english": "we leave behinded"
+      },
+      "ihr": {
+        "german": "hinterließt",
+        "english": "y'all leave behinded"
+      },
+      "sie/Sie": {
+        "german": "hinterließen",
+        "english": "they leave behinded"
+      }
+    }
+  },
+  {
+    "infinitive": "hochladen",
+    "translation": "to upload",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "lade hoch",
+        "english": "I upload"
+      },
+      "du": {
+        "german": "lädst hoch",
+        "english": "you upload"
+      },
+      "er/sie/es": {
+        "german": "lädt hoch",
+        "english": "he/she/it uploads"
+      },
+      "wir": {
+        "german": "laden hoch",
+        "english": "we upload"
+      },
+      "ihr": {
+        "german": "ladet hoch",
+        "english": "y'all upload"
+      },
+      "sie/Sie": {
+        "german": "laden hoch",
+        "english": "they upload"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe hochgeladen",
+        "english": "I have uploaded"
+      },
+      "du": {
+        "german": "hast hochgeladen",
+        "english": "you have uploaded"
+      },
+      "er/sie/es": {
+        "german": "hat hochgeladen",
+        "english": "he/she/it has uploaded"
+      },
+      "wir": {
+        "german": "haben hochgeladen",
+        "english": "we have uploaded"
+      },
+      "ihr": {
+        "german": "habt hochgeladen",
+        "english": "y'all have uploaded"
+      },
+      "sie/Sie": {
+        "german": "haben hochgeladen",
+        "english": "they have uploaded"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "lud hoch",
+        "english": "I uploaded"
+      },
+      "du": {
+        "german": "ludst hoch",
+        "english": "you uploaded"
+      },
+      "er/sie/es": {
+        "german": "lud hoch",
+        "english": "he/she/it uploaded"
+      },
+      "wir": {
+        "german": "luden hoch",
+        "english": "we uploaded"
+      },
+      "ihr": {
+        "german": "ludet hoch",
+        "english": "y'all uploaded"
+      },
+      "sie/Sie": {
+        "german": "luden hoch",
+        "english": "they uploaded"
       }
     }
   },
@@ -4069,7 +7721,7 @@
   {
     "infinitive": "kennen",
     "translation": "to know",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "kenne",
@@ -4152,7 +7804,7 @@
   {
     "infinitive": "klingen",
     "translation": "to sound",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "klinge",
@@ -4235,7 +7887,7 @@
   {
     "infinitive": "kommen",
     "translation": "to come",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "komme",
@@ -4318,7 +7970,7 @@
   {
     "infinitive": "können",
     "translation": "to be able to",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "kann",
@@ -4401,7 +8053,7 @@
   {
     "infinitive": "laden",
     "translation": "to load",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "lade",
@@ -4483,8 +8135,8 @@
   },
   {
     "infinitive": "lassen",
-    "translation": "to leave",
-    "irregular": true,
+    "translation": "to leave/let",
+    "irregular": false,
     "present": {
       "ich": {
         "german": "lasse",
@@ -4567,7 +8219,7 @@
   {
     "infinitive": "laufen",
     "translation": "to run",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "laufe",
@@ -4650,7 +8302,7 @@
   {
     "infinitive": "leiden",
     "translation": "to suffer",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "leide",
@@ -4731,9 +8383,92 @@
     }
   },
   {
+    "infinitive": "leidtun",
+    "translation": "to be sorry (for)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "tue leid",
+        "english": "I be sorry (for)"
+      },
+      "du": {
+        "german": "tust leid",
+        "english": "you be sorry (for)"
+      },
+      "er/sie/es": {
+        "german": "tut leid",
+        "english": "he/she/it be sorry (for)s"
+      },
+      "wir": {
+        "german": "tun leid",
+        "english": "we be sorry (for)"
+      },
+      "ihr": {
+        "german": "tut leid",
+        "english": "y'all be sorry (for)"
+      },
+      "sie/Sie": {
+        "german": "tun leid",
+        "english": "they be sorry (for)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe leidgetan",
+        "english": "I have be sorry (for)ed"
+      },
+      "du": {
+        "german": "hast leidgetan",
+        "english": "you have be sorry (for)ed"
+      },
+      "er/sie/es": {
+        "german": "hat leidgetan",
+        "english": "he/she/it has be sorry (for)ed"
+      },
+      "wir": {
+        "german": "haben leidgetan",
+        "english": "we have be sorry (for)ed"
+      },
+      "ihr": {
+        "german": "habt leidgetan",
+        "english": "y'all have be sorry (for)ed"
+      },
+      "sie/Sie": {
+        "german": "haben leidgetan",
+        "english": "they have be sorry (for)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "tat leid",
+        "english": "I be sorry (for)ed"
+      },
+      "du": {
+        "german": "tatst leid",
+        "english": "you be sorry (for)ed"
+      },
+      "er/sie/es": {
+        "german": "tat leid",
+        "english": "he/she/it be sorry (for)ed"
+      },
+      "wir": {
+        "german": "taten leid",
+        "english": "we be sorry (for)ed"
+      },
+      "ihr": {
+        "german": "tatet leid",
+        "english": "y'all be sorry (for)ed"
+      },
+      "sie/Sie": {
+        "german": "taten leid",
+        "english": "they be sorry (for)ed"
+      }
+    }
+  },
+  {
     "infinitive": "leihen",
     "translation": "to lend",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "leihe",
@@ -4816,7 +8551,7 @@
   {
     "infinitive": "lesen",
     "translation": "to read",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "lese",
@@ -4899,7 +8634,7 @@
   {
     "infinitive": "liegen",
     "translation": "to lie down",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "liege",
@@ -4982,7 +8717,7 @@
   {
     "infinitive": "lügen",
     "translation": "to tell a lie",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "lüge",
@@ -5231,7 +8966,7 @@
   {
     "infinitive": "messen",
     "translation": "to measure",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "messe",
@@ -5308,6 +9043,338 @@
       "sie/Sie": {
         "german": "maßen",
         "english": "they measured"
+      }
+    }
+  },
+  {
+    "infinitive": "mitbringen",
+    "translation": "to bring along",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "bringe mit",
+        "english": "I bring along"
+      },
+      "du": {
+        "german": "bringst mit",
+        "english": "you bring along"
+      },
+      "er/sie/es": {
+        "german": "bringt mit",
+        "english": "he/she/it bring alongs"
+      },
+      "wir": {
+        "german": "bringen mit",
+        "english": "we bring along"
+      },
+      "ihr": {
+        "german": "bringt mit",
+        "english": "y'all bring along"
+      },
+      "sie/Sie": {
+        "german": "bringen mit",
+        "english": "they bring along"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe mitgebracht",
+        "english": "I have bring alonged"
+      },
+      "du": {
+        "german": "hast mitgebracht",
+        "english": "you have bring alonged"
+      },
+      "er/sie/es": {
+        "german": "hat mitgebracht",
+        "english": "he/she/it has bring alonged"
+      },
+      "wir": {
+        "german": "haben mitgebracht",
+        "english": "we have bring alonged"
+      },
+      "ihr": {
+        "german": "habt mitgebracht",
+        "english": "y'all have bring alonged"
+      },
+      "sie/Sie": {
+        "german": "haben mitgebracht",
+        "english": "they have bring alonged"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "brachte mit",
+        "english": "I bring alonged"
+      },
+      "du": {
+        "german": "brachtest mit",
+        "english": "you bring alonged"
+      },
+      "er/sie/es": {
+        "german": "brachte mit",
+        "english": "he/she/it bring alonged"
+      },
+      "wir": {
+        "german": "brachten mit",
+        "english": "we bring alonged"
+      },
+      "ihr": {
+        "german": "brachtet mit",
+        "english": "y'all bring alonged"
+      },
+      "sie/Sie": {
+        "german": "brachten mit",
+        "english": "they bring alonged"
+      }
+    }
+  },
+  {
+    "infinitive": "mithelfen",
+    "translation": "to help out",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "helfe mit",
+        "english": "I help out"
+      },
+      "du": {
+        "german": "hilfst mit",
+        "english": "you help out"
+      },
+      "er/sie/es": {
+        "german": "hilft mit",
+        "english": "he/she/it help outs"
+      },
+      "wir": {
+        "german": "helfen mit",
+        "english": "we help out"
+      },
+      "ihr": {
+        "german": "helft mit",
+        "english": "y'all help out"
+      },
+      "sie/Sie": {
+        "german": "helfen mit",
+        "english": "they help out"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe mitgeholfen",
+        "english": "I have help outed"
+      },
+      "du": {
+        "german": "hast mitgeholfen",
+        "english": "you have help outed"
+      },
+      "er/sie/es": {
+        "german": "hat mitgeholfen",
+        "english": "he/she/it has help outed"
+      },
+      "wir": {
+        "german": "haben mitgeholfen",
+        "english": "we have help outed"
+      },
+      "ihr": {
+        "german": "habt mitgeholfen",
+        "english": "y'all have help outed"
+      },
+      "sie/Sie": {
+        "german": "haben mitgeholfen",
+        "english": "they have help outed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "half mit",
+        "english": "I help outed"
+      },
+      "du": {
+        "german": "halfst mit",
+        "english": "you help outed"
+      },
+      "er/sie/es": {
+        "german": "half mit",
+        "english": "he/she/it help outed"
+      },
+      "wir": {
+        "german": "halfen mit",
+        "english": "we help outed"
+      },
+      "ihr": {
+        "german": "halft mit",
+        "english": "y'all help outed"
+      },
+      "sie/Sie": {
+        "german": "halfen mit",
+        "english": "they help outed"
+      }
+    }
+  },
+  {
+    "infinitive": "mitkommen",
+    "translation": "to come with",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "komme mit",
+        "english": "I come with"
+      },
+      "du": {
+        "german": "kommst mit",
+        "english": "you come with"
+      },
+      "er/sie/es": {
+        "german": "kommt mit",
+        "english": "he/she/it come withs"
+      },
+      "wir": {
+        "german": "kommen mit",
+        "english": "we come with"
+      },
+      "ihr": {
+        "german": "kommt mit",
+        "english": "y'all come with"
+      },
+      "sie/Sie": {
+        "german": "kommen mit",
+        "english": "they come with"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin mitgekommen",
+        "english": "I have come withed"
+      },
+      "du": {
+        "german": "bist mitgekommen",
+        "english": "you have come withed"
+      },
+      "er/sie/es": {
+        "german": "ist mitgekommen",
+        "english": "he/she/it has come withed"
+      },
+      "wir": {
+        "german": "sind mitgekommen",
+        "english": "we have come withed"
+      },
+      "ihr": {
+        "german": "seid mitgekommen",
+        "english": "y'all have come withed"
+      },
+      "sie/Sie": {
+        "german": "sind mitgekommen",
+        "english": "they have come withed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "kam mit",
+        "english": "I come withed"
+      },
+      "du": {
+        "german": "kamst mit",
+        "english": "you come withed"
+      },
+      "er/sie/es": {
+        "german": "kam mit",
+        "english": "he/she/it come withed"
+      },
+      "wir": {
+        "german": "kamen mit",
+        "english": "we come withed"
+      },
+      "ihr": {
+        "german": "kamt mit",
+        "english": "y'all come withed"
+      },
+      "sie/Sie": {
+        "german": "kamen mit",
+        "english": "they come withed"
+      }
+    }
+  },
+  {
+    "infinitive": "mitnehmen",
+    "translation": "to take with",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "nehme mit",
+        "english": "I take with"
+      },
+      "du": {
+        "german": "nimmst mit",
+        "english": "you take with"
+      },
+      "er/sie/es": {
+        "german": "nimmt mit",
+        "english": "he/she/it take withs"
+      },
+      "wir": {
+        "german": "nehmen mit",
+        "english": "we take with"
+      },
+      "ihr": {
+        "german": "nehmt mit",
+        "english": "y'all take with"
+      },
+      "sie/Sie": {
+        "german": "nehmen mit",
+        "english": "they take with"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe mitgenommen",
+        "english": "I have take withed"
+      },
+      "du": {
+        "german": "hast mitgenommen",
+        "english": "you have take withed"
+      },
+      "er/sie/es": {
+        "german": "hat mitgenommen",
+        "english": "he/she/it has take withed"
+      },
+      "wir": {
+        "german": "haben mitgenommen",
+        "english": "we have take withed"
+      },
+      "ihr": {
+        "german": "habt mitgenommen",
+        "english": "y'all have take withed"
+      },
+      "sie/Sie": {
+        "german": "haben mitgenommen",
+        "english": "they have take withed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "nahm mit",
+        "english": "I take withed"
+      },
+      "du": {
+        "german": "nahmst mit",
+        "english": "you take withed"
+      },
+      "er/sie/es": {
+        "german": "nahm mit",
+        "english": "he/she/it take withed"
+      },
+      "wir": {
+        "german": "nahmen mit",
+        "english": "we take withed"
+      },
+      "ihr": {
+        "german": "nahmt mit",
+        "english": "y'all take withed"
+      },
+      "sie/Sie": {
+        "german": "nahmen mit",
+        "english": "they take withed"
       }
     }
   },
@@ -5397,7 +9464,7 @@
   {
     "infinitive": "mögen",
     "translation": "to like",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "mag",
@@ -5480,7 +9547,7 @@
   {
     "infinitive": "müssen",
     "translation": "to have to",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "muss",
@@ -5561,9 +9628,175 @@
     }
   },
   {
+    "infinitive": "nachdenken",
+    "translation": "to think about",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "denke nach",
+        "english": "I think about"
+      },
+      "du": {
+        "german": "denkst nach",
+        "english": "you think about"
+      },
+      "er/sie/es": {
+        "german": "denkt nach",
+        "english": "he/she/it think abouts"
+      },
+      "wir": {
+        "german": "denken nach",
+        "english": "we think about"
+      },
+      "ihr": {
+        "german": "denkt nach",
+        "english": "y'all think about"
+      },
+      "sie/Sie": {
+        "german": "denken nach",
+        "english": "they think about"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe nachgedacht",
+        "english": "I have think abouted"
+      },
+      "du": {
+        "german": "hast nachgedacht",
+        "english": "you have think abouted"
+      },
+      "er/sie/es": {
+        "german": "hat nachgedacht",
+        "english": "he/she/it has think abouted"
+      },
+      "wir": {
+        "german": "haben nachgedacht",
+        "english": "we have think abouted"
+      },
+      "ihr": {
+        "german": "habt nachgedacht",
+        "english": "y'all have think abouted"
+      },
+      "sie/Sie": {
+        "german": "haben nachgedacht",
+        "english": "they have think abouted"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "dachte nach",
+        "english": "I think abouted"
+      },
+      "du": {
+        "german": "dachtest nach",
+        "english": "you think abouted"
+      },
+      "er/sie/es": {
+        "german": "dachte nach",
+        "english": "he/she/it think abouted"
+      },
+      "wir": {
+        "german": "dachten nach",
+        "english": "we think abouted"
+      },
+      "ihr": {
+        "german": "dachtet nach",
+        "english": "y'all think abouted"
+      },
+      "sie/Sie": {
+        "german": "dachten nach",
+        "english": "they think abouted"
+      }
+    }
+  },
+  {
+    "infinitive": "nachsprechen",
+    "translation": "to repeat (after someone)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "spreche nach",
+        "english": "I repeat (after someone)"
+      },
+      "du": {
+        "german": "sprichst nach",
+        "english": "you repeat (after someone)"
+      },
+      "er/sie/es": {
+        "german": "spricht nach",
+        "english": "he/she/it repeat (after someone)s"
+      },
+      "wir": {
+        "german": "sprechen nach",
+        "english": "we repeat (after someone)"
+      },
+      "ihr": {
+        "german": "sprecht nach",
+        "english": "y'all repeat (after someone)"
+      },
+      "sie/Sie": {
+        "german": "sprechen nach",
+        "english": "they repeat (after someone)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe nachgesprochen",
+        "english": "I have repeat (after someone)ed"
+      },
+      "du": {
+        "german": "hast nachgesprochen",
+        "english": "you have repeat (after someone)ed"
+      },
+      "er/sie/es": {
+        "german": "hat nachgesprochen",
+        "english": "he/she/it has repeat (after someone)ed"
+      },
+      "wir": {
+        "german": "haben nachgesprochen",
+        "english": "we have repeat (after someone)ed"
+      },
+      "ihr": {
+        "german": "habt nachgesprochen",
+        "english": "y'all have repeat (after someone)ed"
+      },
+      "sie/Sie": {
+        "german": "haben nachgesprochen",
+        "english": "they have repeat (after someone)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "sprach nach",
+        "english": "I repeat (after someone)ed"
+      },
+      "du": {
+        "german": "sprachst nach",
+        "english": "you repeat (after someone)ed"
+      },
+      "er/sie/es": {
+        "german": "sprach nach",
+        "english": "he/she/it repeat (after someone)ed"
+      },
+      "wir": {
+        "german": "sprachen nach",
+        "english": "we repeat (after someone)ed"
+      },
+      "ihr": {
+        "german": "spracht nach",
+        "english": "y'all repeat (after someone)ed"
+      },
+      "sie/Sie": {
+        "german": "sprachen nach",
+        "english": "they repeat (after someone)ed"
+      }
+    }
+  },
+  {
     "infinitive": "nehmen",
     "translation": "to take",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "nehme",
@@ -5646,7 +9879,7 @@
   {
     "infinitive": "nennen",
     "translation": "to name",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "nenne",
@@ -5729,7 +9962,7 @@
   {
     "infinitive": "raten",
     "translation": "to advise",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "rate",
@@ -5806,6 +10039,89 @@
       "sie/Sie": {
         "german": "rieten",
         "english": "they advised"
+      }
+    }
+  },
+  {
+    "infinitive": "rausbringen",
+    "translation": "to take out",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "bringe raus",
+        "english": "I take out"
+      },
+      "du": {
+        "german": "bringst raus",
+        "english": "you take out"
+      },
+      "er/sie/es": {
+        "german": "bringt raus",
+        "english": "he/she/it take outs"
+      },
+      "wir": {
+        "german": "bringen raus",
+        "english": "we take out"
+      },
+      "ihr": {
+        "german": "bringt raus",
+        "english": "y'all take out"
+      },
+      "sie/Sie": {
+        "german": "bringen raus",
+        "english": "they take out"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe rausgebracht",
+        "english": "I have take outed"
+      },
+      "du": {
+        "german": "hast rausgebracht",
+        "english": "you have take outed"
+      },
+      "er/sie/es": {
+        "german": "hat rausgebracht",
+        "english": "he/she/it has take outed"
+      },
+      "wir": {
+        "german": "haben rausgebracht",
+        "english": "we have take outed"
+      },
+      "ihr": {
+        "german": "habt rausgebracht",
+        "english": "y'all have take outed"
+      },
+      "sie/Sie": {
+        "german": "haben rausgebracht",
+        "english": "they have take outed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "brachte raus",
+        "english": "I take outed"
+      },
+      "du": {
+        "german": "brachtest raus",
+        "english": "you take outed"
+      },
+      "er/sie/es": {
+        "german": "brachte raus",
+        "english": "he/she/it take outed"
+      },
+      "wir": {
+        "german": "brachten raus",
+        "english": "we take outed"
+      },
+      "ihr": {
+        "german": "brachtet raus",
+        "english": "y'all take outed"
+      },
+      "sie/Sie": {
+        "german": "brachten raus",
+        "english": "they take outed"
       }
     }
   },
@@ -5889,6 +10205,89 @@
       "sie/Sie": {
         "german": "rechneten",
         "english": "they calculated"
+      }
+    }
+  },
+  {
+    "infinitive": "recht haben",
+    "translation": "to be right",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "habe recht",
+        "english": "I be right"
+      },
+      "du": {
+        "german": "hast recht",
+        "english": "you be right"
+      },
+      "er/sie/es": {
+        "german": "hat recht",
+        "english": "he/she/it be rights"
+      },
+      "wir": {
+        "german": "haben recht",
+        "english": "we be right"
+      },
+      "ihr": {
+        "german": "habt recht",
+        "english": "y'all be right"
+      },
+      "sie/Sie": {
+        "german": "haben recht",
+        "english": "they be right"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe recht gehabt",
+        "english": "I have be righted"
+      },
+      "du": {
+        "german": "hast recht gehabt",
+        "english": "you have be righted"
+      },
+      "er/sie/es": {
+        "german": "hat recht gehabt",
+        "english": "he/she/it has be righted"
+      },
+      "wir": {
+        "german": "haben recht gehabt",
+        "english": "we have be righted"
+      },
+      "ihr": {
+        "german": "habt recht gehabt",
+        "english": "y'all have be righted"
+      },
+      "sie/Sie": {
+        "german": "haben recht gehabt",
+        "english": "they have be righted"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "hatte recht",
+        "english": "I be righted"
+      },
+      "du": {
+        "german": "hattest recht",
+        "english": "you be righted"
+      },
+      "er/sie/es": {
+        "german": "hatte recht",
+        "english": "he/she/it be righted"
+      },
+      "wir": {
+        "german": "hatten recht",
+        "english": "we be righted"
+      },
+      "ihr": {
+        "german": "hattet recht",
+        "english": "y'all be righted"
+      },
+      "sie/Sie": {
+        "german": "hatten recht",
+        "english": "they be righted"
       }
     }
   },
@@ -5978,7 +10377,7 @@
   {
     "infinitive": "reißen",
     "translation": "to tear",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "reiße",
@@ -6061,7 +10460,7 @@
   {
     "infinitive": "rennen",
     "translation": "to run",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "renne",
@@ -6144,7 +10543,7 @@
   {
     "infinitive": "riechen",
     "translation": "to smell",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "rieche",
@@ -6227,7 +10626,7 @@
   {
     "infinitive": "rufen",
     "translation": "to call",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "rufe",
@@ -6309,8 +10708,8 @@
   },
   {
     "infinitive": "schaffen",
-    "translation": "to create",
-    "irregular": true,
+    "translation": "to create/accomplish",
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schaffe",
@@ -6393,7 +10792,7 @@
   {
     "infinitive": "scheinen",
     "translation": "to seem",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "scheine",
@@ -6476,7 +10875,7 @@
   {
     "infinitive": "schießen",
     "translation": "to shoot",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schieße",
@@ -6559,7 +10958,7 @@
   {
     "infinitive": "schlafen",
     "translation": "to sleep",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schlafe",
@@ -6642,7 +11041,7 @@
   {
     "infinitive": "schlagen",
     "translation": "to hit",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schlage",
@@ -6725,7 +11124,7 @@
   {
     "infinitive": "schließen",
     "translation": "to close",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schließe",
@@ -6808,7 +11207,7 @@
   {
     "infinitive": "schneiden",
     "translation": "to cut",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schneide",
@@ -6891,7 +11290,7 @@
   {
     "infinitive": "schreiben",
     "translation": "to write",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schreibe",
@@ -6974,7 +11373,7 @@
   {
     "infinitive": "schreien",
     "translation": "to shout",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schreie",
@@ -7057,7 +11456,7 @@
   {
     "infinitive": "schweigen",
     "translation": "to go silent",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schweige",
@@ -7140,7 +11539,7 @@
   {
     "infinitive": "schwimmen",
     "translation": "to swim",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "schwimme",
@@ -7223,7 +11622,7 @@
   {
     "infinitive": "sehen",
     "translation": "to see",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "sehe",
@@ -7306,7 +11705,7 @@
   {
     "infinitive": "sein",
     "translation": "to be",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "bin",
@@ -7472,7 +11871,7 @@
   {
     "infinitive": "singen",
     "translation": "to sing",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "singe",
@@ -7555,7 +11954,7 @@
   {
     "infinitive": "sinken",
     "translation": "to sink",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "sinke",
@@ -7638,7 +12037,7 @@
   {
     "infinitive": "sitzen",
     "translation": "to sit",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "sitze",
@@ -7719,9 +12118,92 @@
     }
   },
   {
+    "infinitive": "sitzenbleiben",
+    "translation": "to repeat (a school year)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "bleibe sitzen",
+        "english": "I repeat (a school year)"
+      },
+      "du": {
+        "german": "bleibst sitzen",
+        "english": "you repeat (a school year)"
+      },
+      "er/sie/es": {
+        "german": "bleibt sitzen",
+        "english": "he/she/it repeat (a school year)s"
+      },
+      "wir": {
+        "german": "bleiben sitzen",
+        "english": "we repeat (a school year)"
+      },
+      "ihr": {
+        "german": "bleibt sitzen",
+        "english": "y'all repeat (a school year)"
+      },
+      "sie/Sie": {
+        "german": "bleiben sitzen",
+        "english": "they repeat (a school year)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin sitzengeblieben",
+        "english": "I have repeat (a school year)ed"
+      },
+      "du": {
+        "german": "bist sitzengeblieben",
+        "english": "you have repeat (a school year)ed"
+      },
+      "er/sie/es": {
+        "german": "ist sitzengeblieben",
+        "english": "he/she/it has repeat (a school year)ed"
+      },
+      "wir": {
+        "german": "sind sitzengeblieben",
+        "english": "we have repeat (a school year)ed"
+      },
+      "ihr": {
+        "german": "seid sitzengeblieben",
+        "english": "y'all have repeat (a school year)ed"
+      },
+      "sie/Sie": {
+        "german": "sind sitzengeblieben",
+        "english": "they have repeat (a school year)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "blieb sitzen",
+        "english": "I repeat (a school year)ed"
+      },
+      "du": {
+        "german": "bliebst sitzen",
+        "english": "you repeat (a school year)ed"
+      },
+      "er/sie/es": {
+        "german": "blieb sitzen",
+        "english": "he/she/it repeat (a school year)ed"
+      },
+      "wir": {
+        "german": "blieben sitzen",
+        "english": "we repeat (a school year)ed"
+      },
+      "ihr": {
+        "german": "bliebt sitzen",
+        "english": "y'all repeat (a school year)ed"
+      },
+      "sie/Sie": {
+        "german": "blieben sitzen",
+        "english": "they repeat (a school year)ed"
+      }
+    }
+  },
+  {
     "infinitive": "sollen",
     "translation": "to be supposed to",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "soll",
@@ -7804,7 +12286,7 @@
   {
     "infinitive": "sprechen",
     "translation": "to speak",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "spreche",
@@ -7887,7 +12369,7 @@
   {
     "infinitive": "springen",
     "translation": "to jump",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "springe",
@@ -7968,9 +12450,92 @@
     }
   },
   {
+    "infinitive": "stattfinden",
+    "translation": "to take place",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "finde statt",
+        "english": "I take place"
+      },
+      "du": {
+        "german": "findest statt",
+        "english": "you take place"
+      },
+      "er/sie/es": {
+        "german": "findet statt",
+        "english": "he/she/it take places"
+      },
+      "wir": {
+        "german": "finden statt",
+        "english": "we take place"
+      },
+      "ihr": {
+        "german": "findet statt",
+        "english": "y'all take place"
+      },
+      "sie/Sie": {
+        "german": "finden statt",
+        "english": "they take place"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe stattgefunden",
+        "english": "I have take placed"
+      },
+      "du": {
+        "german": "hast stattgefunden",
+        "english": "you have take placed"
+      },
+      "er/sie/es": {
+        "german": "hat stattgefunden",
+        "english": "he/she/it has take placed"
+      },
+      "wir": {
+        "german": "haben stattgefunden",
+        "english": "we have take placed"
+      },
+      "ihr": {
+        "german": "habt stattgefunden",
+        "english": "y'all have take placed"
+      },
+      "sie/Sie": {
+        "german": "haben stattgefunden",
+        "english": "they have take placed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fand statt",
+        "english": "I take placed"
+      },
+      "du": {
+        "german": "fandest statt",
+        "english": "you take placed"
+      },
+      "er/sie/es": {
+        "german": "fand statt",
+        "english": "he/she/it take placed"
+      },
+      "wir": {
+        "german": "fanden statt",
+        "english": "we take placed"
+      },
+      "ihr": {
+        "german": "fandet statt",
+        "english": "y'all take placed"
+      },
+      "sie/Sie": {
+        "german": "fanden statt",
+        "english": "they take placed"
+      }
+    }
+  },
+  {
     "infinitive": "stechen",
     "translation": "to prick",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "steche",
@@ -8053,7 +12618,7 @@
   {
     "infinitive": "stehen",
     "translation": "to stand",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "stehe",
@@ -8136,7 +12701,7 @@
   {
     "infinitive": "stehlen",
     "translation": "to steal",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "stehle",
@@ -8218,8 +12783,8 @@
   },
   {
     "infinitive": "steigen",
-    "translation": "to climb",
-    "irregular": true,
+    "translation": "to rise/climb",
+    "irregular": false,
     "present": {
       "ich": {
         "german": "steige",
@@ -8302,7 +12867,7 @@
   {
     "infinitive": "sterben",
     "translation": "to die",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "sterbe",
@@ -8385,7 +12950,7 @@
   {
     "infinitive": "stoßen",
     "translation": "to push",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "stoße",
@@ -8466,9 +13031,92 @@
     }
   },
   {
+    "infinitive": "streichen",
+    "translation": "to paint (walls)/to spread/to cancel (something)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "streiche",
+        "english": "I paint (walls)/spread/cancel (something)"
+      },
+      "du": {
+        "german": "streichst",
+        "english": "you paint (walls)/spread/cancel (something)"
+      },
+      "er/sie/es": {
+        "german": "streicht",
+        "english": "he/she/it paint (walls)/spread/cancel (something)s"
+      },
+      "wir": {
+        "german": "streichen",
+        "english": "we paint (walls)/spread/cancel (something)"
+      },
+      "ihr": {
+        "german": "streicht",
+        "english": "y'all paint (walls)/spread/cancel (something)"
+      },
+      "sie/Sie": {
+        "german": "streichen",
+        "english": "they paint (walls)/spread/cancel (something)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe gestrichen",
+        "english": "I have paint (walls)/spread/cancel (something)ed"
+      },
+      "du": {
+        "german": "hast gestrichen",
+        "english": "you have paint (walls)/spread/cancel (something)ed"
+      },
+      "er/sie/es": {
+        "german": "hat gestrichen",
+        "english": "he/she/it has paint (walls)/spread/cancel (something)ed"
+      },
+      "wir": {
+        "german": "haben gestrichen",
+        "english": "we have paint (walls)/spread/cancel (something)ed"
+      },
+      "ihr": {
+        "german": "habt gestrichen",
+        "english": "y'all have paint (walls)/spread/cancel (something)ed"
+      },
+      "sie/Sie": {
+        "german": "haben gestrichen",
+        "english": "they have paint (walls)/spread/cancel (something)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "strich",
+        "english": "I paint (walls)/spread/cancel (something)ed"
+      },
+      "du": {
+        "german": "strichst",
+        "english": "you paint (walls)/spread/cancel (something)ed"
+      },
+      "er/sie/es": {
+        "german": "strich",
+        "english": "he/she/it paint (walls)/spread/cancel (something)ed"
+      },
+      "wir": {
+        "german": "strichen",
+        "english": "we paint (walls)/spread/cancel (something)ed"
+      },
+      "ihr": {
+        "german": "stricht",
+        "english": "y'all paint (walls)/spread/cancel (something)ed"
+      },
+      "sie/Sie": {
+        "german": "strichen",
+        "english": "they paint (walls)/spread/cancel (something)ed"
+      }
+    }
+  },
+  {
     "infinitive": "streiten",
     "translation": "to quarrel",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "streite",
@@ -8632,9 +13280,92 @@
     }
   },
   {
+    "infinitive": "teilnehmen",
+    "translation": "to participate",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "nehme teil",
+        "english": "I participate"
+      },
+      "du": {
+        "german": "nimmst teil",
+        "english": "you participate"
+      },
+      "er/sie/es": {
+        "german": "nimmt teil",
+        "english": "he/she/it participates"
+      },
+      "wir": {
+        "german": "nehmen teil",
+        "english": "we participate"
+      },
+      "ihr": {
+        "german": "nehmt teil",
+        "english": "y'all participate"
+      },
+      "sie/Sie": {
+        "german": "nehmen teil",
+        "english": "they participate"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe teilgenommen",
+        "english": "I have participated"
+      },
+      "du": {
+        "german": "hast teilgenommen",
+        "english": "you have participated"
+      },
+      "er/sie/es": {
+        "german": "hat teilgenommen",
+        "english": "he/she/it has participated"
+      },
+      "wir": {
+        "german": "haben teilgenommen",
+        "english": "we have participated"
+      },
+      "ihr": {
+        "german": "habt teilgenommen",
+        "english": "y'all have participated"
+      },
+      "sie/Sie": {
+        "german": "haben teilgenommen",
+        "english": "they have participated"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "nahm teil",
+        "english": "I participated"
+      },
+      "du": {
+        "german": "nahmst teil",
+        "english": "you participated"
+      },
+      "er/sie/es": {
+        "german": "nahm teil",
+        "english": "he/she/it participated"
+      },
+      "wir": {
+        "german": "nahmen teil",
+        "english": "we participated"
+      },
+      "ihr": {
+        "german": "nahmt teil",
+        "english": "y'all participated"
+      },
+      "sie/Sie": {
+        "german": "nahmen teil",
+        "english": "they participated"
+      }
+    }
+  },
+  {
     "infinitive": "tragen",
     "translation": "to wear",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "trage",
@@ -8717,7 +13448,7 @@
   {
     "infinitive": "treffen",
     "translation": "to meet",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "treffe",
@@ -8800,7 +13531,7 @@
   {
     "infinitive": "treiben",
     "translation": "to drive at",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "treibe",
@@ -8883,7 +13614,7 @@
   {
     "infinitive": "treten",
     "translation": "to tread",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "trete",
@@ -8966,7 +13697,7 @@
   {
     "infinitive": "trinken",
     "translation": "to drink",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "trinke",
@@ -9049,7 +13780,7 @@
   {
     "infinitive": "tun",
     "translation": "to do",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "tue",
@@ -9130,92 +13861,673 @@
     }
   },
   {
-    "infinitive": "sich überlegen",
+    "infinitive": "überlegen (sich)",
     "translation": "to consider",
     "irregular": false,
     "present": {
       "ich": {
-        "german": "überlege mir",
+        "german": "überlege",
         "english": "I consider"
       },
       "du": {
-        "german": "überlegst dir",
+        "german": "überlegst",
         "english": "you consider"
       },
       "er/sie/es": {
-        "german": "überlegt sich",
+        "german": "überlegt",
         "english": "he/she/it considers"
       },
       "wir": {
-        "german": "überlegen uns",
+        "german": "überlegen",
         "english": "we consider"
       },
       "ihr": {
-        "german": "überlegt euch",
+        "german": "überlegt",
         "english": "y'all consider"
       },
       "sie/Sie": {
-        "german": "überlegen sich",
+        "german": "überlegen",
         "english": "they consider"
       }
     },
     "perfekt": {
       "ich": {
-        "german": "habe mir überlegt",
+        "german": "habe überlegt",
         "english": "I have considered"
       },
       "du": {
-        "german": "hast dir überlegt",
+        "german": "hast überlegt",
         "english": "you have considered"
       },
       "er/sie/es": {
-        "german": "hat sich überlegt",
+        "german": "hat überlegt",
         "english": "he/she/it has considered"
       },
       "wir": {
-        "german": "haben uns überlegt",
+        "german": "haben überlegt",
         "english": "we have considered"
       },
       "ihr": {
-        "german": "habt euch überlegt",
+        "german": "habt überlegt",
         "english": "y'all have considered"
       },
       "sie/Sie": {
-        "german": "haben sich überlegt",
+        "german": "haben überlegt",
         "english": "they have considered"
       }
     },
     "imperfekt": {
       "ich": {
-        "german": "überlegte mir",
+        "german": "überlegte",
         "english": "I considered"
       },
       "du": {
-        "german": "überlegtest dir",
+        "german": "überlegtest",
         "english": "you considered"
       },
       "er/sie/es": {
-        "german": "überlegte sich",
+        "german": "überlegte",
         "english": "he/she/it considered"
       },
       "wir": {
-        "german": "überlegten uns",
+        "german": "überlegten",
         "english": "we considered"
       },
       "ihr": {
-        "german": "überlegtet euch",
+        "german": "überlegtet",
         "english": "y'all considered"
       },
       "sie/Sie": {
-        "german": "überlegten sich",
+        "german": "überlegten",
         "english": "they considered"
+      }
+    }
+  },
+  {
+    "infinitive": "übernehmen",
+    "translation": "to take over",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "übernehme",
+        "english": "I take over"
+      },
+      "du": {
+        "german": "übernimmst",
+        "english": "you take over"
+      },
+      "er/sie/es": {
+        "german": "übernimmt",
+        "english": "he/she/it take overs"
+      },
+      "wir": {
+        "german": "übernehmen",
+        "english": "we take over"
+      },
+      "ihr": {
+        "german": "übernehmt",
+        "english": "y'all take over"
+      },
+      "sie/Sie": {
+        "german": "übernehmen",
+        "english": "they take over"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe übernommen",
+        "english": "I have take overed"
+      },
+      "du": {
+        "german": "hast übernommen",
+        "english": "you have take overed"
+      },
+      "er/sie/es": {
+        "german": "hat übernommen",
+        "english": "he/she/it has take overed"
+      },
+      "wir": {
+        "german": "haben übernommen",
+        "english": "we have take overed"
+      },
+      "ihr": {
+        "german": "habt übernommen",
+        "english": "y'all have take overed"
+      },
+      "sie/Sie": {
+        "german": "haben übernommen",
+        "english": "they have take overed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "übernahm",
+        "english": "I take overed"
+      },
+      "du": {
+        "german": "übernahmst",
+        "english": "you take overed"
+      },
+      "er/sie/es": {
+        "german": "übernahm",
+        "english": "he/she/it take overed"
+      },
+      "wir": {
+        "german": "übernahmen",
+        "english": "we take overed"
+      },
+      "ihr": {
+        "german": "übernahmt",
+        "english": "y'all take overed"
+      },
+      "sie/Sie": {
+        "german": "übernahmen",
+        "english": "they take overed"
+      }
+    }
+  },
+  {
+    "infinitive": "übertreiben",
+    "translation": "to exaggerate",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "übertreibe",
+        "english": "I exaggerate"
+      },
+      "du": {
+        "german": "übertreibst",
+        "english": "you exaggerate"
+      },
+      "er/sie/es": {
+        "german": "übertreibt",
+        "english": "he/she/it exaggerates"
+      },
+      "wir": {
+        "german": "übertreiben",
+        "english": "we exaggerate"
+      },
+      "ihr": {
+        "german": "übertreibt",
+        "english": "y'all exaggerate"
+      },
+      "sie/Sie": {
+        "german": "übertreiben",
+        "english": "they exaggerate"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe übertrieben",
+        "english": "I have exaggerated"
+      },
+      "du": {
+        "german": "hast übertrieben",
+        "english": "you have exaggerated"
+      },
+      "er/sie/es": {
+        "german": "hat übertrieben",
+        "english": "he/she/it has exaggerated"
+      },
+      "wir": {
+        "german": "haben übertrieben",
+        "english": "we have exaggerated"
+      },
+      "ihr": {
+        "german": "habt übertrieben",
+        "english": "y'all have exaggerated"
+      },
+      "sie/Sie": {
+        "german": "haben übertrieben",
+        "english": "they have exaggerated"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "übertrieb",
+        "english": "I exaggerated"
+      },
+      "du": {
+        "german": "übertriebst",
+        "english": "you exaggerated"
+      },
+      "er/sie/es": {
+        "german": "übertrieb",
+        "english": "he/she/it exaggerated"
+      },
+      "wir": {
+        "german": "übertrieben",
+        "english": "we exaggerated"
+      },
+      "ihr": {
+        "german": "übertriebt",
+        "english": "y'all exaggerated"
+      },
+      "sie/Sie": {
+        "german": "übertrieben",
+        "english": "they exaggerated"
+      }
+    }
+  },
+  {
+    "infinitive": "überweisen",
+    "translation": "to transfer (money)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "überweise",
+        "english": "I transfer (money)"
+      },
+      "du": {
+        "german": "überweist",
+        "english": "you transfer (money)"
+      },
+      "er/sie/es": {
+        "german": "überweist",
+        "english": "he/she/it transfer (money)s"
+      },
+      "wir": {
+        "german": "überweisen",
+        "english": "we transfer (money)"
+      },
+      "ihr": {
+        "german": "überweist",
+        "english": "y'all transfer (money)"
+      },
+      "sie/Sie": {
+        "german": "überweisen",
+        "english": "they transfer (money)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe überwiesen",
+        "english": "I have transfer (money)ed"
+      },
+      "du": {
+        "german": "hast überwiesen",
+        "english": "you have transfer (money)ed"
+      },
+      "er/sie/es": {
+        "german": "hat überwiesen",
+        "english": "he/she/it has transfer (money)ed"
+      },
+      "wir": {
+        "german": "haben überwiesen",
+        "english": "we have transfer (money)ed"
+      },
+      "ihr": {
+        "german": "habt überwiesen",
+        "english": "y'all have transfer (money)ed"
+      },
+      "sie/Sie": {
+        "german": "haben überwiesen",
+        "english": "they have transfer (money)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "überwies",
+        "english": "I transfer (money)ed"
+      },
+      "du": {
+        "german": "überwiesest",
+        "english": "you transfer (money)ed"
+      },
+      "er/sie/es": {
+        "german": "überwies",
+        "english": "he/she/it transfer (money)ed"
+      },
+      "wir": {
+        "german": "überwiesen",
+        "english": "we transfer (money)ed"
+      },
+      "ihr": {
+        "german": "überwieset",
+        "english": "y'all transfer (money)ed"
+      },
+      "sie/Sie": {
+        "german": "überwiesen",
+        "english": "they transfer (money)ed"
+      }
+    }
+  },
+  {
+    "infinitive": "umsteigen",
+    "translation": "to change/switch (vehicles)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "steige um",
+        "english": "I change/switch (vehicles)"
+      },
+      "du": {
+        "german": "steigst um",
+        "english": "you change/switch (vehicles)"
+      },
+      "er/sie/es": {
+        "german": "steigt um",
+        "english": "he/she/it change/switch (vehicles)s"
+      },
+      "wir": {
+        "german": "steigen um",
+        "english": "we change/switch (vehicles)"
+      },
+      "ihr": {
+        "german": "steigt um",
+        "english": "y'all change/switch (vehicles)"
+      },
+      "sie/Sie": {
+        "german": "steigen um",
+        "english": "they change/switch (vehicles)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin umgestiegen",
+        "english": "I have change/switch (vehicles)ed"
+      },
+      "du": {
+        "german": "bist umgestiegen",
+        "english": "you have change/switch (vehicles)ed"
+      },
+      "er/sie/es": {
+        "german": "ist umgestiegen",
+        "english": "he/she/it has change/switch (vehicles)ed"
+      },
+      "wir": {
+        "german": "sind umgestiegen",
+        "english": "we have change/switch (vehicles)ed"
+      },
+      "ihr": {
+        "german": "seid umgestiegen",
+        "english": "y'all have change/switch (vehicles)ed"
+      },
+      "sie/Sie": {
+        "german": "sind umgestiegen",
+        "english": "they have change/switch (vehicles)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "stieg um",
+        "english": "I change/switch (vehicles)ed"
+      },
+      "du": {
+        "german": "stiegst um",
+        "english": "you change/switch (vehicles)ed"
+      },
+      "er/sie/es": {
+        "german": "stieg um",
+        "english": "he/she/it change/switch (vehicles)ed"
+      },
+      "wir": {
+        "german": "stiegen um",
+        "english": "we change/switch (vehicles)ed"
+      },
+      "ihr": {
+        "german": "stiegt um",
+        "english": "y'all change/switch (vehicles)ed"
+      },
+      "sie/Sie": {
+        "german": "stiegen um",
+        "english": "they change/switch (vehicles)ed"
+      }
+    }
+  },
+  {
+    "infinitive": "umziehen",
+    "translation": "to move/change (clothes)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "ziehe um",
+        "english": "I move/change (clothes)"
+      },
+      "du": {
+        "german": "ziehst um",
+        "english": "you move/change (clothes)"
+      },
+      "er/sie/es": {
+        "german": "zieht um",
+        "english": "he/she/it move/change (clothes)s"
+      },
+      "wir": {
+        "german": "ziehen um",
+        "english": "we move/change (clothes)"
+      },
+      "ihr": {
+        "german": "zieht um",
+        "english": "y'all move/change (clothes)"
+      },
+      "sie/Sie": {
+        "german": "ziehen um",
+        "english": "they move/change (clothes)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin umgezogen",
+        "english": "I have move/change (clothes)ed"
+      },
+      "du": {
+        "german": "bist umgezogen",
+        "english": "you have move/change (clothes)ed"
+      },
+      "er/sie/es": {
+        "german": "ist umgezogen",
+        "english": "he/she/it has move/change (clothes)ed"
+      },
+      "wir": {
+        "german": "sind umgezogen",
+        "english": "we have move/change (clothes)ed"
+      },
+      "ihr": {
+        "german": "seid umgezogen",
+        "english": "y'all have move/change (clothes)ed"
+      },
+      "sie/Sie": {
+        "german": "sind umgezogen",
+        "english": "they have move/change (clothes)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "zog um",
+        "english": "I move/change (clothes)ed"
+      },
+      "du": {
+        "german": "zogst um",
+        "english": "you move/change (clothes)ed"
+      },
+      "er/sie/es": {
+        "german": "zog um",
+        "english": "he/she/it move/change (clothes)ed"
+      },
+      "wir": {
+        "german": "zogen um",
+        "english": "we move/change (clothes)ed"
+      },
+      "ihr": {
+        "german": "zogt um",
+        "english": "y'all move/change (clothes)ed"
+      },
+      "sie/Sie": {
+        "german": "zogen um",
+        "english": "they move/change (clothes)ed"
+      }
+    }
+  },
+  {
+    "infinitive": "unterhalten (sich)",
+    "translation": "to entertain/converse/maintain",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "unterhalte",
+        "english": "I entertain/converse/maintain"
+      },
+      "du": {
+        "german": "unterhältst",
+        "english": "you entertain/converse/maintain"
+      },
+      "er/sie/es": {
+        "german": "unterhält",
+        "english": "he/she/it entertain/converse/maintains"
+      },
+      "wir": {
+        "german": "unterhalten",
+        "english": "we entertain/converse/maintain"
+      },
+      "ihr": {
+        "german": "unterhaltet",
+        "english": "y'all entertain/converse/maintain"
+      },
+      "sie/Sie": {
+        "german": "unterhalten",
+        "english": "they entertain/converse/maintain"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe unterhalten",
+        "english": "I have entertain/converse/maintained"
+      },
+      "du": {
+        "german": "hast unterhalten",
+        "english": "you have entertain/converse/maintained"
+      },
+      "er/sie/es": {
+        "german": "hat unterhalten",
+        "english": "he/she/it has entertain/converse/maintained"
+      },
+      "wir": {
+        "german": "haben unterhalten",
+        "english": "we have entertain/converse/maintained"
+      },
+      "ihr": {
+        "german": "habt unterhalten",
+        "english": "y'all have entertain/converse/maintained"
+      },
+      "sie/Sie": {
+        "german": "haben unterhalten",
+        "english": "they have entertain/converse/maintained"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "unterhielt",
+        "english": "I entertain/converse/maintained"
+      },
+      "du": {
+        "german": "unterhieltst",
+        "english": "you entertain/converse/maintained"
+      },
+      "er/sie/es": {
+        "german": "unterhielt",
+        "english": "he/she/it entertain/converse/maintained"
+      },
+      "wir": {
+        "german": "unterhielten",
+        "english": "we entertain/converse/maintained"
+      },
+      "ihr": {
+        "german": "unterhieltet",
+        "english": "y'all entertain/converse/maintained"
+      },
+      "sie/Sie": {
+        "german": "unterhielten",
+        "english": "they entertain/converse/maintained"
+      }
+    }
+  },
+  {
+    "infinitive": "verbringen",
+    "translation": "to spend/pass (time)",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "verbringe",
+        "english": "I spend/pass (time)"
+      },
+      "du": {
+        "german": "verbringst",
+        "english": "you spend/pass (time)"
+      },
+      "er/sie/es": {
+        "german": "verbringt",
+        "english": "he/she/it spend/pass (time)s"
+      },
+      "wir": {
+        "german": "verbringen",
+        "english": "we spend/pass (time)"
+      },
+      "ihr": {
+        "german": "verbringt",
+        "english": "y'all spend/pass (time)"
+      },
+      "sie/Sie": {
+        "german": "verbringen",
+        "english": "they spend/pass (time)"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe verbracht",
+        "english": "I have spend/pass (time)ed"
+      },
+      "du": {
+        "german": "hast verbracht",
+        "english": "you have spend/pass (time)ed"
+      },
+      "er/sie/es": {
+        "german": "hat verbracht",
+        "english": "he/she/it has spend/pass (time)ed"
+      },
+      "wir": {
+        "german": "haben verbracht",
+        "english": "we have spend/pass (time)ed"
+      },
+      "ihr": {
+        "german": "habt verbracht",
+        "english": "y'all have spend/pass (time)ed"
+      },
+      "sie/Sie": {
+        "german": "haben verbracht",
+        "english": "they have spend/pass (time)ed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "verbrachte",
+        "english": "I spend/pass (time)ed"
+      },
+      "du": {
+        "german": "verbrachtest",
+        "english": "you spend/pass (time)ed"
+      },
+      "er/sie/es": {
+        "german": "verbrachte",
+        "english": "he/she/it spend/pass (time)ed"
+      },
+      "wir": {
+        "german": "verbrachten",
+        "english": "we spend/pass (time)ed"
+      },
+      "ihr": {
+        "german": "verbrachtet",
+        "english": "y'all spend/pass (time)ed"
+      },
+      "sie/Sie": {
+        "german": "verbrachten",
+        "english": "they spend/pass (time)ed"
       }
     }
   },
   {
     "infinitive": "vergessen",
     "translation": "to forget",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "vergesse",
@@ -9292,6 +14604,89 @@
       "sie/Sie": {
         "german": "vergaßen",
         "english": "they forgot"
+      }
+    }
+  },
+  {
+    "infinitive": "vergleichen",
+    "translation": "to compare",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "vergleiche",
+        "english": "I compare"
+      },
+      "du": {
+        "german": "vergleichst",
+        "english": "you compare"
+      },
+      "er/sie/es": {
+        "german": "vergleicht",
+        "english": "he/she/it compares"
+      },
+      "wir": {
+        "german": "vergleichen",
+        "english": "we compare"
+      },
+      "ihr": {
+        "german": "vergleicht",
+        "english": "y'all compare"
+      },
+      "sie/Sie": {
+        "german": "vergleichen",
+        "english": "they compare"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe verglichen",
+        "english": "I have compared"
+      },
+      "du": {
+        "german": "hast verglichen",
+        "english": "you have compared"
+      },
+      "er/sie/es": {
+        "german": "hat verglichen",
+        "english": "he/she/it has compared"
+      },
+      "wir": {
+        "german": "haben verglichen",
+        "english": "we have compared"
+      },
+      "ihr": {
+        "german": "habt verglichen",
+        "english": "y'all have compared"
+      },
+      "sie/Sie": {
+        "german": "haben verglichen",
+        "english": "they have compared"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "verglich",
+        "english": "I compared"
+      },
+      "du": {
+        "german": "verglichst",
+        "english": "you compared"
+      },
+      "er/sie/es": {
+        "german": "verglich",
+        "english": "he/she/it compared"
+      },
+      "wir": {
+        "german": "verglichen",
+        "english": "we compared"
+      },
+      "ihr": {
+        "german": "verglicht",
+        "english": "y'all compared"
+      },
+      "sie/Sie": {
+        "german": "verglichen",
+        "english": "they compared"
       }
     }
   },
@@ -9379,9 +14774,92 @@
     }
   },
   {
+    "infinitive": "verlassen",
+    "translation": "to leave",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "verlasse",
+        "english": "I leave"
+      },
+      "du": {
+        "german": "verlässt",
+        "english": "you leave"
+      },
+      "er/sie/es": {
+        "german": "verlässt",
+        "english": "he/she/it leaves"
+      },
+      "wir": {
+        "german": "verlassen",
+        "english": "we leave"
+      },
+      "ihr": {
+        "german": "verlasst",
+        "english": "y'all leave"
+      },
+      "sie/Sie": {
+        "german": "verlassen",
+        "english": "they leave"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe verlassen",
+        "english": "I have leaved"
+      },
+      "du": {
+        "german": "hast verlassen",
+        "english": "you have leaved"
+      },
+      "er/sie/es": {
+        "german": "hat verlassen",
+        "english": "he/she/it has leaved"
+      },
+      "wir": {
+        "german": "haben verlassen",
+        "english": "we have leaved"
+      },
+      "ihr": {
+        "german": "habt verlassen",
+        "english": "y'all have leaved"
+      },
+      "sie/Sie": {
+        "german": "haben verlassen",
+        "english": "they have leaved"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "verließ",
+        "english": "I leaved"
+      },
+      "du": {
+        "german": "verließt",
+        "english": "you leaved"
+      },
+      "er/sie/es": {
+        "german": "verließ",
+        "english": "he/she/it leaved"
+      },
+      "wir": {
+        "german": "verließen",
+        "english": "we leaved"
+      },
+      "ihr": {
+        "german": "verließt",
+        "english": "y'all leaved"
+      },
+      "sie/Sie": {
+        "german": "verließen",
+        "english": "they leaved"
+      }
+    }
+  },
+  {
     "infinitive": "verlieren",
     "translation": "to lose",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "verliere",
@@ -9464,7 +14942,7 @@
   {
     "infinitive": "verschwinden",
     "translation": "to disappear",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "verschwinde",
@@ -9545,9 +15023,258 @@
     }
   },
   {
+    "infinitive": "versprechen",
+    "translation": "to promise",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "verspreche",
+        "english": "I promise"
+      },
+      "du": {
+        "german": "versprichst",
+        "english": "you promise"
+      },
+      "er/sie/es": {
+        "german": "verspricht",
+        "english": "he/she/it promises"
+      },
+      "wir": {
+        "german": "versprechen",
+        "english": "we promise"
+      },
+      "ihr": {
+        "german": "versprecht",
+        "english": "y'all promise"
+      },
+      "sie/Sie": {
+        "german": "versprechen",
+        "english": "they promise"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe versprochen",
+        "english": "I have promised"
+      },
+      "du": {
+        "german": "hast versprochen",
+        "english": "you have promised"
+      },
+      "er/sie/es": {
+        "german": "hat versprochen",
+        "english": "he/she/it has promised"
+      },
+      "wir": {
+        "german": "haben versprochen",
+        "english": "we have promised"
+      },
+      "ihr": {
+        "german": "habt versprochen",
+        "english": "y'all have promised"
+      },
+      "sie/Sie": {
+        "german": "haben versprochen",
+        "english": "they have promised"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "versprach",
+        "english": "I promised"
+      },
+      "du": {
+        "german": "versprachst",
+        "english": "you promised"
+      },
+      "er/sie/es": {
+        "german": "versprach",
+        "english": "he/she/it promised"
+      },
+      "wir": {
+        "german": "versprachen",
+        "english": "we promised"
+      },
+      "ihr": {
+        "german": "verspracht",
+        "english": "y'all promised"
+      },
+      "sie/Sie": {
+        "german": "versprachen",
+        "english": "they promised"
+      }
+    }
+  },
+  {
+    "infinitive": "verstehen",
+    "translation": "to understand",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "verstehe",
+        "english": "I understand"
+      },
+      "du": {
+        "german": "verstehst",
+        "english": "you understand"
+      },
+      "er/sie/es": {
+        "german": "versteht",
+        "english": "he/she/it understands"
+      },
+      "wir": {
+        "german": "verstehen",
+        "english": "we understand"
+      },
+      "ihr": {
+        "german": "versteht",
+        "english": "y'all understand"
+      },
+      "sie/Sie": {
+        "german": "verstehen",
+        "english": "they understand"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe verstanden",
+        "english": "I have understanded"
+      },
+      "du": {
+        "german": "hast verstanden",
+        "english": "you have understanded"
+      },
+      "er/sie/es": {
+        "german": "hat verstanden",
+        "english": "he/she/it has understanded"
+      },
+      "wir": {
+        "german": "haben verstanden",
+        "english": "we have understanded"
+      },
+      "ihr": {
+        "german": "habt verstanden",
+        "english": "y'all have understanded"
+      },
+      "sie/Sie": {
+        "german": "haben verstanden",
+        "english": "they have understanded"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "verstand",
+        "english": "I understanded"
+      },
+      "du": {
+        "german": "verstandst/verstandest",
+        "english": "you understanded"
+      },
+      "er/sie/es": {
+        "german": "verstand",
+        "english": "he/she/it understanded"
+      },
+      "wir": {
+        "german": "verstanden",
+        "english": "we understanded"
+      },
+      "ihr": {
+        "german": "verstandet",
+        "english": "y'all understanded"
+      },
+      "sie/Sie": {
+        "german": "verstanden",
+        "english": "they understanded"
+      }
+    }
+  },
+  {
+    "infinitive": "vertragen",
+    "translation": "to tolerate",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "vertrage",
+        "english": "I tolerate"
+      },
+      "du": {
+        "german": "verträgst",
+        "english": "you tolerate"
+      },
+      "er/sie/es": {
+        "german": "verträgt",
+        "english": "he/she/it tolerates"
+      },
+      "wir": {
+        "german": "vertragen",
+        "english": "we tolerate"
+      },
+      "ihr": {
+        "german": "vertragt",
+        "english": "y'all tolerate"
+      },
+      "sie/Sie": {
+        "german": "vertragen",
+        "english": "they tolerate"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe vertragen",
+        "english": "I have tolerated"
+      },
+      "du": {
+        "german": "hast vertragen",
+        "english": "you have tolerated"
+      },
+      "er/sie/es": {
+        "german": "hat vertragen",
+        "english": "he/she/it has tolerated"
+      },
+      "wir": {
+        "german": "haben vertragen",
+        "english": "we have tolerated"
+      },
+      "ihr": {
+        "german": "habt vertragen",
+        "english": "y'all have tolerated"
+      },
+      "sie/Sie": {
+        "german": "haben vertragen",
+        "english": "they have tolerated"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "vertrug",
+        "english": "I tolerated"
+      },
+      "du": {
+        "german": "vertrugst",
+        "english": "you tolerated"
+      },
+      "er/sie/es": {
+        "german": "vertrug",
+        "english": "he/she/it tolerated"
+      },
+      "wir": {
+        "german": "vertrugen",
+        "english": "we tolerated"
+      },
+      "ihr": {
+        "german": "vertrugt",
+        "english": "y'all tolerated"
+      },
+      "sie/Sie": {
+        "german": "vertrugen",
+        "english": "they tolerated"
+      }
+    }
+  },
+  {
     "infinitive": "verzeihen",
     "translation": "to forgive",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "verzeihe",
@@ -9630,7 +15357,7 @@
   {
     "infinitive": "wachsen",
     "translation": "to grow",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "wachse",
@@ -9796,7 +15523,7 @@
   {
     "infinitive": "waschen",
     "translation": "to wash",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "wasche",
@@ -9877,9 +15604,341 @@
     }
   },
   {
+    "infinitive": "wegbringen",
+    "translation": "to bring away",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "bringe weg",
+        "english": "I bring away"
+      },
+      "du": {
+        "german": "bringst weg",
+        "english": "you bring away"
+      },
+      "er/sie/es": {
+        "german": "bringt weg",
+        "english": "he/she/it bring aways"
+      },
+      "wir": {
+        "german": "bringen weg",
+        "english": "we bring away"
+      },
+      "ihr": {
+        "german": "bringt weg",
+        "english": "y'all bring away"
+      },
+      "sie/Sie": {
+        "german": "bringen weg",
+        "english": "they bring away"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe weggebracht",
+        "english": "I have bring awayed"
+      },
+      "du": {
+        "german": "hast weggebracht",
+        "english": "you have bring awayed"
+      },
+      "er/sie/es": {
+        "german": "hat weggebracht",
+        "english": "he/she/it has bring awayed"
+      },
+      "wir": {
+        "german": "haben weggebracht",
+        "english": "we have bring awayed"
+      },
+      "ihr": {
+        "german": "habt weggebracht",
+        "english": "y'all have bring awayed"
+      },
+      "sie/Sie": {
+        "german": "haben weggebracht",
+        "english": "they have bring awayed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "brachte weg",
+        "english": "I bring awayed"
+      },
+      "du": {
+        "german": "brachtest weg",
+        "english": "you bring awayed"
+      },
+      "er/sie/es": {
+        "german": "brachte weg",
+        "english": "he/she/it bring awayed"
+      },
+      "wir": {
+        "german": "brachten weg",
+        "english": "we bring awayed"
+      },
+      "ihr": {
+        "german": "brachtet weg",
+        "english": "y'all bring awayed"
+      },
+      "sie/Sie": {
+        "german": "brachten weg",
+        "english": "they bring awayed"
+      }
+    }
+  },
+  {
+    "infinitive": "weglaufen",
+    "translation": "to run away",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "laufe weg",
+        "english": "I run away"
+      },
+      "du": {
+        "german": "läufst weg",
+        "english": "you run away"
+      },
+      "er/sie/es": {
+        "german": "läuft weg",
+        "english": "he/she/it run aways"
+      },
+      "wir": {
+        "german": "laufen weg",
+        "english": "we run away"
+      },
+      "ihr": {
+        "german": "lauft weg",
+        "english": "y'all run away"
+      },
+      "sie/Sie": {
+        "german": "laufen weg",
+        "english": "they run away"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin weggelaufen",
+        "english": "I have run awayed"
+      },
+      "du": {
+        "german": "bist weggelaufen",
+        "english": "you have run awayed"
+      },
+      "er/sie/es": {
+        "german": "ist weggelaufen",
+        "english": "he/she/it has run awayed"
+      },
+      "wir": {
+        "german": "sind weggelaufen",
+        "english": "we have run awayed"
+      },
+      "ihr": {
+        "german": "seid weggelaufen",
+        "english": "y'all have run awayed"
+      },
+      "sie/Sie": {
+        "german": "sind weggelaufen",
+        "english": "they have run awayed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "lief weg",
+        "english": "I run awayed"
+      },
+      "du": {
+        "german": "liefst weg",
+        "english": "you run awayed"
+      },
+      "er/sie/es": {
+        "german": "lief weg",
+        "english": "he/she/it run awayed"
+      },
+      "wir": {
+        "german": "liefen weg",
+        "english": "we run awayed"
+      },
+      "ihr": {
+        "german": "lieft weg",
+        "english": "y'all run awayed"
+      },
+      "sie/Sie": {
+        "german": "liefen weg",
+        "english": "they run awayed"
+      }
+    }
+  },
+  {
+    "infinitive": "wegwerfen",
+    "translation": "to throw away",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "werfe weg",
+        "english": "I throw away"
+      },
+      "du": {
+        "german": "wirfst weg",
+        "english": "you throw away"
+      },
+      "er/sie/es": {
+        "german": "wirft weg",
+        "english": "he/she/it throw aways"
+      },
+      "wir": {
+        "german": "werfen weg",
+        "english": "we throw away"
+      },
+      "ihr": {
+        "german": "werft weg",
+        "english": "y'all throw away"
+      },
+      "sie/Sie": {
+        "german": "werfen weg",
+        "english": "they throw away"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe weggeworfen",
+        "english": "I have throw awayed"
+      },
+      "du": {
+        "german": "hast weggeworfen",
+        "english": "you have throw awayed"
+      },
+      "er/sie/es": {
+        "german": "hat weggeworfen",
+        "english": "he/she/it has throw awayed"
+      },
+      "wir": {
+        "german": "haben weggeworfen",
+        "english": "we have throw awayed"
+      },
+      "ihr": {
+        "german": "habt weggeworfen",
+        "english": "y'all have throw awayed"
+      },
+      "sie/Sie": {
+        "german": "haben weggeworfen",
+        "english": "they have throw awayed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "warf weg",
+        "english": "I throw awayed"
+      },
+      "du": {
+        "german": "warfst weg",
+        "english": "you throw awayed"
+      },
+      "er/sie/es": {
+        "german": "warf weg",
+        "english": "he/she/it throw awayed"
+      },
+      "wir": {
+        "german": "warfen weg",
+        "english": "we throw awayed"
+      },
+      "ihr": {
+        "german": "warft weg",
+        "english": "y'all throw awayed"
+      },
+      "sie/Sie": {
+        "german": "warfen weg",
+        "english": "they throw awayed"
+      }
+    }
+  },
+  {
+    "infinitive": "wehtun (sich)",
+    "translation": "to hurt yourself",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "tue weh",
+        "english": "I hurt yourself"
+      },
+      "du": {
+        "german": "tust weh",
+        "english": "you hurt yourself"
+      },
+      "er/sie/es": {
+        "german": "tut weh",
+        "english": "he/she/it hurt yourselfs"
+      },
+      "wir": {
+        "german": "tun weh",
+        "english": "we hurt yourself"
+      },
+      "ihr": {
+        "german": "tut weh",
+        "english": "y'all hurt yourself"
+      },
+      "sie/Sie": {
+        "german": "tun weh",
+        "english": "they hurt yourself"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe wehgetan",
+        "english": "I have hurt yourselfed"
+      },
+      "du": {
+        "german": "hast wehgetan",
+        "english": "you have hurt yourselfed"
+      },
+      "er/sie/es": {
+        "german": "hat wehgetan",
+        "english": "he/she/it has hurt yourselfed"
+      },
+      "wir": {
+        "german": "haben wehgetan",
+        "english": "we have hurt yourselfed"
+      },
+      "ihr": {
+        "german": "habt wehgetan",
+        "english": "y'all have hurt yourselfed"
+      },
+      "sie/Sie": {
+        "german": "haben wehgetan",
+        "english": "they have hurt yourselfed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "tat weh",
+        "english": "I hurt yourselfed"
+      },
+      "du": {
+        "german": "tatst weh",
+        "english": "you hurt yourselfed"
+      },
+      "er/sie/es": {
+        "german": "tat weh",
+        "english": "he/she/it hurt yourselfed"
+      },
+      "wir": {
+        "german": "taten weh",
+        "english": "we hurt yourselfed"
+      },
+      "ihr": {
+        "german": "tatet weh",
+        "english": "y'all hurt yourselfed"
+      },
+      "sie/Sie": {
+        "german": "taten weh",
+        "english": "they hurt yourselfed"
+      }
+    }
+  },
+  {
     "infinitive": "werben",
     "translation": "to advertise",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "werbe",
@@ -9962,7 +16021,7 @@
   {
     "infinitive": "werden",
     "translation": "to become",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "werde",
@@ -10045,7 +16104,7 @@
   {
     "infinitive": "werfen",
     "translation": "to throw",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "werfe",
@@ -10128,7 +16187,7 @@
   {
     "infinitive": "wiegen",
     "translation": "to weigh",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "wiege",
@@ -10211,7 +16270,7 @@
   {
     "infinitive": "wissen",
     "translation": "to know",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "weiß",
@@ -10294,7 +16353,7 @@
   {
     "infinitive": "wollen",
     "translation": "to want",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "will",
@@ -10460,7 +16519,7 @@
   {
     "infinitive": "ziehen",
     "translation": "to pull",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "ziehe",
@@ -10541,9 +16600,258 @@
     }
   },
   {
+    "infinitive": "zurückfahren",
+    "translation": "to drive back",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "fahre zurück",
+        "english": "I drive back"
+      },
+      "du": {
+        "german": "fährst zurück",
+        "english": "you drive back"
+      },
+      "er/sie/es": {
+        "german": "fährt zurück",
+        "english": "he/she/it drive backs"
+      },
+      "wir": {
+        "german": "fahren zurück",
+        "english": "we drive back"
+      },
+      "ihr": {
+        "german": "fahrt zurück",
+        "english": "y'all drive back"
+      },
+      "sie/Sie": {
+        "german": "fahren zurück",
+        "english": "they drive back"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin zurückgefahren",
+        "english": "I have drive backed"
+      },
+      "du": {
+        "german": "bist zurückgefahren",
+        "english": "you have drive backed"
+      },
+      "er/sie/es": {
+        "german": "ist zurückgefahren",
+        "english": "he/she/it has drive backed"
+      },
+      "wir": {
+        "german": "sind zurückgefahren",
+        "english": "we have drive backed"
+      },
+      "ihr": {
+        "german": "seid zurückgefahren",
+        "english": "y'all have drive backed"
+      },
+      "sie/Sie": {
+        "german": "sind zurückgefahren",
+        "english": "they have drive backed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "fuhr zurück",
+        "english": "I drive backed"
+      },
+      "du": {
+        "german": "fuhrst zurück",
+        "english": "you drive backed"
+      },
+      "er/sie/es": {
+        "german": "fuhr zurück",
+        "english": "he/she/it drive backed"
+      },
+      "wir": {
+        "german": "fuhren zurück",
+        "english": "we drive backed"
+      },
+      "ihr": {
+        "german": "fuhrt zurück",
+        "english": "y'all drive backed"
+      },
+      "sie/Sie": {
+        "german": "fuhren zurück",
+        "english": "they drive backed"
+      }
+    }
+  },
+  {
+    "infinitive": "zurückkommen",
+    "translation": "to come back",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "komme zurück",
+        "english": "I come back"
+      },
+      "du": {
+        "german": "kommst zurück",
+        "english": "you come back"
+      },
+      "er/sie/es": {
+        "german": "kommt zurück",
+        "english": "he/she/it come backs"
+      },
+      "wir": {
+        "german": "kommen zurück",
+        "english": "we come back"
+      },
+      "ihr": {
+        "german": "kommt zurück",
+        "english": "y'all come back"
+      },
+      "sie/Sie": {
+        "german": "kommen zurück",
+        "english": "they come back"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "bin zurückgekommen",
+        "english": "I have come backed"
+      },
+      "du": {
+        "german": "bist zurückgekommen",
+        "english": "you have come backed"
+      },
+      "er/sie/es": {
+        "german": "ist zurückgekommen",
+        "english": "he/she/it has come backed"
+      },
+      "wir": {
+        "german": "sind zurückgekommen",
+        "english": "we have come backed"
+      },
+      "ihr": {
+        "german": "seid zurückgekommen",
+        "english": "y'all have come backed"
+      },
+      "sie/Sie": {
+        "german": "sind zurückgekommen",
+        "english": "they have come backed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "kam zurück",
+        "english": "I come backed"
+      },
+      "du": {
+        "german": "kamst zurück",
+        "english": "you come backed"
+      },
+      "er/sie/es": {
+        "german": "kam zurück",
+        "english": "he/she/it come backed"
+      },
+      "wir": {
+        "german": "kamen zurück",
+        "english": "we come backed"
+      },
+      "ihr": {
+        "german": "kamt zurück",
+        "english": "y'all come backed"
+      },
+      "sie/Sie": {
+        "german": "kamen zurück",
+        "english": "they come backed"
+      }
+    }
+  },
+  {
+    "infinitive": "zurückrufen",
+    "translation": "to call back",
+    "irregular": false,
+    "present": {
+      "ich": {
+        "german": "rufe zurück",
+        "english": "I call back"
+      },
+      "du": {
+        "german": "rufst zurück",
+        "english": "you call back"
+      },
+      "er/sie/es": {
+        "german": "ruft zurück",
+        "english": "he/she/it call backs"
+      },
+      "wir": {
+        "german": "rufen zurück",
+        "english": "we call back"
+      },
+      "ihr": {
+        "german": "ruft zurück",
+        "english": "y'all call back"
+      },
+      "sie/Sie": {
+        "german": "rufen zurück",
+        "english": "they call back"
+      }
+    },
+    "perfekt": {
+      "ich": {
+        "german": "habe zurückgerufen",
+        "english": "I have call backed"
+      },
+      "du": {
+        "german": "hast zurückgerufen",
+        "english": "you have call backed"
+      },
+      "er/sie/es": {
+        "german": "hat zurückgerufen",
+        "english": "he/she/it has call backed"
+      },
+      "wir": {
+        "german": "haben zurückgerufen",
+        "english": "we have call backed"
+      },
+      "ihr": {
+        "german": "habt zurückgerufen",
+        "english": "y'all have call backed"
+      },
+      "sie/Sie": {
+        "german": "haben zurückgerufen",
+        "english": "they have call backed"
+      }
+    },
+    "imperfekt": {
+      "ich": {
+        "german": "rief zurück",
+        "english": "I call backed"
+      },
+      "du": {
+        "german": "riefst zurück",
+        "english": "you call backed"
+      },
+      "er/sie/es": {
+        "german": "rief zurück",
+        "english": "he/she/it call backed"
+      },
+      "wir": {
+        "german": "riefen zurück",
+        "english": "we call backed"
+      },
+      "ihr": {
+        "german": "rieft zurück",
+        "english": "y'all call backed"
+      },
+      "sie/Sie": {
+        "german": "riefen zurück",
+        "english": "they call backed"
+      }
+    }
+  },
+  {
     "infinitive": "zwingen",
     "translation": "to force",
-    "irregular": true,
+    "irregular": false,
     "present": {
       "ich": {
         "german": "zwinge",
