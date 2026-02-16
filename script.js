@@ -250,6 +250,34 @@ function normalizeAnswer(str) {
     return str.toLowerCase().trim().replace(/ß/g, 'ss');
 }
 
+// Generate all valid answer options from a correct answer string
+// Handles alternatives like "standst/standest auf" → ["standst auf", "standest auf"]
+function generateAnswerOptions(correctAnswer) {
+    if (!correctAnswer.includes('/')) {
+        return [correctAnswer];
+    }
+    
+    const parts = correctAnswer.split(' ');
+    
+    // Find which part contains the alternatives (the one with '/')
+    const altPartIndex = parts.findIndex(p => p.includes('/'));
+    if (altPartIndex === -1) {
+        return [correctAnswer];
+    }
+    
+    // Get the alternatives for that part
+    const alternatives = parts[altPartIndex].split('/');
+    
+    // Generate all combinations by replacing the alternatives part
+    const options = alternatives.map(alt => {
+        const newParts = [...parts];
+        newParts[altPartIndex] = alt;
+        return newParts.join(' ');
+    });
+    
+    return options;
+}
+
 // Conjugation maps for haben and sein
 const HABEN_CONJUGATIONS = {
     'ich': 'habe',
@@ -311,7 +339,12 @@ function generateAuxiliarySelector(subject) {
 }
 
 function isCorrect(userAnswer, correctAnswer) {
-    return normalizeAnswer(userAnswer) === normalizeAnswer(correctAnswer);
+    // Generate all valid options from the correct answer (handles alternatives like "standst/standest auf")
+    const validOptions = generateAnswerOptions(correctAnswer);
+    const normalizedUserAnswer = normalizeAnswer(userAnswer);
+    
+    // Check if user answer matches any valid option
+    return validOptions.some(option => normalizeAnswer(option) === normalizedUserAnswer);
 }
 
 function checkAnswer(e) {
