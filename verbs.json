@@ -2,7 +2,7 @@
   {
     "infinitive": "abfahren",
     "translation": "to depart",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fahre ab",
@@ -85,7 +85,7 @@
   {
     "infinitive": "abwaschen",
     "translation": "to do dishes",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "wasche ab",
@@ -168,7 +168,7 @@
   {
     "infinitive": "anbieten",
     "translation": "to offer",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "biete an",
@@ -251,7 +251,7 @@
   {
     "infinitive": "anfangen",
     "translation": "to begin",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fange an",
@@ -334,7 +334,7 @@
   {
     "infinitive": "ankommen",
     "translation": "to arrive",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "komme an",
@@ -417,7 +417,7 @@
   {
     "infinitive": "annehmen",
     "translation": "to accept",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "nehme an",
@@ -500,7 +500,7 @@
   {
     "infinitive": "anrufen",
     "translation": "to call",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "rufe an",
@@ -583,7 +583,7 @@
   {
     "infinitive": "ansehen",
     "translation": "to look at",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "sehe an",
@@ -666,7 +666,7 @@
   {
     "infinitive": "anschließen",
     "translation": "to join",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schließe an",
@@ -749,7 +749,7 @@
   {
     "infinitive": "anziehen (sich)",
     "translation": "to get dressed",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "ziehe an",
@@ -998,7 +998,7 @@
   {
     "infinitive": "aufladen",
     "translation": "to charge",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "lade auf",
@@ -1081,7 +1081,7 @@
   {
     "infinitive": "aufstehen",
     "translation": "to get/stand up",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "stehe auf",
@@ -1164,7 +1164,7 @@
   {
     "infinitive": "auftreten",
     "translation": "to occur",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "trete auf",
@@ -1247,7 +1247,7 @@
   {
     "infinitive": "ausbrechen",
     "translation": "to break out",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "breche aus",
@@ -1330,7 +1330,7 @@
   {
     "infinitive": "ausfallen",
     "translation": "to be cancelled/turn out",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "falle aus",
@@ -1413,7 +1413,7 @@
   {
     "infinitive": "ausgeben",
     "translation": "to spend",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gebe aus",
@@ -1496,7 +1496,7 @@
   {
     "infinitive": "ausgehen",
     "translation": "to go out",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gehe aus",
@@ -1579,7 +1579,7 @@
   {
     "infinitive": "ausschlafen",
     "translation": "to sleep in",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schlafe aus",
@@ -1662,7 +1662,7 @@
   {
     "infinitive": "aussehen",
     "translation": "to look/appear",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "sehe aus",
@@ -1828,7 +1828,7 @@
   {
     "infinitive": "ausziehen (sich)",
     "translation": "to undress",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "ziehe aus",
@@ -1911,7 +1911,7 @@
   {
     "infinitive": "befehlen",
     "translation": "to command",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "befehle",
@@ -1994,7 +1994,7 @@
   {
     "infinitive": "beginnen",
     "translation": "to begin",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "beginne",
@@ -2077,7 +2077,7 @@
   {
     "infinitive": "beißen",
     "translation": "to bite",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "beiße",
@@ -2160,7 +2160,7 @@
   {
     "infinitive": "bekommen",
     "translation": "to get",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bekomme",
@@ -2243,7 +2243,7 @@
   {
     "infinitive": "beraten",
     "translation": "to advice",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "berate",
@@ -2326,7 +2326,7 @@
   {
     "infinitive": "bestehen",
     "translation": "to pass",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bestehe",
@@ -2492,7 +2492,7 @@
   {
     "infinitive": "beweisen",
     "translation": "to prove",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "beweise",
@@ -2575,7 +2575,7 @@
   {
     "infinitive": "bewerben (sich)",
     "translation": "to apply",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bewerbe",
@@ -2658,7 +2658,7 @@
   {
     "infinitive": "biegen",
     "translation": "to bend",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "biege",
@@ -2741,7 +2741,7 @@
   {
     "infinitive": "bieten",
     "translation": "to offer",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "biete",
@@ -2824,7 +2824,7 @@
   {
     "infinitive": "binden",
     "translation": "to tie",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "binde",
@@ -2907,7 +2907,7 @@
   {
     "infinitive": "bitten",
     "translation": "to request",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bitte",
@@ -2990,7 +2990,7 @@
   {
     "infinitive": "bleiben",
     "translation": "to remain",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bleibe",
@@ -3073,7 +3073,7 @@
   {
     "infinitive": "brechen",
     "translation": "to break",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "breche",
@@ -3156,7 +3156,7 @@
   {
     "infinitive": "brennen",
     "translation": "to burn",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "brenne",
@@ -3239,7 +3239,7 @@
   {
     "infinitive": "bringen",
     "translation": "to bring",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bringe",
@@ -3322,7 +3322,7 @@
   {
     "infinitive": "denken",
     "translation": "to think",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "denke",
@@ -3488,7 +3488,7 @@
   {
     "infinitive": "dürfen",
     "translation": "to be allowed to",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "darf",
@@ -3571,7 +3571,7 @@
   {
     "infinitive": "einfallen",
     "translation": "to think of",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "falle ein",
@@ -3654,7 +3654,7 @@
   {
     "infinitive": "eingeben",
     "translation": "to enter",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gebe ein",
@@ -3737,7 +3737,7 @@
   {
     "infinitive": "einladen",
     "translation": "to invite",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "lade ein",
@@ -3820,7 +3820,7 @@
   {
     "infinitive": "einziehen",
     "translation": "to move in",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "ziehe ein",
@@ -3903,7 +3903,7 @@
   {
     "infinitive": "empfehlen",
     "translation": "to recommend",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "empfehle",
@@ -4069,7 +4069,7 @@
   {
     "infinitive": "enthalten",
     "translation": "to contain",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "enthalte",
@@ -4152,7 +4152,7 @@
   {
     "infinitive": "entscheiden",
     "translation": "to decide",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "entscheide",
@@ -4235,7 +4235,7 @@
   {
     "infinitive": "entstehen",
     "translation": "to arise/emerge",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "entstehe",
@@ -4318,7 +4318,7 @@
   {
     "infinitive": "erfahren",
     "translation": "to experience/find out",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "erfahre",
@@ -4401,7 +4401,7 @@
   {
     "infinitive": "erkennen",
     "translation": "to recognise",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "erkenne",
@@ -4484,7 +4484,7 @@
   {
     "infinitive": "erschrecken",
     "translation": "to (be) startled",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "erschrecke",
@@ -4650,7 +4650,7 @@
   {
     "infinitive": "essen",
     "translation": "to eat",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "esse",
@@ -4733,7 +4733,7 @@
   {
     "infinitive": "fahren",
     "translation": "to drive",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fahre",
@@ -4816,7 +4816,7 @@
   {
     "infinitive": "fallen",
     "translation": "to fall",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "falle",
@@ -4899,7 +4899,7 @@
   {
     "infinitive": "fangen",
     "translation": "to catch",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fange",
@@ -4982,7 +4982,7 @@
   {
     "infinitive": "finden",
     "translation": "to find",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "finde",
@@ -5065,7 +5065,7 @@
   {
     "infinitive": "fliegen",
     "translation": "to fly",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fliege",
@@ -5148,7 +5148,7 @@
   {
     "infinitive": "fliehen",
     "translation": "to flee",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fliehe",
@@ -5231,7 +5231,7 @@
   {
     "infinitive": "fließen",
     "translation": "to flow",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fließe",
@@ -5314,7 +5314,7 @@
   {
     "infinitive": "fressen",
     "translation": "to eat (for animals)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fresse",
@@ -5397,7 +5397,7 @@
   {
     "infinitive": "frieren",
     "translation": "to freeze",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "friere",
@@ -5480,7 +5480,7 @@
   {
     "infinitive": "geben",
     "translation": "to give",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gebe",
@@ -5563,7 +5563,7 @@
   {
     "infinitive": "gefallen",
     "translation": "to like/please",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gefalle",
@@ -5646,7 +5646,7 @@
   {
     "infinitive": "gehen",
     "translation": "to go",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gehe",
@@ -5812,7 +5812,7 @@
   {
     "infinitive": "genießen",
     "translation": "to enjoy",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "genieße",
@@ -5895,7 +5895,7 @@
   {
     "infinitive": "gewinnen",
     "translation": "to win",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gewinne",
@@ -5978,7 +5978,7 @@
   {
     "infinitive": "gießen",
     "translation": "to pour",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gieße",
@@ -6061,7 +6061,7 @@
   {
     "infinitive": "graben",
     "translation": "to dig",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "grabe",
@@ -6144,7 +6144,7 @@
   {
     "infinitive": "greifen",
     "translation": "to seize",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "greife",
@@ -6310,7 +6310,7 @@
   {
     "infinitive": "haben",
     "translation": "to have",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "habe",
@@ -6393,7 +6393,7 @@
   {
     "infinitive": "halten",
     "translation": "to hold",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "halte",
@@ -6559,7 +6559,7 @@
   {
     "infinitive": "hängen",
     "translation": "to hang",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "hänge",
@@ -6642,7 +6642,7 @@
   {
     "infinitive": "heben",
     "translation": "to lift",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "hebe",
@@ -6725,7 +6725,7 @@
   {
     "infinitive": "heißen",
     "translation": "to be called",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "heiße",
@@ -6891,7 +6891,7 @@
   {
     "infinitive": "helfen",
     "translation": "to help",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "helfe",
@@ -6974,7 +6974,7 @@
   {
     "infinitive": "herausfinden",
     "translation": "to find out",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "finde heraus",
@@ -7057,7 +7057,7 @@
   {
     "infinitive": "herunterladen",
     "translation": "to download",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "lade herunter",
@@ -7140,7 +7140,7 @@
   {
     "infinitive": "hinfahren",
     "translation": "to drive to",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fahre hin",
@@ -7223,7 +7223,7 @@
   {
     "infinitive": "hinfallen",
     "translation": "to fall down",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "falle hin",
@@ -7306,7 +7306,7 @@
   {
     "infinitive": "hingehen",
     "translation": "to go to",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "gehe hin",
@@ -7389,7 +7389,7 @@
   {
     "infinitive": "hinkommen",
     "translation": "to come to",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "komme hin",
@@ -7472,7 +7472,7 @@
   {
     "infinitive": "hinterlassen",
     "translation": "to leave behind",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "hinterlasse",
@@ -7555,7 +7555,7 @@
   {
     "infinitive": "hochladen",
     "translation": "to upload",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "lade hoch",
@@ -7721,7 +7721,7 @@
   {
     "infinitive": "kennen",
     "translation": "to know",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "kenne",
@@ -7804,7 +7804,7 @@
   {
     "infinitive": "klingen",
     "translation": "to sound",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "klinge",
@@ -7887,7 +7887,7 @@
   {
     "infinitive": "kommen",
     "translation": "to come",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "komme",
@@ -7970,7 +7970,7 @@
   {
     "infinitive": "können",
     "translation": "to be able to",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "kann",
@@ -8053,7 +8053,7 @@
   {
     "infinitive": "laden",
     "translation": "to load",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "lade",
@@ -8136,7 +8136,7 @@
   {
     "infinitive": "lassen",
     "translation": "to leave/let",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "lasse",
@@ -8219,7 +8219,7 @@
   {
     "infinitive": "laufen",
     "translation": "to run",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "laufe",
@@ -8302,7 +8302,7 @@
   {
     "infinitive": "leiden",
     "translation": "to suffer",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "leide",
@@ -8385,7 +8385,7 @@
   {
     "infinitive": "leidtun",
     "translation": "to be sorry (for)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "tue leid",
@@ -8468,7 +8468,7 @@
   {
     "infinitive": "leihen",
     "translation": "to lend",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "leihe",
@@ -8551,7 +8551,7 @@
   {
     "infinitive": "lesen",
     "translation": "to read",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "lese",
@@ -8634,7 +8634,7 @@
   {
     "infinitive": "liegen",
     "translation": "to lie down",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "liege",
@@ -8717,7 +8717,7 @@
   {
     "infinitive": "lügen",
     "translation": "to tell a lie",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "lüge",
@@ -8966,7 +8966,7 @@
   {
     "infinitive": "messen",
     "translation": "to measure",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "messe",
@@ -9049,7 +9049,7 @@
   {
     "infinitive": "mitbringen",
     "translation": "to bring along",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bringe mit",
@@ -9132,7 +9132,7 @@
   {
     "infinitive": "mithelfen",
     "translation": "to help out",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "helfe mit",
@@ -9215,7 +9215,7 @@
   {
     "infinitive": "mitkommen",
     "translation": "to come with",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "komme mit",
@@ -9298,7 +9298,7 @@
   {
     "infinitive": "mitnehmen",
     "translation": "to take with",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "nehme mit",
@@ -9464,7 +9464,7 @@
   {
     "infinitive": "mögen",
     "translation": "to like",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "mag",
@@ -9547,7 +9547,7 @@
   {
     "infinitive": "müssen",
     "translation": "to have to",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "muss",
@@ -9630,7 +9630,7 @@
   {
     "infinitive": "nachdenken",
     "translation": "to think about",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "denke nach",
@@ -9713,7 +9713,7 @@
   {
     "infinitive": "nachsprechen",
     "translation": "to repeat (after someone)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "spreche nach",
@@ -9796,7 +9796,7 @@
   {
     "infinitive": "nehmen",
     "translation": "to take",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "nehme",
@@ -9879,7 +9879,7 @@
   {
     "infinitive": "nennen",
     "translation": "to name",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "nenne",
@@ -9962,7 +9962,7 @@
   {
     "infinitive": "raten",
     "translation": "to advise",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "rate",
@@ -10045,7 +10045,7 @@
   {
     "infinitive": "rausbringen",
     "translation": "to take out",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bringe raus",
@@ -10211,7 +10211,7 @@
   {
     "infinitive": "recht haben",
     "translation": "to be right",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "habe recht",
@@ -10377,7 +10377,7 @@
   {
     "infinitive": "reißen",
     "translation": "to tear",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "reiße",
@@ -10460,7 +10460,7 @@
   {
     "infinitive": "rennen",
     "translation": "to run",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "renne",
@@ -10543,7 +10543,7 @@
   {
     "infinitive": "riechen",
     "translation": "to smell",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "rieche",
@@ -10626,7 +10626,7 @@
   {
     "infinitive": "rufen",
     "translation": "to call",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "rufe",
@@ -10709,7 +10709,7 @@
   {
     "infinitive": "schaffen",
     "translation": "to create/accomplish",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schaffe",
@@ -10792,7 +10792,7 @@
   {
     "infinitive": "scheinen",
     "translation": "to seem",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "scheine",
@@ -10875,7 +10875,7 @@
   {
     "infinitive": "schießen",
     "translation": "to shoot",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schieße",
@@ -10958,7 +10958,7 @@
   {
     "infinitive": "schlafen",
     "translation": "to sleep",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schlafe",
@@ -11041,7 +11041,7 @@
   {
     "infinitive": "schlagen",
     "translation": "to hit",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schlage",
@@ -11124,7 +11124,7 @@
   {
     "infinitive": "schließen",
     "translation": "to close",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schließe",
@@ -11207,7 +11207,7 @@
   {
     "infinitive": "schneiden",
     "translation": "to cut",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schneide",
@@ -11290,7 +11290,7 @@
   {
     "infinitive": "schreiben",
     "translation": "to write",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schreibe",
@@ -11373,7 +11373,7 @@
   {
     "infinitive": "schreien",
     "translation": "to shout",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schreie",
@@ -11456,7 +11456,7 @@
   {
     "infinitive": "schweigen",
     "translation": "to go silent",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schweige",
@@ -11539,7 +11539,7 @@
   {
     "infinitive": "schwimmen",
     "translation": "to swim",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "schwimme",
@@ -11622,7 +11622,7 @@
   {
     "infinitive": "sehen",
     "translation": "to see",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "sehe",
@@ -11705,7 +11705,7 @@
   {
     "infinitive": "sein",
     "translation": "to be",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bin",
@@ -11871,7 +11871,7 @@
   {
     "infinitive": "singen",
     "translation": "to sing",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "singe",
@@ -11954,7 +11954,7 @@
   {
     "infinitive": "sinken",
     "translation": "to sink",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "sinke",
@@ -12037,7 +12037,7 @@
   {
     "infinitive": "sitzen",
     "translation": "to sit",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "sitze",
@@ -12120,7 +12120,7 @@
   {
     "infinitive": "sitzenbleiben",
     "translation": "to repeat (a school year)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bleibe sitzen",
@@ -12203,7 +12203,7 @@
   {
     "infinitive": "sollen",
     "translation": "to be supposed to",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "soll",
@@ -12286,7 +12286,7 @@
   {
     "infinitive": "sprechen",
     "translation": "to speak",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "spreche",
@@ -12369,7 +12369,7 @@
   {
     "infinitive": "springen",
     "translation": "to jump",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "springe",
@@ -12452,7 +12452,7 @@
   {
     "infinitive": "stattfinden",
     "translation": "to take place",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "finde statt",
@@ -12535,7 +12535,7 @@
   {
     "infinitive": "stechen",
     "translation": "to prick",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "steche",
@@ -12618,7 +12618,7 @@
   {
     "infinitive": "stehen",
     "translation": "to stand",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "stehe",
@@ -12701,7 +12701,7 @@
   {
     "infinitive": "stehlen",
     "translation": "to steal",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "stehle",
@@ -12784,7 +12784,7 @@
   {
     "infinitive": "steigen",
     "translation": "to rise/climb",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "steige",
@@ -12867,7 +12867,7 @@
   {
     "infinitive": "sterben",
     "translation": "to die",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "sterbe",
@@ -12950,7 +12950,7 @@
   {
     "infinitive": "stoßen",
     "translation": "to push",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "stoße",
@@ -13033,7 +13033,7 @@
   {
     "infinitive": "streichen",
     "translation": "to paint (walls)/to spread/to cancel (something)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "streiche",
@@ -13116,7 +13116,7 @@
   {
     "infinitive": "streiten",
     "translation": "to quarrel",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "streite",
@@ -13282,7 +13282,7 @@
   {
     "infinitive": "teilnehmen",
     "translation": "to participate",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "nehme teil",
@@ -13365,7 +13365,7 @@
   {
     "infinitive": "tragen",
     "translation": "to wear",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "trage",
@@ -13448,7 +13448,7 @@
   {
     "infinitive": "treffen",
     "translation": "to meet",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "treffe",
@@ -13531,7 +13531,7 @@
   {
     "infinitive": "treiben",
     "translation": "to drive at",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "treibe",
@@ -13614,7 +13614,7 @@
   {
     "infinitive": "treten",
     "translation": "to tread",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "trete",
@@ -13697,7 +13697,7 @@
   {
     "infinitive": "trinken",
     "translation": "to drink",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "trinke",
@@ -13780,7 +13780,7 @@
   {
     "infinitive": "tun",
     "translation": "to do",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "tue",
@@ -13946,7 +13946,7 @@
   {
     "infinitive": "übernehmen",
     "translation": "to take over",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "übernehme",
@@ -14029,7 +14029,7 @@
   {
     "infinitive": "übertreiben",
     "translation": "to exaggerate",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "übertreibe",
@@ -14112,7 +14112,7 @@
   {
     "infinitive": "überweisen",
     "translation": "to transfer (money)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "überweise",
@@ -14195,7 +14195,7 @@
   {
     "infinitive": "umsteigen",
     "translation": "to change/switch (vehicles)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "steige um",
@@ -14278,7 +14278,7 @@
   {
     "infinitive": "umziehen",
     "translation": "to move/change (clothes)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "ziehe um",
@@ -14361,7 +14361,7 @@
   {
     "infinitive": "unterhalten (sich)",
     "translation": "to entertain/converse/maintain",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "unterhalte",
@@ -14444,7 +14444,7 @@
   {
     "infinitive": "verbringen",
     "translation": "to spend/pass (time)",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "verbringe",
@@ -14527,7 +14527,7 @@
   {
     "infinitive": "vergessen",
     "translation": "to forget",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "vergesse",
@@ -14610,7 +14610,7 @@
   {
     "infinitive": "vergleichen",
     "translation": "to compare",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "vergleiche",
@@ -14776,7 +14776,7 @@
   {
     "infinitive": "verlassen",
     "translation": "to leave",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "verlasse",
@@ -14859,7 +14859,7 @@
   {
     "infinitive": "verlieren",
     "translation": "to lose",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "verliere",
@@ -14942,7 +14942,7 @@
   {
     "infinitive": "verschwinden",
     "translation": "to disappear",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "verschwinde",
@@ -15025,7 +15025,7 @@
   {
     "infinitive": "versprechen",
     "translation": "to promise",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "verspreche",
@@ -15108,7 +15108,7 @@
   {
     "infinitive": "verstehen",
     "translation": "to understand",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "verstehe",
@@ -15191,7 +15191,7 @@
   {
     "infinitive": "vertragen",
     "translation": "to tolerate",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "vertrage",
@@ -15274,7 +15274,7 @@
   {
     "infinitive": "verzeihen",
     "translation": "to forgive",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "verzeihe",
@@ -15357,7 +15357,7 @@
   {
     "infinitive": "wachsen",
     "translation": "to grow",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "wachse",
@@ -15523,7 +15523,7 @@
   {
     "infinitive": "waschen",
     "translation": "to wash",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "wasche",
@@ -15606,7 +15606,7 @@
   {
     "infinitive": "wegbringen",
     "translation": "to bring away",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "bringe weg",
@@ -15689,7 +15689,7 @@
   {
     "infinitive": "weglaufen",
     "translation": "to run away",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "laufe weg",
@@ -15772,7 +15772,7 @@
   {
     "infinitive": "wegwerfen",
     "translation": "to throw away",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "werfe weg",
@@ -15855,7 +15855,7 @@
   {
     "infinitive": "wehtun (sich)",
     "translation": "to hurt yourself",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "tue weh",
@@ -15938,7 +15938,7 @@
   {
     "infinitive": "werben",
     "translation": "to advertise",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "werbe",
@@ -16021,7 +16021,7 @@
   {
     "infinitive": "werden",
     "translation": "to become",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "werde",
@@ -16104,7 +16104,7 @@
   {
     "infinitive": "werfen",
     "translation": "to throw",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "werfe",
@@ -16187,7 +16187,7 @@
   {
     "infinitive": "wiegen",
     "translation": "to weigh",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "wiege",
@@ -16270,7 +16270,7 @@
   {
     "infinitive": "wissen",
     "translation": "to know",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "weiß",
@@ -16353,7 +16353,7 @@
   {
     "infinitive": "wollen",
     "translation": "to want",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "will",
@@ -16519,7 +16519,7 @@
   {
     "infinitive": "ziehen",
     "translation": "to pull",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "ziehe",
@@ -16602,7 +16602,7 @@
   {
     "infinitive": "zurückfahren",
     "translation": "to drive back",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "fahre zurück",
@@ -16685,7 +16685,7 @@
   {
     "infinitive": "zurückkommen",
     "translation": "to come back",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "komme zurück",
@@ -16768,7 +16768,7 @@
   {
     "infinitive": "zurückrufen",
     "translation": "to call back",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "rufe zurück",
@@ -16851,7 +16851,7 @@
   {
     "infinitive": "zwingen",
     "translation": "to force",
-    "irregular": false,
+    "irregular": true,
     "present": {
       "ich": {
         "german": "zwinge",
