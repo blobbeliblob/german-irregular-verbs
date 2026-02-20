@@ -656,6 +656,66 @@ main {
     text-align: center;
 }
 
+/* Meanings Mode */
+.meanings-card {
+    text-align: center;
+}
+
+.meanings-prompt {
+    margin-bottom: 20px;
+}
+
+.meanings-choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.meaning-choice {
+    padding: 18px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-align: center;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meaning-choice:hover:not(:disabled) {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.meaning-choice:disabled {
+    cursor: default;
+}
+
+.meaning-choice.correct {
+    border-color: var(--success);
+    background-color: rgba(76, 175, 80, 0.15);
+    color: var(--success);
+}
+
+.meaning-choice.incorrect {
+    border-color: var(--error);
+    background-color: rgba(244, 67, 54, 0.15);
+    color: var(--error);
+}
+
+.meaning-choice.correct-answer {
+    border-color: var(--success);
+    background-color: rgba(76, 175, 80, 0.15);
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -694,5 +754,15 @@ footer .copyright {
 
     .flashcard-answer {
         font-size: 1.3rem;
+    }
+    
+    .meanings-choices {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .meaning-choice {
+        min-height: 60px;
+        padding: 15px 12px;
     }
 }

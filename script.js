@@ -74,7 +74,25 @@ function initializeElements() {
         memorizePerfekt: document.getElementById('memorize-perfekt'),
         memorizeNextBtn: document.getElementById('memorize-next-btn'),
         memorizeAgainBtn: document.getElementById('memorize-again-btn'),
-        memorizeMenuBtn: document.getElementById('memorize-menu-btn')
+        memorizeMenuBtn: document.getElementById('memorize-menu-btn'),
+        
+        // Meanings elements
+        startMeaningsBtn: document.getElementById('start-meanings-btn'),
+        meaningsProgress: document.getElementById('meanings-progress'),
+        meaningsCurrentNum: document.getElementById('meanings-current-num'),
+        meaningsTotalNum: document.getElementById('meanings-total-num'),
+        meaningsLabel: document.getElementById('meanings-label'),
+        meaningsWord: document.getElementById('meanings-word'),
+        meaningsChoices: document.getElementById('meanings-choices'),
+        meaningChoiceButtons: document.querySelectorAll('.meaning-choice'),
+        meaningsNextBtn: document.getElementById('meanings-next-btn'),
+        meaningsFinalScore: document.getElementById('meanings-final-score'),
+        meaningsFinalTotal: document.getElementById('meanings-final-total'),
+        meaningsScorePercentage: document.getElementById('meanings-score-percentage'),
+        meaningsMistakesSummary: document.getElementById('meanings-mistakes-summary'),
+        meaningsMistakesList: document.getElementById('meanings-mistakes-list'),
+        meaningsAgainBtn: document.getElementById('meanings-again-btn'),
+        meaningsMenuBtn: document.getElementById('meanings-menu-btn')
     };
 }
 
@@ -103,6 +121,8 @@ function setupEventListeners() {
                 showScreen('practice-setup');
             } else if (mode === 'memorize') {
                 showScreen('memorize-setup');
+            } else if (mode === 'meanings') {
+                showScreen('meanings-setup');
             }
         });
     });
@@ -127,6 +147,15 @@ function setupEventListeners() {
     elements.memorizeNextBtn.addEventListener('click', nextMemorizeVerb);
     elements.memorizeAgainBtn.addEventListener('click', () => showScreen('memorize-setup'));
     elements.memorizeMenuBtn.addEventListener('click', () => showScreen('menu'));
+    
+    // Meanings mode
+    elements.startMeaningsBtn.addEventListener('click', startMeanings);
+    elements.meaningChoiceButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => checkMeaningsAnswer(e.target));
+    });
+    elements.meaningsNextBtn.addEventListener('click', nextMeaningsVerb);
+    elements.meaningsAgainBtn.addEventListener('click', () => showScreen('meanings-setup'));
+    elements.meaningsMenuBtn.addEventListener('click', () => showScreen('menu'));
 }
 
 // Switch between screens
@@ -135,7 +164,7 @@ function showScreen(screenName) {
     document.getElementById(`${screenName}-screen`).classList.add('active');
     
     // Show/hide home button based on screen
-    const showHomeBtn = ['practice', 'memorize', 'practice-setup', 'memorize-setup'].includes(screenName);
+    const showHomeBtn = ['practice', 'memorize', 'meanings', 'practice-setup', 'memorize-setup', 'meanings-setup'].includes(screenName);
     elements.homeBtn.classList.toggle('hidden', !showHomeBtn);
 }
 
@@ -614,6 +643,170 @@ function nextMemorizeVerb() {
     } else {
         displayMemorizeVerb();
     }
+}
+
+// ==================
+// MEANINGS MODE
+// ==================
+
+function startMeanings() {
+    const countValue = document.querySelector('input[name="meanings-verb-count"]:checked').value;
+    const direction = document.querySelector('input[name="meanings-direction"]:checked').value;
+    
+    const count = countValue === 'all' ? verbs.length : parseInt(countValue);
+    
+    currentSession = {
+        mode: 'meanings',
+        direction: direction,
+        verbs: shuffleArray(verbs).slice(0, count),
+        currentIndex: 0,
+        score: 0,
+        mistakes: []
+    };
+    
+    elements.meaningsTotalNum.textContent = currentSession.verbs.length;
+    showScreen('meanings');
+    displayMeaningsVerb();
+}
+
+function displayMeaningsVerb() {
+    const verb = currentSession.verbs[currentSession.currentIndex];
+    
+    // Update progress
+    elements.meaningsCurrentNum.textContent = currentSession.currentIndex + 1;
+    const progressPercent = (currentSession.currentIndex / currentSession.verbs.length) * 100;
+    elements.meaningsProgress.style.width = `${progressPercent}%`;
+    
+    // Determine direction for this round
+    let showGerman;
+    if (currentSession.direction === 'de-en') {
+        showGerman = true;
+    } else if (currentSession.direction === 'en-de') {
+        showGerman = false;
+    } else {
+        // Mix: randomly choose direction
+        showGerman = Math.random() < 0.5;
+    }
+    
+    // Store current direction for answer checking
+    currentSession.currentShowGerman = showGerman;
+    
+    // Display the word
+    elements.meaningsLabel.textContent = showGerman ? 'German' : 'English';
+    elements.meaningsWord.textContent = showGerman ? verb.infinitive : verb.translation;
+    
+    // Generate 4 choices (1 correct + 3 wrong)
+    const correctAnswer = showGerman ? verb.translation : verb.infinitive;
+    const wrongAnswers = getWrongAnswers(verb, showGerman, 3);
+    const choices = shuffleArray([correctAnswer, ...wrongAnswers]);
+    
+    // Store correct answer index
+    currentSession.correctAnswerIndex = choices.indexOf(correctAnswer);
+    currentSession.correctAnswer = correctAnswer;
+    
+    // Update choice buttons
+    elements.meaningChoiceButtons.forEach((btn, index) => {
+        btn.textContent = choices[index];
+        btn.disabled = false;
+        btn.classList.remove('correct', 'incorrect', 'correct-answer');
+    });
+    
+    // Hide next button
+    elements.meaningsNextBtn.classList.add('hidden');
+}
+
+function getWrongAnswers(currentVerb, showGerman, count) {
+    // Get translations/infinitives from other verbs
+    const otherVerbs = verbs.filter(v => v.infinitive !== currentVerb.infinitive);
+    const shuffled = shuffleArray(otherVerbs);
+    
+    const wrongAnswers = [];
+    for (let i = 0; i < shuffled.length && wrongAnswers.length < count; i++) {
+        const answer = showGerman ? shuffled[i].translation : shuffled[i].infinitive;
+        // Avoid duplicates
+        if (!wrongAnswers.includes(answer)) {
+            wrongAnswers.push(answer);
+        }
+    }
+    
+    return wrongAnswers;
+}
+
+function checkMeaningsAnswer(selectedButton) {
+    const selectedIndex = parseInt(selectedButton.dataset.index);
+    const isCorrect = selectedIndex === currentSession.correctAnswerIndex;
+    
+    // Disable all buttons
+    elements.meaningChoiceButtons.forEach(btn => {
+        btn.disabled = true;
+    });
+    
+    // Mark selected button
+    selectedButton.classList.add(isCorrect ? 'correct' : 'incorrect');
+    
+    // Always show the correct answer
+    if (!isCorrect) {
+        elements.meaningChoiceButtons[currentSession.correctAnswerIndex].classList.add('correct-answer');
+    }
+    
+    // Update score
+    if (isCorrect) {
+        currentSession.score++;
+    } else {
+        // Track mistake
+        const verb = currentSession.verbs[currentSession.currentIndex];
+        currentSession.mistakes.push({
+            word: currentSession.currentShowGerman ? verb.infinitive : verb.translation,
+            correctAnswer: currentSession.correctAnswer,
+            userAnswer: selectedButton.textContent,
+            direction: currentSession.currentShowGerman ? 'DE → EN' : 'EN → DE'
+        });
+    }
+    
+    // Show next button
+    const isLastVerb = currentSession.currentIndex >= currentSession.verbs.length - 1;
+    elements.meaningsNextBtn.textContent = isLastVerb ? 'Finish' : 'Next Verb';
+    elements.meaningsNextBtn.classList.remove('hidden');
+}
+
+function nextMeaningsVerb() {
+    currentSession.currentIndex++;
+    
+    if (currentSession.currentIndex >= currentSession.verbs.length) {
+        showMeaningsResults();
+    } else {
+        displayMeaningsVerb();
+    }
+}
+
+function showMeaningsResults() {
+    const total = currentSession.verbs.length;
+    const score = currentSession.score;
+    const percentage = Math.round((score / total) * 100);
+    
+    elements.meaningsFinalScore.textContent = score;
+    elements.meaningsFinalTotal.textContent = total;
+    elements.meaningsScorePercentage.textContent = `${percentage}%`;
+    
+    if (percentage >= 80) {
+        elements.meaningsScorePercentage.style.color = 'var(--success)';
+    } else if (percentage >= 50) {
+        elements.meaningsScorePercentage.style.color = 'var(--secondary-color)';
+    } else {
+        elements.meaningsScorePercentage.style.color = 'var(--error)';
+    }
+    
+    if (currentSession.mistakes.length > 0) {
+        elements.meaningsMistakesSummary.classList.remove('hidden');
+        elements.meaningsMistakesList.innerHTML = currentSession.mistakes.map(m => 
+            `<li><strong>${m.word}</strong> (${m.direction})<br>Correct: ${m.correctAnswer}<br>You chose: ${m.userAnswer}</li>`
+        ).join('');
+    } else {
+        elements.meaningsMistakesSummary.classList.add('hidden');
+    }
+    
+    elements.meaningsProgress.style.width = '100%';
+    showScreen('meanings-results');
 }
 
 // Initialize when DOM is loaded

@@ -35,6 +35,11 @@
                             <span class="mode-title">Memorize</span>
                             <span class="mode-desc">Review verbs with flashcards</span>
                         </button>
+                        <button class="mode-btn" data-mode="meanings">
+                            <span class="mode-icon"><img src="language.png" alt="Meanings"></span>
+                            <span class="mode-title">Meanings</span>
+                            <span class="mode-desc">Learn verb translations with multiple choice</span>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -360,6 +365,93 @@
                     <div class="results-buttons">
                         <button id="memorize-again-btn" class="btn primary">Review Again</button>
                         <button id="memorize-menu-btn" class="btn secondary">Back to Menu</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meanings Setup Screen -->
+            <section id="meanings-setup-screen" class="screen">
+                <div class="card">
+                    <h2>Meanings Mode</h2>
+                    <p>Learn verb meanings. You will be shown a verb and need to select the correct translation from four options.</p>
+                    <div class="options">
+                        <span class="options-label">Number of verbs:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="meanings-verb-count" value="10" checked>
+                                <span class="radio-btn">Quick (10)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="meanings-verb-count" value="30">
+                                <span class="radio-btn">Medium (30)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="meanings-verb-count" value="all">
+                                <span class="radio-btn">All</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <span class="options-label">Direction:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="meanings-direction" value="de-en" checked>
+                                <span class="radio-btn">DE → EN</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="meanings-direction" value="en-de">
+                                <span class="radio-btn">EN → DE</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="meanings-direction" value="mix">
+                                <span class="radio-btn">Mix</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button id="start-meanings-btn" class="btn primary">Start Learning</button>
+                </div>
+            </section>
+
+            <!-- Meanings Screen -->
+            <section id="meanings-screen" class="screen">
+                <div class="progress-bar">
+                    <div class="progress" id="meanings-progress"></div>
+                </div>
+                <p class="progress-text"><span id="meanings-current-num">1</span> / <span id="meanings-total-num">10</span></p>
+
+                <div class="card meanings-card">
+                    <div class="verb-prompt meanings-prompt">
+                        <span class="label" id="meanings-label">German</span>
+                        <span class="verb" id="meanings-word">—</span>
+                    </div>
+
+                    <div class="meanings-choices" id="meanings-choices">
+                        <button class="meaning-choice" data-index="0">—</button>
+                        <button class="meaning-choice" data-index="1">—</button>
+                        <button class="meaning-choice" data-index="2">—</button>
+                        <button class="meaning-choice" data-index="3">—</button>
+                    </div>
+
+                    <button id="meanings-next-btn" class="btn secondary hidden">Next Verb</button>
+                </div>
+            </section>
+
+            <!-- Meanings Results Screen -->
+            <section id="meanings-results-screen" class="screen">
+                <div class="card">
+                    <h2>Learning Complete!</h2>
+                    <div class="score">
+                        <span class="score-number" id="meanings-final-score">0</span>
+                        <span class="score-label">out of <span id="meanings-final-total">10</span> correct</span>
+                    </div>
+                    <div class="score-percentage" id="meanings-score-percentage">0%</div>
+                    <div id="meanings-mistakes-summary" class="mistakes-summary hidden">
+                        <h3>Review your mistakes:</h3>
+                        <ul id="meanings-mistakes-list"></ul>
+                    </div>
+                    <div class="results-buttons">
+                        <button id="meanings-again-btn" class="btn primary">Learn Again</button>
+                        <button id="meanings-menu-btn" class="btn secondary">Back to Menu</button>
                     </div>
                 </div>
             </section>
