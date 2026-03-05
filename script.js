@@ -92,7 +92,25 @@ function initializeElements() {
         meaningsMistakesSummary: document.getElementById('meanings-mistakes-summary'),
         meaningsMistakesList: document.getElementById('meanings-mistakes-list'),
         meaningsAgainBtn: document.getElementById('meanings-again-btn'),
-        meaningsMenuBtn: document.getElementById('meanings-menu-btn')
+        meaningsMenuBtn: document.getElementById('meanings-menu-btn'),
+        
+        // Cases elements
+        startCasesBtn: document.getElementById('start-cases-btn'),
+        casesProgress: document.getElementById('cases-progress'),
+        casesCurrentNum: document.getElementById('cases-current-num'),
+        casesTotalNum: document.getElementById('cases-total-num'),
+        casesWord: document.getElementById('cases-word'),
+        casesTranslation: document.getElementById('cases-translation'),
+        casesChoices: document.getElementById('cases-choices'),
+        caseChoiceButtons: document.querySelectorAll('.case-choice'),
+        casesNextBtn: document.getElementById('cases-next-btn'),
+        casesFinalScore: document.getElementById('cases-final-score'),
+        casesFinalTotal: document.getElementById('cases-final-total'),
+        casesScorePercentage: document.getElementById('cases-score-percentage'),
+        casesMistakesSummary: document.getElementById('cases-mistakes-summary'),
+        casesMistakesList: document.getElementById('cases-mistakes-list'),
+        casesAgainBtn: document.getElementById('cases-again-btn'),
+        casesMenuBtn: document.getElementById('cases-menu-btn')
     };
 }
 
@@ -123,6 +141,8 @@ function setupEventListeners() {
                 showScreen('memorize-setup');
             } else if (mode === 'meanings') {
                 showScreen('meanings-setup');
+            } else if (mode === 'cases') {
+                showScreen('cases-setup');
             }
         });
     });
@@ -156,6 +176,15 @@ function setupEventListeners() {
     elements.meaningsNextBtn.addEventListener('click', nextMeaningsVerb);
     elements.meaningsAgainBtn.addEventListener('click', () => showScreen('meanings-setup'));
     elements.meaningsMenuBtn.addEventListener('click', () => showScreen('menu'));
+    
+    // Cases mode
+    elements.startCasesBtn.addEventListener('click', startCases);
+    elements.caseChoiceButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => checkCasesAnswer(e.target));
+    });
+    elements.casesNextBtn.addEventListener('click', nextCasesVerb);
+    elements.casesAgainBtn.addEventListener('click', () => showScreen('cases-setup'));
+    elements.casesMenuBtn.addEventListener('click', () => showScreen('menu'));
 }
 
 // Switch between screens
@@ -164,7 +193,7 @@ function showScreen(screenName) {
     document.getElementById(`${screenName}-screen`).classList.add('active');
     
     // Show/hide home button based on screen
-    const showHomeBtn = ['practice', 'memorize', 'meanings', 'practice-setup', 'memorize-setup', 'meanings-setup'].includes(screenName);
+    const showHomeBtn = ['practice', 'memorize', 'meanings', 'cases', 'practice-setup', 'memorize-setup', 'meanings-setup', 'cases-setup'].includes(screenName);
     elements.homeBtn.classList.toggle('hidden', !showHomeBtn);
 }
 
@@ -815,3 +844,140 @@ document.addEventListener('DOMContentLoaded', () => {
     // Footer year update
     document.getElementById('current-year').textContent = new Date().getFullYear();
 });
+
+// ==================
+// CASES MODE
+// ==================
+
+// Case display names mapping
+const CASE_DISPLAY_NAMES = {
+    'N': 'Nominativ',
+    'A': 'Akkusativ',
+    'D': 'Dativ',
+    'D+A': 'Akkusativ + Dativ',
+    '-': 'Intransitive'
+};
+
+function startCases() {
+    const countValue = document.querySelector('input[name="cases-verb-count"]:checked').value;
+    
+    const count = countValue === 'all' ? verbs.length : parseInt(countValue);
+    
+    currentSession = {
+        mode: 'cases',
+        verbs: shuffleArray(verbs).slice(0, count),
+        currentIndex: 0,
+        score: 0,
+        mistakes: []
+    };
+    
+    elements.casesTotalNum.textContent = currentSession.verbs.length;
+    showScreen('cases');
+    displayCasesVerb();
+}
+
+function displayCasesVerb() {
+    const verb = currentSession.verbs[currentSession.currentIndex];
+    
+    // Update progress
+    elements.casesCurrentNum.textContent = currentSession.currentIndex + 1;
+    const progressPercent = (currentSession.currentIndex / currentSession.verbs.length) * 100;
+    elements.casesProgress.style.width = `${progressPercent}%`;
+    
+    // Display the verb
+    elements.casesWord.textContent = verb.infinitive;
+    elements.casesTranslation.textContent = verb.translation;
+    
+    // Store correct case for checking
+    currentSession.correctCase = verb.case;
+    
+    // Reset choice buttons
+    elements.caseChoiceButtons.forEach(btn => {
+        btn.disabled = false;
+        btn.classList.remove('correct', 'incorrect', 'correct-answer');
+    });
+    
+    // Hide next button
+    elements.casesNextBtn.classList.add('hidden');
+}
+
+function checkCasesAnswer(selectedButton) {
+    const selectedCase = selectedButton.dataset.case;
+    const isCorrect = selectedCase === currentSession.correctCase;
+    
+    // Disable all buttons
+    elements.caseChoiceButtons.forEach(btn => {
+        btn.disabled = true;
+    });
+    
+    // Mark selected button
+    selectedButton.classList.add(isCorrect ? 'correct' : 'incorrect');
+    
+    // Always show the correct answer if wrong
+    if (!isCorrect) {
+        elements.caseChoiceButtons.forEach(btn => {
+            if (btn.dataset.case === currentSession.correctCase) {
+                btn.classList.add('correct-answer');
+            }
+        });
+    }
+    
+    // Update score
+    if (isCorrect) {
+        currentSession.score++;
+    } else {
+        // Track mistake
+        const verb = currentSession.verbs[currentSession.currentIndex];
+        currentSession.mistakes.push({
+            verb: verb.infinitive,
+            translation: verb.translation,
+            correctCase: CASE_DISPLAY_NAMES[currentSession.correctCase],
+            userCase: CASE_DISPLAY_NAMES[selectedCase]
+        });
+    }
+    
+    // Show next button
+    const isLastVerb = currentSession.currentIndex >= currentSession.verbs.length - 1;
+    elements.casesNextBtn.textContent = isLastVerb ? 'Finish' : 'Next Verb';
+    elements.casesNextBtn.classList.remove('hidden');
+}
+
+function nextCasesVerb() {
+    currentSession.currentIndex++;
+    
+    if (currentSession.currentIndex >= currentSession.verbs.length) {
+        showCasesResults();
+    } else {
+        displayCasesVerb();
+    }
+}
+
+function showCasesResults() {
+    const total = currentSession.verbs.length;
+    const score = currentSession.score;
+    const percentage = Math.round((score / total) * 100);
+    
+    elements.casesFinalScore.textContent = score;
+    elements.casesFinalTotal.textContent = total;
+    elements.casesScorePercentage.textContent = `${percentage}%`;
+    
+    if (percentage >= 80) {
+        elements.casesScorePercentage.style.color = 'var(--success)';
+    } else if (percentage >= 50) {
+        elements.casesScorePercentage.style.color = 'var(--secondary-color)';
+    } else {
+        elements.casesScorePercentage.style.color = 'var(--error)';
+    }
+    
+    if (currentSession.mistakes.length > 0) {
+        elements.casesMistakesSummary.classList.remove('hidden');
+        elements.casesMistakesList.innerHTML = currentSession.mistakes.map(m => 
+            `<li><strong>${m.verb}</strong> (${m.translation})<br>Correct: ${m.correctCase}<br>You chose: ${m.userCase}</li>`
+        ).join('');
+    } else {
+        elements.casesMistakesSummary.classList.add('hidden');
+    }
+    
+    elements.casesProgress.style.width = '100%';
+    showScreen('cases-results');
+}

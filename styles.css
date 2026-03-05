@@ -716,6 +716,70 @@ main {
     background-color: rgba(76, 175, 80, 0.15);
 }
 
+/* Cases Mode Styles */
+.cases-card {
+    text-align: center;
+}
+
+.cases-prompt {
+    margin-bottom: 20px;
+}
+
+.cases-choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.case-choice {
+    padding: 18px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-align: center;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.case-choice:last-child {
+    grid-column: 1 / -1;
+}
+
+.case-choice:hover:not(:disabled) {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.case-choice:disabled {
+    cursor: default;
+}
+
+.case-choice.correct {
+    border-color: var(--success);
+    background-color: rgba(76, 175, 80, 0.15);
+    color: var(--success);
+}
+
+.case-choice.incorrect {
+    border-color: var(--error);
+    background-color: rgba(244, 67, 54, 0.15);
+    color: var(--error);
+}
+
+.case-choice.correct-answer {
+    border-color: var(--success);
+    background-color: rgba(76, 175, 80, 0.15);
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -764,5 +828,19 @@ footer .copyright {
     .meaning-choice {
         min-height: 60px;
         padding: 15px 12px;
+    }
+    
+    .cases-choices {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .case-choice {
+        min-height: 50px;
+        padding: 15px 12px;
+    }
+    
+    .case-choice:last-child {
+        grid-column: auto;
     }
 }

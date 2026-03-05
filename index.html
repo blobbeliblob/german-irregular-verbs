@@ -40,6 +40,11 @@
                             <span class="mode-title">Meanings</span>
                             <span class="mode-desc">Learn verb translations with multiple choice</span>
                         </button>
+                        <button class="mode-btn" data-mode="cases">
+                            <span class="mode-icon"><img src="choice.png" alt="Cases"></span>
+                            <span class="mode-title">Cases</span>
+                            <span class="mode-desc">Learn which case each verb requires</span>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -452,6 +457,78 @@
                     <div class="results-buttons">
                         <button id="meanings-again-btn" class="btn primary">Learn Again</button>
                         <button id="meanings-menu-btn" class="btn secondary">Back to Menu</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cases Setup Screen -->
+            <section id="cases-setup-screen" class="screen">
+                <div class="card">
+                    <h2>Cases Mode</h2>
+                    <p>Learn which grammatical case each verb requires. You will be shown a verb and need to select the correct case from five options.</p>
+                    <div class="options">
+                        <span class="options-label">Number of verbs:</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="cases-verb-count" value="10" checked>
+                                <span class="radio-btn">Quick (10)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="cases-verb-count" value="30">
+                                <span class="radio-btn">Medium (30)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="cases-verb-count" value="all">
+                                <span class="radio-btn">All</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button id="start-cases-btn" class="btn primary">Start Learning</button>
+                </div>
+            </section>
+
+            <!-- Cases Screen -->
+            <section id="cases-screen" class="screen">
+                <div class="progress-bar">
+                    <div class="progress" id="cases-progress"></div>
+                </div>
+                <p class="progress-text"><span id="cases-current-num">1</span> / <span id="cases-total-num">10</span></p>
+
+                <div class="card cases-card">
+                    <div class="verb-prompt cases-prompt">
+                        <span class="label">Verb</span>
+                        <span class="verb" id="cases-word">—</span>
+                        <span class="translation" id="cases-translation">—</span>
+                    </div>
+
+                    <div class="cases-choices" id="cases-choices">
+                        <button class="case-choice" data-case="N">Nominativ</button>
+                        <button class="case-choice" data-case="A">Akkusativ</button>
+                        <button class="case-choice" data-case="D">Dativ</button>
+                        <button class="case-choice" data-case="D+A">Akkusativ + Dativ</button>
+                        <button class="case-choice" data-case="-">Intransitive</button>
+                    </div>
+
+                    <button id="cases-next-btn" class="btn secondary hidden">Next Verb</button>
+                </div>
+            </section>
+
+            <!-- Cases Results Screen -->
+            <section id="cases-results-screen" class="screen">
+                <div class="card">
+                    <h2>Learning Complete!</h2>
+                    <div class="score">
+                        <span class="score-number" id="cases-final-score">0</span>
+                        <span class="score-label">out of <span id="cases-final-total">10</span> correct</span>
+                    </div>
+                    <div class="score-percentage" id="cases-score-percentage">0%</div>
+                    <div id="cases-mistakes-summary" class="mistakes-summary hidden">
+                        <h3>Review your mistakes:</h3>
+                        <ul id="cases-mistakes-list"></ul>
+                    </div>
+                    <div class="results-buttons">
+                        <button id="cases-again-btn" class="btn primary">Practice Again</button>
+                        <button id="cases-menu-btn" class="btn secondary">Back to Menu</button>
                     </div>
                 </div>
             </section>
