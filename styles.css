@@ -1040,10 +1040,33 @@ footer {
     font-size: 0.9rem;
 }
 
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
 footer .copyright {
     font-size: 0.8rem;
-    margin-top: 5px;
+    margin: 0;
     color: rgba(255, 255, 255, 0.4);
+}
+
+footer .github-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+footer .github-link img {
+    height: 20px;
+    width: 20px;
+    opacity: 0.6;
+    filter: brightness(1.2);
+}
+
+footer .github-link:hover img {
+    opacity: 1;
 }
 
 /* Responsive */
