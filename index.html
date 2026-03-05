@@ -45,6 +45,11 @@
                             <span class="mode-title">Cases</span>
                             <span class="mode-desc">Learn which case each verb requires</span>
                         </button>
+                        <button class="mode-btn" data-mode="reference">
+                            <span class="mode-icon"><img src="looking_glass.png" alt="Reference"></span>
+                            <span class="mode-title">Reference</span>
+                            <span class="mode-desc">Browse all verbs and their conjugations</span>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -532,6 +537,54 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Reference Screen -->
+            <section id="reference-screen" class="screen">
+                <div class="card reference-card">
+                    <h2>Verb Reference</h2>
+                    <div class="reference-search">
+                        <input type="text" id="reference-search-input" placeholder="Search verbs..." autocomplete="off">
+                        <button class="search-clear-btn" id="search-clear-btn" type="button">&times;</button>
+                    </div>
+                    <div class="reference-list" id="reference-list">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Verb Detail Overlay -->
+            <div id="verb-detail-overlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <button class="overlay-close" id="overlay-close">&times;</button>
+                    <div class="overlay-header">
+                        <h2 id="overlay-infinitive">—</h2>
+                        <p class="overlay-translation" id="overlay-translation">—</p>
+                    </div>
+                    <div class="overlay-badges">
+                        <span class="badge" id="overlay-case-badge">—</span>
+                        <span class="badge" id="overlay-type-badge">—</span>
+                    </div>
+                    <div class="overlay-tense-filters">
+                        <button class="tense-filter-btn active" data-tense="praesens">Präsens</button>
+                        <button class="tense-filter-btn" data-tense="praeteritum">Präteritum</button>
+                        <button class="tense-filter-btn" data-tense="perfekt">Perfekt</button>
+                    </div>
+                    <div class="overlay-conjugations">
+                        <div class="conjugation-table">
+                            <h3>Präsens</h3>
+                            <table id="overlay-praesens-table"></table>
+                        </div>
+                        <div class="conjugation-table">
+                            <h3>Präteritum</h3>
+                            <table id="overlay-praeteritum-table"></table>
+                        </div>
+                        <div class="conjugation-table">
+                            <h3>Perfekt</h3>
+                            <table id="overlay-perfekt-table"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>

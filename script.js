@@ -110,7 +110,22 @@ function initializeElements() {
         casesMistakesSummary: document.getElementById('cases-mistakes-summary'),
         casesMistakesList: document.getElementById('cases-mistakes-list'),
         casesAgainBtn: document.getElementById('cases-again-btn'),
-        casesMenuBtn: document.getElementById('cases-menu-btn')
+        casesMenuBtn: document.getElementById('cases-menu-btn'),
+        
+        // Reference elements
+        referenceSearchInput: document.getElementById('reference-search-input'),
+        searchClearBtn: document.getElementById('search-clear-btn'),
+        referenceList: document.getElementById('reference-list'),
+        verbDetailOverlay: document.getElementById('verb-detail-overlay'),
+        overlayClose: document.getElementById('overlay-close'),
+        overlayInfinitive: document.getElementById('overlay-infinitive'),
+        overlayTranslation: document.getElementById('overlay-translation'),
+        overlayCaseBadge: document.getElementById('overlay-case-badge'),
+        overlayTypeBadge: document.getElementById('overlay-type-badge'),
+        tenseFilterBtns: document.querySelectorAll('.tense-filter-btn'),
+        overlayPraesensTable: document.getElementById('overlay-praesens-table'),
+        overlayPraeteritumTable: document.getElementById('overlay-praeteritum-table'),
+        overlayPerfektTable: document.getElementById('overlay-perfekt-table')
     };
 }
 
@@ -143,6 +158,9 @@ function setupEventListeners() {
                 showScreen('meanings-setup');
             } else if (mode === 'cases') {
                 showScreen('cases-setup');
+            } else if (mode === 'reference') {
+                showScreen('reference');
+                populateReferenceList();
             }
         });
     });
@@ -185,6 +203,19 @@ function setupEventListeners() {
     elements.casesNextBtn.addEventListener('click', nextCasesVerb);
     elements.casesAgainBtn.addEventListener('click', () => showScreen('cases-setup'));
     elements.casesMenuBtn.addEventListener('click', () => showScreen('menu'));
+    
+    // Reference mode
+    elements.referenceSearchInput.addEventListener('input', filterReferenceList);
+    elements.searchClearBtn.addEventListener('click', clearReferenceSearch);
+    elements.overlayClose.addEventListener('click', closeVerbDetailOverlay);
+    elements.verbDetailOverlay.addEventListener('click', (e) => {
+        if (e.target === elements.verbDetailOverlay) {
+            closeVerbDetailOverlay();
+        }
+    });
+    elements.tenseFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => filterConjugationsByTense(btn.dataset.tense));
+    });
 }
 
 // Switch between screens
@@ -193,7 +224,7 @@ function showScreen(screenName) {
     document.getElementById(`${screenName}-screen`).classList.add('active');
     
     // Show/hide home button based on screen
-    const showHomeBtn = ['practice', 'memorize', 'meanings', 'cases', 'practice-setup', 'memorize-setup', 'meanings-setup', 'cases-setup'].includes(screenName);
+    const showHomeBtn = ['practice', 'memorize', 'meanings', 'cases', 'reference', 'practice-setup', 'memorize-setup', 'meanings-setup', 'cases-setup'].includes(screenName);
     elements.homeBtn.classList.toggle('hidden', !showHomeBtn);
 }
 
@@ -980,4 +1011,122 @@ function showCasesResults() {
     
     elements.casesProgress.style.width = '100%';
     showScreen('cases-results');
+}
+
+// ==================
+// REFERENCE MODE
+// ==================
+
+function populateReferenceList() {
+    // Sort verbs alphabetically by infinitive
+    const sortedVerbs = [...verbs].sort((a, b) => a.infinitive.localeCompare(b.infinitive));
+    
+    elements.referenceList.innerHTML = sortedVerbs.map((verb, index) => `
+        <div class="reference-item" data-verb-index="${verbs.indexOf(verb)}">
+            <span class="reference-item-verb">${verb.infinitive}</span>
+            <span class="reference-item-translation">${verb.translation}</span>
+        </div>
+    `).join('');
+    
+    // Add click listeners to items
+    document.querySelectorAll('.reference-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const verbIndex = parseInt(item.dataset.verbIndex);
+            showVerbDetailOverlay(verbs[verbIndex]);
+        });
+    });
+    
+    // Clear search input and hide clear button
+    elements.referenceSearchInput.value = '';
+    elements.searchClearBtn.classList.remove('visible');
+}
+
+function filterReferenceList() {
+    const searchTerm = elements.referenceSearchInput.value.toLowerCase().trim();
+    
+    // Show/hide clear button based on search input
+    elements.searchClearBtn.classList.toggle('visible', searchTerm.length > 0);
+    
+    document.querySelectorAll('.reference-item').forEach(item => {
+        const verb = item.querySelector('.reference-item-verb').textContent.toLowerCase();
+        const translation = item.querySelector('.reference-item-translation').textContent.toLowerCase();
+        
+        const matches = verb.includes(searchTerm) || translation.includes(searchTerm);
+        item.style.display = matches ? 'flex' : 'none';
+    });
+}
+
+function clearReferenceSearch() {
+    elements.referenceSearchInput.value = '';
+    elements.searchClearBtn.classList.remove('visible');
+    filterReferenceList();
+    elements.referenceSearchInput.focus();
+}
+
+function showVerbDetailOverlay(verb) {
+    // Set header info
+    elements.overlayInfinitive.textContent = verb.infinitive;
+    elements.overlayTranslation.textContent = verb.translation;
+    
+    // Set badges
+    const caseName = CASE_DISPLAY_NAMES[verb.case] || verb.case;
+    elements.overlayCaseBadge.textContent = caseName;
+    elements.overlayCaseBadge.className = 'badge case-badge';
+    
+    const isIrregular = verb.irregular;
+    elements.overlayTypeBadge.textContent = isIrregular ? 'Irregular' : 'Regular';
+    elements.overlayTypeBadge.className = `badge ${isIrregular ? 'type-badge-irregular' : 'type-badge-regular'}`;
+    
+    // Build conjugation tables
+    const subjects = ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie'];
+    
+    elements.overlayPraesensTable.innerHTML = subjects.map(subject => `
+        <tr>
+            <td>${subject}</td>
+            <td>${verb.present[subject].german}</td>
+        </tr>
+    `).join('');
+    
+    elements.overlayPraeteritumTable.innerHTML = subjects.map(subject => `
+        <tr>
+            <td>${subject}</td>
+            <td>${verb.imperfekt[subject].german}</td>
+        </tr>
+    `).join('');
+    
+    elements.overlayPerfektTable.innerHTML = subjects.map(subject => `
+        <tr>
+            <td>${subject}</td>
+            <td>${verb.perfekt[subject].german}</td>
+        </tr>
+    `).join('');
+    
+    // Reset tense filter to "Präsens"
+    filterConjugationsByTense('praesens');
+    
+    // Show overlay
+    elements.verbDetailOverlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function filterConjugationsByTense(tense) {
+    // Update active button
+    elements.tenseFilterBtns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tense === tense);
+    });
+    
+    // Get conjugation table containers
+    const praesensContainer = elements.overlayPraesensTable.closest('.conjugation-table');
+    const praeteritumContainer = elements.overlayPraeteritumTable.closest('.conjugation-table');
+    const perfektContainer = elements.overlayPerfektTable.closest('.conjugation-table');
+    
+    // Show/hide tables based on filter
+    praesensContainer.classList.toggle('hidden', tense !== 'praesens');
+    praeteritumContainer.classList.toggle('hidden', tense !== 'praeteritum');
+    perfektContainer.classList.toggle('hidden', tense !== 'perfekt');
+}
+
+function closeVerbDetailOverlay() {
+    elements.verbDetailOverlay.classList.add('hidden');
+    document.body.style.overflow = '';
 }
